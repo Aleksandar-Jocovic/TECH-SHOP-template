@@ -1,0 +1,65 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.quickContact {
+	padding-left: 20px;
+	background-color: #0d1a26;
+	display: flex;
+	min-height: 4vh;
+	color: rgba(133, 0, 0, 0.993);
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.logoMedia {
+	display: inline-flex;
+	justify-content: space-between;
+	min-height: 16vh;
+	width: 100%;
+	padding: 0px;
+/*	margin-bottom: 5px;
+*/	background-color: #fff;
+
+
+/*	color: white;
+*/}
+
+
+.logo {
+	padding-left: 20px;
+	background-color: red;
+	min-height: 16vh;
+	width: 20%;
+	color: white;
+}
+
+.navMenu {
+	align-items: center;
+	background-color: #0d1a26;
+	display: flex;
+	min-height: 8vh;
+	justify-content: space-around;
+	color: white;
+
+
+}
+.icons {
+	background-color: red;
+	min-height: 16vh;
+	width: 20%;
+	color: white;
+}
+/*
+.slide {
+	min-height: 40vh;
+	background-color: red;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+*/
+
