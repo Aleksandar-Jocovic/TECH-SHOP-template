@@ -1,65 +1,249 @@
 
-* {
+* { font-family: $abel;
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+	
+	
 }
+/* div#fixed {
 
+	position: sticky;
+	top:0;
+	
+
+} */
 .quickContact {
 	padding-left: 20px;
-	background-color: #0d1a26;
+	background-color:/* #3d5c7a */ $darkBlue;
 	display: flex;
 	min-height: 4vh;
-	color: rgba(133, 0, 0, 0.993);
+	color: whitesmoke;
 	justify-content: space-around;
 	padding: 5px;
+	// border-bottom: 1px solid $orange;
+	margin-bottom: 3px;
+	top: 0;
 }
 
-.logoMedia {
-	display: inline-flex;
-	justify-content: space-between;
-	min-height: 16vh;
-	width: 100%;
-	padding: 0px;
-/*	margin-bottom: 5px;
-*/	background-color: #fff;
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	min-height: 11vh;
+	background-color: $lightBlue;
+	color: whitesmoke;
+	border-bottom: 1px solid whitesmoke;
+		border-top: 1px solid whitesmoke;
 
-
-/*	color: white;
-*/}
-
+}
 
 .logo {
-	padding-left: 20px;
-	background-color: red;
-	min-height: 16vh;
-	width: 20%;
-	color: white;
+	position: relative;
+	top: 0;
+	padding: 0 0 5px 0;
+	font-size: 26px;
+	letter-spacing: 10px;
+	// text-transform: uppercase;
+	margin-right: 30%;
+	border-bottom: 1px solid whitesmoke;
 }
 
-.navMenu {
-	align-items: center;
-	background-color: #0d1a26;
+.nav-links {
 	display: flex;
-	min-height: 8vh;
 	justify-content: space-around;
-	color: white;
+	width: 40%;
+	
+	margin-top:3% ;
+	
+
+	li {
+	
+	list-style: none;
+		
+}
+a {
+		text-decoration: none;
+		color: whitesmoke;
+	}
+}
+
+#home {
+	color: $orange;
+	font-size: 20px;
+	border-top: 1px solid white;
+	font-weight: bold;
+	margin: 5px 0 0 0;
+	letter-spacing: 2px;
+	padding-top: 5px;
+}
+
+#alpvc {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: $orange;
+	
 
 
 }
-.icons {
+body {
 	background-color: red;
+}
+
+
+.icons {
+
+	background-color: rgb(64, 82, 17);
 	min-height: 16vh;
 	width: 20%;
 	color: white;
-}
-/*
-.slide {
-	min-height: 40vh;
-	background-color: red;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 10px;
-}
-*/
+	position: absolute;
+	
+	display: inline;
+	text-align: center;
 
+
+}
+
+#fancyParagraf {
+	 margin:  5% 5% 5% 5%;
+	 padding: 	5% 5% 5% 5%;
+	/* padding:  50px 50px  50px 50px; */
+	
+
+	background-color: $whiteDark;
+
+	#bigTxt {
+		font-size: 25px;
+	}
+	#mediumTxt {
+		font-size: 25px;
+	}
+	#smallTxt {
+		font-size: 20px;
+	}
+}
+
+.home {
+	color: $orange;
+	font-size: 20px;
+	border-top: 1px solid white;
+	font-weight: bold;
+	#homeId {
+		margin: 7px 0 3px 0;
+	}
+	
+}
+
+footer {
+	height:300px;
+	color: whitesmoke;
+	background-color: rgb(0, 0, 26);
+	margin-top: 10%;
+	padding: 20px 10px 0 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(39, 81, 219);
+  color: white;
+}
+.burger {
+	cursor: pointer;
+	display: none;
+}
+
+.burger div {
+	background-color: rgb(226, 226, 226);
+	height: 3px;
+	margin: 5px;
+	transition: all 0.3s ease;
+	width: 25px;
+}
+
+@media screen and (max-width: 300px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-links {
+	z-index: 4;
+	align-items: center;
+	background-color: #5d5954;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+	height: 92vh;
+	position: absolute;
+	right: 0px;
+ 	top: 4.5vh;
+ 	transform: translateX(100%);
+	transition: transform 0.5s ease-in;
+	width: 60%;
+}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		z-index: 5;
+		display: block;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+
+	}
+
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}

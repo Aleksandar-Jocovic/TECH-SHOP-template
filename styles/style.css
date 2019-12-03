@@ -1,132 +1,310 @@
 * {
+  font-family: "Abel", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
+/* div#fixed {
+
+	position: sticky;
+	top:0;
+	
+
+} */
 .quickContact {
   padding-left: 20px;
-  background-color: #0d1a26;
+  background-color: #102f52;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 4vh;
-  color: rgba(133, 0, 0, 0.993);
+  color: whitesmoke;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 5px;
+  margin-bottom: 3px;
+  top: 0;
 }
 
-.logoMedia {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 16vh;
-  width: 100%;
-  padding: 0px;
-  /*	margin-bottom: 5px;
-*/
-  background-color: #fff;
-  /*	color: white;
-*/
-}
-
-.logo {
-  padding-left: 20px;
-  background-color: red;
-  min-height: 16vh;
-  width: 20%;
-  color: white;
-}
-
-.navMenu {
+nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0d1a26;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 8vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
+  min-height: 11vh;
+  background-color: #5d7187;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+}
+
+.logo {
+  position: relative;
+  top: 0;
+  padding: 0 0 5px 0;
+  font-size: 26px;
+  letter-spacing: 10px;
+  margin-right: 30%;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+  margin-top: 3%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#home {
+  color: #ff6600;
+  font-size: 20px;
+  border-top: 1px solid white;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+  letter-spacing: 2px;
+  padding-top: 5px;
+}
+
+#alpvc {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ff6600;
+}
+
+body {
+  background-color: red;
 }
 
 .icons {
-  background-color: red;
+  background-color: #405211;
   min-height: 16vh;
   width: 20%;
   color: white;
+  position: absolute;
+  display: inline;
+  text-align: center;
 }
 
-/*
-.slide {
-	min-height: 40vh;
-	background-color: red;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 10px;
+#fancyParagraf {
+  margin: 5% 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
+  /* padding:  50px 50px  50px 50px; */
+  background-color: #c8c8c8;
 }
-*/
+
+#fancyParagraf #bigTxt {
+  font-size: 25px;
+}
+
+#fancyParagraf #mediumTxt {
+  font-size: 25px;
+}
+
+#fancyParagraf #smallTxt {
+  font-size: 20px;
+}
+
+.home {
+  color: #ff6600;
+  font-size: 20px;
+  border-top: 1px solid white;
+  font-weight: bold;
+}
+
+.home #homeId {
+  margin: 7px 0 3px 0;
+}
+
+footer {
+  height: 300px;
+  color: whitesmoke;
+  background-color: #00001a;
+  margin-top: 10%;
+  padding: 20px 10px 0 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #2751db;
+  color: white;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger div {
+  background-color: #e2e2e2;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 25px;
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    z-index: 4;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #5d5954;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 92vh;
+    position: absolute;
+    right: 0px;
+    top: 4.5vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    width: 60%;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    z-index: 5;
+    display: block;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /*slider css*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+.allSlides {
+  display: none;
+}
+
 .mainSlideContainer {
-  /*	max-width: 1000px;
-*/
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 40vh;
+  height: 20%;
+  max-height: 70vh;
   position: relative;
   margin: auto;
-  background-color: #91b384;
+  background-color: #5d7187;
+  border-top: 30px solid #5d7187;
+  border-bottom: 30px solid #5d7187;
 }
 
-.mainSlideContainer .allSlides {
-  /*	display: none;
-
-*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mainSlideContainer .allSlides .image {
-  /* position: relative;
-	left: 22%;
-	text-align: center; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.mainSlideContainer .image {
+  width: 100%;
+  height: 100%;
 }
 
 /* hide images on the default
 */
-.mySlides {
-  /*	display: none;
-*/
-}
-
 .prevButton, .nextButton {
   cursor: pointer;
   position: absolute;
@@ -155,7 +333,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.slideText {
+.slideNumber {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -165,17 +343,21 @@
   text-align: center;
 }
 
-.slideNumber {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+/* .slideNumber {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
 
+} */
 .dotContainer {
-  margin-top: 10px;
+  /* 	margin-top: 10px;
+
+ */
+  padding-top: 10px;
   text-align: center;
+  /*  background-color:$lightBlue; */
 }
 
 .dot {
@@ -191,7 +373,45 @@
   left: 50%;
 }
 
-.active .dot:hover {
+.active, .dot:hover {
   background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+/* @-webkit-keyframes fade {
+	from{opacity: .4;}
+	to {opacity: 1;}
+} */
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prevButton, .nextButton, .slideText {
+    font-size: 11px;
+  }
+}
+
+body {
+  background-color: #5d718711;
 }
 /*# sourceMappingURL=style.css.map */

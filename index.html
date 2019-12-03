@@ -4,54 +4,99 @@
 	<title>StlBato</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="quickContact">
 		<p>bozo:0340340330 </p>
-		<p>gmail:<a href="bozo@gmail">bozo@gmail</a></p>	
+		<p>gmail:<a href="bozo@gmail">bozo@gmail</a></p>
 	</div>
 
-	<div class="logoMedia">
-		<div class="logo">BATO logo</div>
-		<div class="icons"></div>
-	</div>
+	<nav id="fixed">
+	
+		<div class="logo">BATO
+			<p id="alpvc">aluminijumska</br>i pvc stolarija</p>
+		</div>
+		
+		
+<ul class="nav-links">
+	<li><a id="home" href="#">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Work</a></li>
+	<li><a href="#">Projects</a></li>
+</ul>
 
-	<nav class="navMenu">
-		<ul class="home">Home</ul>
-		<ul class="home">Kontakt</ul>
-		<ul class="home">Proizvodi</ul>
+<div class="burger">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+
+</div>
+
 	</nav>
 
 	
 <!-- 		slide-show container -->	
 		<div class="mainSlideContainer">
 
-			<div class="allSlides fadeAnimation">
+			<div class="allSlides fade">
 				<div class="slideNumber">1/2</div>
 				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImg.jpg">
-				<div class="slideText">Caption</div>
 			</div>
 
-			<div class="allSlides fadeAnimation">
+			<div class="allSlides fade">
 				<div class="slideNumber">2/2</div>
 			<!-- 	mozda bi trebala posebna klasa da ne bi uticala na ostale slike ili ne kakko bi se css mogao koristiti za druge projekte -->
-				<img src="">
-				<div class="slideText">CaptionTwo</div>
+				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/imageTwo.jpg">
+				
 			</div>
 
-			<a class="prevButton" onclick="plusSlide(-1)">&#10094;</a>
-			<a class="nextButton" onclick="plusSlide(1)">&#10095;</a>
+			<a class="prevButton" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="nextButton" onclick="plusSlides(1)">&#10095;</a>
 		</div>
 <!-- 			style inline style= text-aling:center
  -->	
 		<div class="dotContainer">
- 				<span class="dot" onclick="curentSlide(1)"></span>		
- 				<span class="dot" onclick="curentSlide(2)"></span>		
+ 				<span class="dot" onclick="currentSlide(1)"></span>		
+ 				<span class="dot" onclick="currentSlide(2)"></span>		
 		</div>
+
+
+
+
 		<!-- background photo
- 		-->	
+		 -->	
+		 <div id="fancyParagraf">
+			 <p id="bigTxt">We are young company </p>
+			  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p>
+
+        <p id="smallTxt">We are young company posvecena kommpanija koja mnogo voli vase pare ako bi </br>
+          nam dali malo 
+          para mi mi bili mnogo zadovoljni veoma nam
+           hvala i nema na cemyyyy pozzz</p>
+
+		 </div>
+
+		 <footer>foooooootrteetS
+			<header class="logoMedia">
+			
+			
+				<div class="icons">
+					<!-- Add icon library -->
+					<link rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+					<!-- Add font awesome icons -->
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-instagram"></a>
+			
+				</div>
+			</header>
+		 </footer>
  		<!-- contacts icons-->
 
+
+		 <script src="D:\Dokumenta\Desktop\New folder\stlBato\js\slide.js"></script>
 </body>
 </html>

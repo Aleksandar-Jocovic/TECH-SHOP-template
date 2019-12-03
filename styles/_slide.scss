@@ -4,49 +4,36 @@
 	box-sizing: border-box;
 }
 
-
-
-.mainSlideContainer { 
-/*	max-width: 1000px;
-*/	overflow: hidden;
-	align-items: center;
-    width: 100%;
-    height: 40vh;
-	position: relative;
-	margin: auto;
-	background-color: rgb(145, 179, 132);
-
-
-
-
 	.allSlides {
-/*	display: none;
-
-*/
-	display: flex;
-	align-items: center;
-	
-  justify-content: center; 
-
-.image {
-	/* position: relative;
-	left: 22%;
-	text-align: center; */
-	align-items: center;
-	justify-content: center;
-		}
+	display: none;
 	}
 
+.mainSlideContainer { 
+
+	 overflow: hidden; 
+	align-items: center;
+    width: 100%;
+	height: 20%;
+	max-height: 70vh;
+	position: relative;
+	margin: auto;
+	background-color: #5d7187;
+	border-top: 30px solid $lightBlue;
+	border-bottom: 30px solid $lightBlue;
 
 
+
+.image {
+	width: 100%;
+	height: 100%;
+	
+	}
  }
 
  
 /* hide images on the default
 */
-.mySlides {
-/*	display: none;
-*/}
+
 
 .prevButton, .nextButton {
 	cursor: pointer;
@@ -73,7 +60,7 @@
 	background-color: rgba(0,0,0,0.5);
 }
 
-.slideText {
+.slideNumber {
 	color: #f2f2f2;
 	font-size: 15px;
 	padding: 8px 12px;
@@ -83,17 +70,20 @@
 	text-align: center;
 }
 
-.slideNumber {
+/* .slideNumber {
 	color: #f2f2f2;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
 
-}
+} */
 .dotContainer {
-	margin-top: 10px;
-	 text-align: center; 
+/* 	margin-top: 10px;
+
+ */	 padding-top: 10px; 
+ 	 text-align: center; 
+	/*  background-color:$lightBlue; */
 }
 .dot {
 	cursor: pointer;
@@ -107,7 +97,27 @@
 	left: 50%
 }
 
-.active .dot:hover {
+.active, .dot:hover {
 	background-color: #717171;
 }
 
+//fading animation 
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+// check do i need this
+/* @-webkit-keyframes fade {
+	from{opacity: .4;}
+	to {opacity: 1;}
+} */
+
+@keyframes fade {
+	from{opacity: .4;}
+	to {opacity: 1;}
+}
+
+@media only screen and (max-width: 300px) {
+  .prevButton, .nextButton ,.slideText {font-size: 11px}
+}
