@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 <head>
 	<title>StlBato</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
-<body>
+<body>	
+	
 	<div class="quickContact">
-		<p>bozo:0340340330 </p>
-		<p>gmail:<a href="bozo@gmail">bozo@gmail</a></p>
+		<p id="telefon">tel:<p id="broj">065/454-34-34</p></p>
+		<p id="gmail">gmail:<a href="bozo@gmail">bozo.stolarija@gmail</a></p>
 	</div>
 
 	<nav id="fixed">
 	
-		<div class="logo">BATO
+		<div class="logo">
+			<p id="bato">BATO</p>
 			<p id="alpvc">aluminijumska</br>i pvc stolarija</p>
 		</div>
 		
 		
 <ul class="nav-links">
-	<li><a id="home" href="#">Home</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Work</a></li>
-	<li><a href="#">Projects</a></li>
+	<li><a id="home" href="#">naslovna</a></li>
+	<li><a href="#">Kontakt</a></li>
+	<li><a href="#">O nama</a></li>
+
+	<li class="dropdown"><a href="#" class="dropbtn">proizvodi &#9662</a>
+	<div class="dropdown-content">
+		<a href="#">aluminijumska stolarija</a>
+		<a href="#">pvc stolarija</a>
+		<a href="#">aluminijumske roletne</a>
+		<a href="#">pvc roletne</a>
+		<a href="#">komarnici</a>
+		<a href="#">tus kabine</a>
+		<a href="#">sobna vrata</a>
+		<a href="#">harmonika vrata</a>
+		<a href="#">rolo vrata</a>
+		<a href="#">rolo resetke</a>
+		<a href="#">aluminijumska ograda</a>
+		<a href="#">trakaste i rolo zavese</a>
+		<a href="#">venecijaneri</a>
+	</div>
+	</li>
+
 </ul>
 
 <div class="burger">
@@ -41,15 +66,34 @@
 		<div class="mainSlideContainer">
 
 			<div class="allSlides fade">
-				<div class="slideNumber">1/2</div>
-				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImg.jpg">
+				<div class="slideNumber">1/3</div>
+				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImgEdit.jpg">
+			<div class="content">
+				<h1>Sobna vrata</h1>
+				<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+			</div>
+			>
 			</div>
 
 			<div class="allSlides fade">
-				<div class="slideNumber">2/2</div>
+				<div class="slideNumber">2/3</div>
 			<!-- 	mozda bi trebala posebna klasa da ne bi uticala na ostale slike ili ne kakko bi se css mogao koristiti za druge projekte -->
 				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/imageTwo.jpg">
-				
+				<div class="content">
+					<h1>Roletne i komarnici</h1>
+					<p>Korektan odnos cene i kvaliteta.</p>
+
+				</div>
+			</div>
+			<div class="allSlides fade">
+				<div class="slideNumber">3/3</div>
+				<!-- 	mozda bi trebala posebna klasa da ne bi uticala na ostale slike ili ne kakko bi se css mogao koristiti za druge projekte -->
+				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImg.jpg">
+			<div class="content">
+				<h1>Aluminijumske ograde i gelenderi.</h1>
+				<p>Vikokog kvaliteta i odllicong izgleda.</p>
+
+			</div>
 			</div>
 
 			<a class="prevButton" onclick="plusSlides(-1)">&#10094;</a>
@@ -59,7 +103,9 @@
  -->	
 		<div class="dotContainer">
  				<span class="dot" onclick="currentSlide(1)"></span>		
- 				<span class="dot" onclick="currentSlide(2)"></span>		
+				 <span class="dot" onclick="currentSlide(2)"></span>		
+				<span class="dot" onclick="currentSlide(3)"></span>
+
 		</div>
 
 
@@ -67,22 +113,51 @@
 
 		<!-- background photo
 		 -->	
+		 <!-- <strong >Bato </br>aluminiumska i pvc stolarija</strong> -->
+		 <div id="mainContent">
 		 <div id="fancyParagraf">
-			 <p id="bigTxt">We are young company </p>
-			  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p>
+			
+			 <p id="bigTxt">Stolarija Bato</p>
+			 <!--  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p> --></br>
 
-        <p id="smallTxt">We are young company posvecena kommpanija koja mnogo voli vase pare ako bi </br>
-          nam dali malo 
-          para mi mi bili mnogo zadovoljni veoma nam
-           hvala i nema na cemyyyy pozzz</p>
-
+        <p id="smallTxt">
+		Naši proizvodi pružaju skrovitost i toplinu pa dopridonose ugodnom osećaju u Vašem domu. Drvo se odlikuje posebno svojom
+		dugotrajnošću i stabilnošću tako da nudi optimalnu toplotnu izolaciju i zaštitu od buke. Sirovina koja se dokazala već
+		hiljdama godina garantuje prirodan osjećaj udodnosti. Vitak profil i savremen dizajn odlikuju naš prozorski sistem.
+		Plastificirani aluminijski prednji profil u spoljnom delu otporan je na sve vremenske uslove.</p>
 		 </div>
+		<aside class='aside'>
+			<!-- <ul>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				<li><a href="#">aluminijumska stolarija</a></li>
+				
+			</ul> -->
+			
+				<a href="#">aluminijumska stolarija</a>
+				<a href="#">pvc stolarija</a>
+				<a href="#">aluminijumske roletne</a>
+				<a href="#">pvc roletne</a>
+				<a href="#">komarnici</a>
+				<a href="#">tus kabine</a>
+			
+	
+		
+		</aside>
+		
+		</div>
+		
+		
 
-		 <footer>foooooootrteetS
-			<header class="logoMedia">
-			
-			
+
+		 <footer>
+			 	<div id="icons-vraper">
+				<p id="icons">Pratie nas na:</p>
 				<div class="icons">
+					
 					<!-- Add icon library -->
 					<link rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -90,13 +165,60 @@
 					<!-- Add font awesome icons -->
 					<a href="#" class="fa fa-facebook"></a>
 					<a href="#" class="fa fa-instagram"></a>
-			
 				</div>
-			</header>
+				<h4>Stolarija Bato:</br></h4>
+				<h4><i class="fa fa-phone"></i> tel: +38165/456/456</br></h4>
+				<h4><i class="fa fa-phone"></i>tel: +38165/65-56-56</br></h4>
+				<h4 id="adresa"><i class='fas fa-map-marker-alt'></i>Adresa: Mojsinje Cacak</br></h4>
+			</div>
+
+				<div id="mapTxt">
+				<ul>
+					<li<h3>Gde se nalazimo:</h3></li>
+					<li id="map">
+					  <img id="draggable" src="D:/Dokumenta/Desktop/New folder/stlBato/images/mapa.jpg"> 
+					</li>
+				</ul>
+				</div>
+				
+				<div id="proizvodiFooter">
+          <div>
+					<a href="#">aluminijumska stolarija</a>
+					<a href="#">aluminijumske roletne</a>
+					<a href="#">harmonika vrata</a>
+					<a href="#">aluminijumska ograda</a>
+					<a href="#">trakaste i rolo zavese</a>
+					<a href="#">venecijaneri</a>
+          </div>
+          
+          <div id="kratki">
+						<a href="#">pvc stolarija</a>
+             <a href="#">pvc roletne</a>
+             <a href="#">komarnici</a>
+             <a href="#">tus kabine</a>
+             <a href="#">sobna vrata</a>
+             <a href="#">rolo vrata</a>
+             <a href="#">rolo resetke</a>
+            </div>
+
+
+				</div>
+				
+				</div>
+
+
+
+			
 		 </footer>
  		<!-- contacts icons-->
 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 		 <script src="D:\Dokumenta\Desktop\New folder\stlBato\js\slide.js"></script>
+		<!--  
+		 <script async defer 
+		 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+		</script> -->
 </body>
 </html>
