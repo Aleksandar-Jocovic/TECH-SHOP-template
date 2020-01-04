@@ -1,5 +1,5 @@
 console.log('a');
-var slideIndex = 1;
+/* var slideIndex = 1;
 
 showSlides(slideIndex);
 
@@ -28,7 +28,7 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
-}
+} */
 
 // fade animation
 
@@ -58,7 +58,7 @@ navSlide();
 
 // automate slide index
 
-function autoSlide() {
+/* function autoSlide() {
   var i;
   var slides = document.getElementsByClassName('allSlides');
   var dots = document.getElementsByClassName('dot');
@@ -80,12 +80,12 @@ function autoSlide() {
 
   dots[slideIndex - 1].className += ' active';
 }
-autoSlide();
+autoSlide(); */
 
 var img = $('#draggable');
 img.draggable();
-/* 
-function initMap () {
+
+/* function initMap () {
   // location of place 
   var uluru = {lat:-25.344, lng:131.036};
   // the map created at Uluru
@@ -94,8 +94,7 @@ function initMap () {
     // The marker positioned at Uluru
     var marker = new google.maps.Marker({position:uluru, map:map});
     //fali jos jedan script pogledaj na developers.gooogle.com
-}
- */
+} */
 
 //jebeni api keyyy wtff
 

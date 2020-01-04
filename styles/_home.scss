@@ -5,27 +5,37 @@
   padding: 0px;
 }
 
+body {
+  background-color: #f4f4f4;
+  //background-color: slategrey;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 250px;
+}
+
 .quickContact {
   width: 100%;
   background-color: $lightBlue;
-  display: flex;
   height: 29px;
   color: whitesmoke;
-  justify-content: space-around;
-  padding: 5px 30px 0 30px;
-  top: 0;
+  padding: 3.5px 40px 0 40px;
   border-bottom: 1px solid rgba(255, 252, 252, 0.473);
-  #gmail,
+  p {
+    display: inline;
+    margin: 0;
+  }
   #telefon {
+    margin: 0;
+    color: orange;
+  }
+  #gmail {
+    margin: 0;
+    float: right;
     color: orange;
     a {
       color: white;
-      text-decoration: none;
     }
-  }
-  #broj {
-    position: absolute;
-    left: 220px;
   }
 }
 
@@ -50,17 +60,40 @@ nav {
 }
 
 .logo {
+  text-align: unset;
+  line-height: unset;
+  margin: 0;
   position: relative;
   top: 0;
   padding: 0 0 5px 0;
   width: 92.5px;
   left: -10%;
   border-bottom: 1px solid whitesmoke;
+  a {
+    margin: unset;
+    padding: unset;
+    text-decoration: none;
+  }
+}
+.logo :hover {
+  cursor: pointer;
 }
 #bato {
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 25px;
   font-size: 20px;
   letter-spacing: 9px;
   font-family: 'Orbitron', sans-serif;
+}
+#alpvc {
+  height: 32px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #e8491d;
+  font-weight: bold;
+  margin: 0;
 }
 
 .nav-links {
@@ -69,6 +102,7 @@ nav {
   justify-content: space-around;
   width: 40%;
   margin-top: 15px;
+  margin-bottom: 16px;
   right: 0;
 
   li {
@@ -82,6 +116,7 @@ nav {
 }
 
 #home {
+  text-decoration: none;
   color: $orange;
   /* font-size: 15px; */
   border-top: 1px solid white;
@@ -93,39 +128,20 @@ nav {
   //font: 15px/1.5 Helvetica,sans-serif;
 }
 
-#alpvc {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #e8491d;
-  font-weight: bold;
-}
-
 #fancyParagraf {
+  background-color: rgb(223, 223, 238);
   text-align: center;
   margin: 0 auto;
-  margin-top: 60px;
-  border: #ccc solid 1px;
-  //text-align: center;
-  //margin:  5% 5% 5% 10%;
-  //width: 50%;
-  padding: 20px;
-  background-color: #e6e6e6;
-
-  #bigTxt {
-    font-family: 'Roboto', sans-serif;
-    //margin:0 auto;
-    font-size: 20px;
-    font-weight: 200;
-    margin: 0;
-    padding: 0;
-  }
+  max-width: 790px;
+  padding: 10px;
+  padding-top: 0;
 
   #smallTxt {
-    color: rgb(22, 21, 21);
+    text-align: center;
+    color: $lightBlue;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 17px;
-    line-height: 2;
+    font-size: 16px;
+    //line-height: 2;
     word-wrap: break-word;
     margin: 0;
     padding: 0;
@@ -138,10 +154,13 @@ footer {
   justify-content: space-between;
   min-height: 300px;
   color: rgb(209, 197, 197);
-  background-color: rgb(0, 0, 0);
-  margin-top: 10%;
+  background-color: rgb(43, 41, 49);
+  //margin-top: 10%;
   //padding: 20px 10px 0 30px;
   padding: 30px;
+  clear: both;
+  position: relative;
+  margin-top: 20px;
 }
 
 #icons-vraper {
@@ -149,6 +168,7 @@ footer {
   text-align: center;
   h4 {
     font-weight: normal;
+    font-size: 16px;
   }
   .fa-phone {
     padding: 0;
@@ -173,36 +193,45 @@ footer {
 }
 
 #mapTxt {
-  left: 25%;
   width: 35%;
   min-height: 60px;
-  height: 30vh;
   overflow: hidden;
-  //height:80%;
 }
 
 #map {
   //left: 25%;
   width: 100%;
-  min-height: 60px;
-  height: 30vh;
+  height: 220px;
   overflow: hidden;
   //height:80%;
 }
 
 #proizvodiFooter {
+  text-align: center;
   font-size: 14px;
   width: 30%;
   min-height: 60px;
-  background-color: rgb(177, 0, 0);
-  div {
-    display: inline-block;
+  #innerProizvodi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 5px;
   }
+
   a {
     display: block;
     color: white;
-    text-decoration: none;
   }
+}
+
+#copyRight {
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  color: white;
+  background-color: rgb(43, 41, 49);
+  border-top: 1px solid rgb(79, 77, 85);
+  text-align: center;
+  font-size: 14px;
 }
 
 .fa {
@@ -253,6 +282,9 @@ footer {
   .quickContact {
     height: 23px;
     font-size: 12px;
+    #telefon {
+      margin: 0 auto;
+    }
   }
   .icons {
     display: inline-block;
@@ -291,7 +323,7 @@ footer {
     right: 0px;
     top: 54px;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.2s ease-in;
     width: 45%;
   }
 
@@ -327,15 +359,16 @@ footer {
   #gmail {
     display: none;
   }
+
   #mainContent {
     display: flex;
     flex-direction: column;
     #fancyParagraf {
       width: 100%;
-      margin: 0;
       line-height: 1;
       #smallTxt {
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: normal;
       }
     }
   }
@@ -369,38 +402,50 @@ footer {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-body {
-  background-color: #f4f4f4;
-}
-
 #mainContent {
-  //margin-top: 670px;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: 20px;
+  //background-color: slategrey;
   background-color: #f4f4f4;
   width: 90%;
   display: block;
-  //display: flex;
-  //flex-direction: column;
-  // margin-left:10%;
 }
-.aside {
-  //  padding: 10px;
-  //	max-width: 1500px;
 
-  border: #ccc solid 1px;
-  background-color: #e6e6e6;
-  margin: 0 auto;
-  margin-top: 10px;
-  // margin:20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  // float: right;
-  a {
-    color: rgb(88, 150, 96);
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-  }
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  //width: 30px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: $darkBlue;
+  z-index: 6;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transform: rotate(90deg);
+  text-align: center;
+  padding: 10px;
+}
+
+#topBtn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#activeNav {
+  text-decoration: none;
+  color: orangered;
+  /* font-size: 15px; */
+  border-top: 1px solid white;
+  //font-weight: bold;
+  margin: 5px 0 0 0;
+  // letter-spacing: 2px;
+  padding-top: 5px;
+  z-index: 10;
+  font-weight: bold;
+  //font: 15px/1.5 Helvetica,sans-serif;
 }

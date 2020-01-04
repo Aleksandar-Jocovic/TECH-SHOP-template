@@ -1,0 +1,134 @@
+.aside,
+#cards {
+  //  padding: 10px;
+  max-width: 800px;
+  width: 80%;
+  //border: #ccc solid 1px;
+  background-color: #f4f4f4;
+  // background-color: slategrey;
+
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  // margin:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  //grid-template-rows: 200px 200px;
+  min-height: 250px;
+  grid-gap: 10px;
+  overflow: hidden;
+
+  a {
+    margin: 0 auto;
+    // max-width: 250px;
+    width: 250px;
+    height: 390px;
+    color: $lightBlue;
+    background-color: rgb(223, 223, 238);
+    //list-style: none;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 2px solid $lightBlue;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+    //border-bottom-right-radius: 15px;
+
+    img {
+      background-size: cover;
+      width: 100%;
+      height: 70%;
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #mainContent {
+    width: 100%;
+  }
+  .aside,
+  #cards {
+    width: 100%;
+
+    a {
+      margin: 0 auto;
+      max-width: 250px;
+      width: 100%;
+    }
+  }
+}
+
+#gridCard1 {
+  background-color: #f4f4f4;
+  border-bottom: none;
+  text-align: left;
+  button {
+    position: relative;
+
+    right: -170px;
+  }
+}
+
+#gridCard2 {
+  padding: 5px;
+  border-bottom: none;
+  text-align: left;
+  button {
+    position: relative;
+
+    right: -170px;
+  }
+}
+
+#cards {
+  border-top: 1px solid $lightBlue;
+}
+#cards a {
+  padding-top: 20px;
+  border: 2px solid $lightBlue;
+  border-radius: 20px;
+  border: none;
+  margin-top: 50px;
+  background-color: #f4f4f4;
+  //max-width: 100px;
+  max-height: 200px;
+  // border: 2px solid black;
+  // border-radius: 35px;
+  p {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 20px;
+    margin: 20px;
+  }
+}
+
+.fill {
+  width: 50px;
+  height: 50px;
+  fill: $lightBlue;
+  // padding: 10px;
+  //border: 2px solid red;
+  //border-radius: 35px;
+}
+
+#gridBtn {
+  font-weight: 500;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  bottom: -2px;
+  margin: 0;
+  right: -85px;
+  background-color: $lightBlue;
+  color: #f4f4f4;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  border-style: none;
+  //border-top-left-radius: 15px;
+}
