@@ -12,13 +12,19 @@
   overflow: hidden;
 
   max-height: 500px;
+  max-width: 1800px;
+
   // min-height: 250px;
 
   margin-top: 40px;
 }
+.carousel-item {
+  max-height: 500px;
+  max-width: 1800px;
+}
 
 .content {
-  height: 20%;
+  height: 100px;
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0); /* Fallback color */
@@ -26,4 +32,5 @@
   color: #f1f1f1;
   width: 100%;
   padding: 0;
+  padding-left: 50px;
 }

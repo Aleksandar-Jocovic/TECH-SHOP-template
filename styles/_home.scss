@@ -13,7 +13,9 @@ body {
   height: 100%;
   min-width: 250px;
 }
-
+.noDisplay {
+  display: none;
+}
 .quickContact {
   width: 100%;
   background-color: $lightBlue;
@@ -224,8 +226,6 @@ footer {
 }
 
 #copyRight {
-  position: relative;
-  bottom: 0;
   margin: 0;
   color: white;
   background-color: rgb(43, 41, 49);
@@ -296,9 +296,10 @@ footer {
     flex-direction: column;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    // pos absulute skinut zbog copy problema wrv nece ni trebati
+    //position: absolute;
     #icons-vraper,
     .icons,
     #mapTxt,
@@ -312,7 +313,9 @@ footer {
   }
 
   .nav-links {
-    z-index: 4;
+    //-webkit-tap-highlight-color: unset;
+
+    z-index: 11;
     align-items: center;
     background-color: $lightBlue;
     display: flex;
@@ -371,6 +374,12 @@ footer {
         font-weight: normal;
       }
     }
+  }
+  .dropdown {
+    display: none;
+  }
+  .noDisplay {
+    display: inline;
   }
 }
 
