@@ -47,7 +47,6 @@ const navSlide = () => {
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
           0.3}s`;
-        console.log(index / 7);
       }
     });
     // burrger animation
@@ -82,9 +81,9 @@ navSlide();
 }
 autoSlide(); */
 
-var img = $('#draggable');
-img.draggable();
-
+/* var img = $('#draggable');
+img.draggable(); */
+//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa skinuto img dragable zbog owl slidera
 /* function initMap () {
   // location of place 
   var uluru = {lat:-25.344, lng:131.036};

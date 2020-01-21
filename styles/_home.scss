@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: $mainBackgroun;
   //background-color: slategrey;
   margin: 0;
   padding: 0;
@@ -53,6 +53,9 @@ nav {
   background-color: $lightBlue;
   color: whitesmoke;
   z-index: 3;
+  background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/aaaa.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /*dodato owo gore*/
@@ -61,16 +64,53 @@ nav {
   font-weight: bold;
 }
 
+.logoImg{
+  position: absolute;
+  height: 70px;
+  width: 112px;
+  left: 20px;
+  background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh70.png");
+
+}
+.logoToHome {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+.logoImgSmall {
+   // right: -30px;
+    position: absolute;
+    left: 20px;
+    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh48.png");
+    height: 48px;
+    width: 77px;
+  }
+@media screen and (max-width: 800px) {
+  .logoImg {
+    left: 20px;
+    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh48.png");
+    height: 48px;
+    width: 77px;
+  }
+  .logoToHome {
+  position: absolute;
+  height: 48px;
+  width: 77px;
+
+}
+}
 .logo {
   text-align: unset;
   line-height: unset;
   margin: 0;
   position: relative;
-  top: 0;
+  top: -10px;
   padding: 0 0 5px 0;
   width: 92.5px;
   left: -10%;
   border-bottom: 1px solid whitesmoke;
+
   a {
     margin: unset;
     padding: unset;
@@ -84,7 +124,7 @@ nav {
   color: white;
   margin: 0;
   padding: 0;
-  height: 25px;
+  height: 20px;
   font-size: 20px;
   letter-spacing: 9px;
   font-family: 'Orbitron', sans-serif;
@@ -103,9 +143,12 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 40%;
-  margin-top: 15px;
-  margin-bottom: 16px;
-  right: 0;
+ // margin-top: 15px;
+  //margin-bottom: 0;
+  margin: unset;
+  position: absolute;
+  right: 30px;
+
 
   li {
     list-style: none;
@@ -129,11 +172,35 @@ nav {
   font-weight: bold;
   //font: 15px/1.5 Helvetica,sans-serif;
 }
-
-#fancyParagraf {
-  background-color: rgb(223, 223, 238);
+#naslov {
   text-align: center;
   margin: 0 auto;
+   position: relative;
+   line-height: 0;
+   animation: title 1s forwards;
+   animation-delay: 1s;
+ /*  animation-name: title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; */
+  h2, h3 {
+    padding: 0;
+  }
+}
+
+@keyframes title {
+  0% {left: -1000px}
+  100% {left: 0}
+}
+
+
+
+#fancyParagraf {
+  // background-color: rgb(223, 223, 238);
+  background-color: $mainBackgroun;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
   max-width: 790px;
   padding: 10px;
   padding-top: 0;
@@ -163,6 +230,7 @@ footer {
   clear: both;
   position: relative;
   margin-top: 20px;
+
 }
 
 #icons-vraper {
@@ -198,6 +266,7 @@ footer {
   width: 35%;
   min-height: 60px;
   overflow: hidden;
+ 
 }
 
 #map {
@@ -205,6 +274,7 @@ footer {
   width: 100%;
   height: 220px;
   overflow: hidden;
+  list-style: none;
   //height:80%;
 }
 
@@ -263,6 +333,8 @@ footer {
 }
 
 .burger {
+  position: absolute;
+  right: 20px;
   cursor: pointer;
   display: none;
 }
@@ -312,10 +384,11 @@ footer {
     }
   }
 
+
   .nav-links {
     //-webkit-tap-highlight-color: unset;
-
-    z-index: 11;
+    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/aaaa.jpg");
+    z-index: 999;
     align-items: center;
     background-color: $lightBlue;
     display: flex;
@@ -324,7 +397,7 @@ footer {
     height: 72vh;
     position: absolute;
     right: 0px;
-    top: 54px;
+    top: 40px;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
     width: 45%;
@@ -341,7 +414,7 @@ footer {
 
   .logo {
     position: relative;
-    top: 0;
+    top: -2px;
     padding: 0 0 5px 0;
     width: 62px;
     left: -10%;
@@ -357,7 +430,7 @@ footer {
     color: $orange;
   }
   nav {
-    height: 70px;
+    height: 60px;
   }
   #gmail {
     display: none;
@@ -416,7 +489,6 @@ footer {
   margin: 0 auto;
   margin-top: 20px;
   //background-color: slategrey;
-  background-color: #f4f4f4;
   width: 90%;
   display: block;
 }

@@ -1,0 +1,41 @@
+.kontaktAside {
+  max-width: 800px;
+  //width: 80%;
+  background-color:/*  $mainBackgroun */ red;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  overflow: hidden;
+  border: 1px solid $lightBlue;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#smallImgKontakt {
+  max-width: 800px;
+  //height: 350px;
+  min-height: 350px;
+  background-color: $mainBackgroun;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  min-height: 250px;
+  grid-gap: 10px;
+  overflow: hidden;
+  img {
+    min-width: 250px;
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .kontaktAside,
+  #smallImgKontakt,
+  #bigImgKontakt {
+    width: 100%;
+  }
+}

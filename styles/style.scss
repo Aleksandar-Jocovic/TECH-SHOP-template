@@ -1,11 +1,16 @@
 //  @import "mediaQ.scss";
 @import '_variables.scss';
 @import '_home.scss';
-@import '_slide.scss';
+@import '_carorusel.scss';
+/* @import '_slide.scss'; */
+@import '_proizvodi.scss';
+@import '_kontakt.scss';
 @import '_drop.scss';
 @import '_grid.scss';
-@import '_carorusel.scss';
 
+// bag ifon nav nije sticky
+// logo class ili id="logo" kad sam resize nav sta treba da stoji class ili log u home.scss je class
+// prozivodi na telefonu bag nece side menu i dugme nzm sta je
 // nema scrol na gagjgjagjjg uredjaju manje od 250px ali mislim da ne treba da brinem za to
 //icons ..
 

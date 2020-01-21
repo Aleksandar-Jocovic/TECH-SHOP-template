@@ -1,111 +1,123 @@
 <!DOCTYPE html>
 <html lang="sr">
+
 <head>
 	<title>StlBato</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="shourtcut icon" type="image/png" href="images/logoh48.png">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
 
-<body>	
-	
+<body>
+
 	<div class="quickContact">
-		<p id="telefon">tel:</p><p>065/454-34-34</p>
+		<p id="telefon">tel:</p>
+		<p>065/454-34-34</p>
 		<p id="gmail">gmail:
-		<a href="bozo@gmail">bozo.stolarija@gmail</a></p>
+			<a href="bozo@gmail">jocovic099@gmail</a></p>
 	</div>
+	<!-- 	obrisan iz nav elementa id="fixed" msm da ne treba -->
+	<nav id="nav" class="bigNav">
 
-	<nav id="fixed">
-	
-		<div class="logo">
+		<!-- <div class="bigLogo" id="logo">
 			<a href="index.html">
-			<p id="bato">BATO</p>
-			<p id="alpvc">aluminijumska</br>i pvc stolarija</p>
+				<p class="batoBig" id="batoTarget">BATO</p>
+				<p class="alpvcBig" id="alpvcTarget">aluminijumska<br>i pvc stolarija</p>
 			</a>
+		</div> -->
+
+
+		<div class="logoImg" id="logoImgId">
+			<a class="logoToHome" href="index.html"></a>
+
 		</div>
-		
-		
-<ul class="nav-links">
-	<li><a  id="activeNav" href="index.html">naslovna</a></li>
-	<li><a   href="kontakt.html" >Kontakt</a></li>
-	<li><a   href="#" >O nama</a></li>
 
-	<li class="noDisplay"><a href="#">proizvodi</a></li>
 
-	<li class="dropdown"><a href="#" class="dropbtn">proizvodi &#9662</a>
-	<div class="dropdown-content">
-		<a href="#">aluminijumska stolarija</a>
-		<a href="#">pvc stolarija</a>
-		<a href="#">aluminijumske roletne</a>
-		<a href="#">pvc roletne</a>
-		<a href="#">komarnici</a>
-		<a href="#">tus kabine</a>
-		<a href="#">sobna vrata</a>
-		<a href="#">harmonika vrata</a>
-		<a href="#">rolo vrata</a>
-		<a href="#">rolo resetke</a>
-		<a href="#">aluminijumska ograda</a>
-		<a href="#">trakaste i rolo zavese</a>
-		<a href="#">venecijaneri</a>
-	</div>
-	</li>
 
-</ul>
 
-<div class="burger">
-	<div class="line1"></div>
-	<div class="line2"></div>
-	<div class="line3"></div>
+		<ul class="nav-links">
+			<li><a href="index.html" id="activeNav">naslovna</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
 
-</div>
+
+			<li class="dropdown"><a href="proizvodi.html" class="dropbtn">proizvodi &#9662;</a>
+				<div class="dropdown-content">
+					<a href="#">aluminijumska stolarija</a>
+					<a href="#">pvc stolarija</a>
+					<a href="#">aluminijumske roletne</a>
+					<a href="#">pvc roletne</a>
+					<a href="#">komarnici</a>
+					<a href="#">tus kabine</a>
+					<a href="#">sobna vrata</a>
+					<a href="#">harmonika vrata</a>
+					<a href="#">rolo vrata</a>
+					<a href="#">rolo resetke</a>
+					<a href="#">aluminijumska ograda</a>
+					<a href="#">trakaste i rolo zavese</a>
+					<a href="#">venecijaneri</a>
+				</div>
+			</li>
+
+			<li class="noDisplay"><a href="proizvodi.html">proizvodi</a></li>
+			<li><a href="#">O nama</a></li>
+		</ul>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+
+		</div>
 
 	</nav>
 
 	<div id="demo" class="carousel slide" data-ride="carousel">
-	
-		
+
+
 		<ul class="carousel-indicators">
 			<li data-target="#demo" data-slide-to="0" class="active"></li>
 			<li data-target="#demo" data-slide-to="1"></li>
 			<li data-target="#demo" data-slide-to="2"></li>
 		</ul>
-	
-	
+
+
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="content">
 					<h1>Sobna vrata</h1>
 					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
 				</div>
-				<img src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImg.jpg" alt="Los Angeles" width="1100" height="500">
-			
+				<img src="./images/firstImg.jpg" alt="Los Angeles" width="1100" height="500">
 			</div>
+
 			<div class="carousel-item">
-				<img src="D:/Dokumenta/Desktop/New folder/nav bar/aaaa.jpg" alt="Chicago" width="1100" height="500">
-			<div class="content">
-				<h1>Sobna vrata</h1>
-				<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+				<img src="./images/firstImg.jpg" alt="Chicago" width="1100" height="500">
+				<div class="content">
+					<h1>Sobna vrata</h1>
+					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+				</div>
 			</div>
-			</div>
+
 			<div class="carousel-item">
-				<img src="D:/Dokumenta/Desktop/New folder/nav bar/download.jpg" alt="New York" width="1100" height="500">
-			<div class="content">
-				<h1>Sobna vrata</h1>
-				<p>Veoma kvalitetna i sigurna sobna vrata.</p>
-			</div>
+				<img src="./images/firstImg.jpg" alt="New York" width="1100" height="500">
+				<div class="content">
+					<h1>Sobna vrata</h1>
+					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+				</div>
 			</div>
 		</div>
-	
-		
+
+
 		<a class="carousel-control-prev" href="#demo" data-slide="prev">
 			<span class="carousel-control-prev-icon"></span>
 		</a>
@@ -158,141 +170,106 @@
 
  -->
 	<div id="mainContent">
+		<div id='naslov'>
+			<h2>Bato</h2>
+			<h3>aluminijumska i Pvc stolarija</h3>
+		</div>
 		<div id="fancyParagraf">
-			
-			 <!-- <p id="bigTxt">Stolarija Bato</p> -->
-			 <!--  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p> --></br>
 
-    <p id="smallTxt">
-		Naši proizvodi pružaju skrovitost i toplinu pa dopridonose ugodnom osećaju u Vašem domu.  Vitak profil i savremen dizajn odlikuju naš prozorski sistem.
-		Plastificirani aluminijski prednji profil u spoljnom delu otporan je na sve vremenske uslove.</p>
+			<!-- <p id="bigTxt">Stolarija Bato</p> -->
+			<!--  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p> --><br>
+
+			<p id="smallTxt">
+				Naši proizvodi pružaju skrovitost i toplinu pa dopridonose ugodnom osećaju u Vašem domu. Vitak profil i savremen
+				dizajn odlikuju naš prozorski sistem.
+				Plastificirani aluminijski prednji profil u spoljnom delu otporan je na sve vremenske uslove.</p>
 		</div>
 		<aside class='aside'>
-				<a  href="#"><img src="images/profil1.jpg" alt="">
+			<a class="card" href="#">
+				<img src="images/profil1.jpg" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
 					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-					<button id="gridBtn">Vise</button>
-				</a>
-				<a  href="#"><img src="images/profil3.jpg" alt="">
-					<p>Pvc stolarija kombinuje najbolji odnos cene i kvaliteta.</p>
-					<button id="gridBtn">Vise</button>
-				</a>
-				<a href="#"><img src="images/profil1.jpg" alt="">
+				</div>
+			</a>
+			<a class="card" href="#">
+				<img src="images/profil3.jpg" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
 					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-					<button id="gridBtn">Vise</button>
-				</a>
-				<a href="#"><img src="images/rol1.jfif" alt="">
+				</div>
+			</a>
+			<a class="card" href="#">
+				<img src="images/rol2.jpg" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
 					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-					<button id="gridBtn">Vise</button>
-				</a>
-				<a href="#"><img src="images/vrata.jfif" alt="">
+				</div>
+			</a>
+			<a class="card" href="#">
+				<img src="images/vrata.jfif" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
 					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-					<button id="gridBtn">Vise</button>
-				</a>
-				<a href="#"><img src="images/vrata.jfif" alt="">
+				</div>
+			</a>
+			<a class="card" href="#">
+				<img src="images/vrata.jfif" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
 					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-					<button id="gridBtn">Vise</button>
-				</a>				
+				</div>
+			</a>
+			<div class="card" href="#">
+				<img src="images/vrata.jfif" alt="Avatar" style="width:100%">
+				<div class="container">
+					<h4><b>John Doe</b></h4>
+					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
+				</div>
+			</div>
 		</aside>
 
 		<div id="cards">
-			
-			<a href="#"><svg class="fill" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-				y="0px" viewBox="0 0 218.063 218.063" style="enable-background:new 0 0 218.063 218.063;" xml:space="preserve">
-				<path d="M215.866,170.815l-23.507-23.507c-0.017-0.017-0.03-0.036-0.047-0.053s-0.036-0.03-0.052-0.048l-36.585-36.584
-				l60.161-60.161c2.929-2.929,2.929-7.678,0.001-10.606L178.209,2.219c-1.407-1.406-3.314-2.197-5.304-2.197h0
-				c-0.249,0-0.496,0.012-0.741,0.037c-1.717,0.17-3.331,0.929-4.562,2.159l-37.631,37.629c-0.005,0.005-0.008,0.01-0.013,0.015
-				L107.43,62.389L94.357,49.315c-0.002-0.002-0.003-0.003-0.005-0.005c-0.002-0.002-0.003-0.003-0.005-0.005L70.86,25.817
-				c-0.022-0.023-0.04-0.047-0.063-0.069c-0.022-0.022-0.046-0.04-0.068-0.062L47.243,2.198c-1.406-1.407-3.314-2.197-5.303-2.197
-				s-3.897,0.79-5.304,2.197L2.197,36.644c-2.929,2.929-2.928,7.678,0,10.606l60.186,60.185L2.197,167.62
-				C0.79,169.028,0,170.935,0,172.924v37.638c0,1.989,0.79,3.897,2.197,5.304c1.407,1.406,3.315,2.196,5.304,2.196l37.635-0.007
-				c1.989,0,3.895-0.79,5.302-2.196l60.181-60.182l60.189,60.188c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.838-0.732,5.303-2.196
-				l34.451-34.443c1.407-1.406,2.197-3.314,2.197-5.304C218.063,174.129,217.273,172.222,215.866,170.815z M172.898,72.18
-				L145.88,45.153l27.023-27.023l27.021,27.028L172.898,72.18z M18.107,41.946L41.94,18.109l12.945,12.946l-11.92,11.923
-				c-2.928,2.93-2.928,7.679,0.001,10.606c1.465,1.465,3.383,2.196,5.303,2.196c1.919,0,3.84-0.732,5.304-2.197l11.918-11.921
-				l12.95,12.95L61.978,71.075c-2.929,2.929-2.929,7.678,0,10.607c1.464,1.465,3.384,2.197,5.303,2.197
-				c1.919,0,3.839-0.732,5.303-2.196L89.049,65.22l7.775,7.774L72.991,96.828L18.107,41.946z M42.028,203.056L15,203.061v-27.03
-				L135.273,55.759l27.021,27.03L42.028,203.056z M176.112,199.955l-54.885-54.885l23.84-23.841l7.776,7.776l-16.467,16.467
-				c-2.929,2.93-2.929,7.678,0,10.607c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.839-0.732,5.303-2.196l16.467-16.467
-				l12.949,12.948l-11.919,11.92c-2.929,2.929-2.929,7.678,0,10.606c1.464,1.464,3.384,2.196,5.303,2.196
-				c1.919,0,3.839-0.732,5.303-2.197l11.919-11.919l12.95,12.949L176.112,199.955z" />
-			</svg>
-			
-				<p>Prozori vašoj po meri.</p>
+
+			<!--usluzno secenje  -->
+			<a href="#">
+				<div class="svgRadius">
+					<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M21 14v-11h-11v-3h-7v3h-3v2h3v16h16v3h2v-3h3v-7h-3zm-11-9h9v9h-9v-9zm12 14h-17v-17h3v1h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h1v3z" />
+					</svg>
+				</div>
+				<p>Usluzno secenje prozora.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
 			</a>
 
 
-			<a href="#"><svg class="fill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-				y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-				<g>
-					<g>
-						<path d="M441.872,0H70.128c-11.28,0-20.426,9.145-20.426,20.426v471.149c0,11.28,9.145,20.426,20.426,20.426h371.745
-						c11.28,0,20.426-9.145,20.426-20.426V20.426C462.298,9.145,453.153,0,441.872,0z M422.809,471.149H90.553V40.851h332.255V471.149z
-						" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M358.809,73.532H154.553c-11.28,0-20.426,9.145-20.426,20.426v102.128c0,11.28,9.145,20.425,20.426,20.425h204.255
-						c11.28,0,20.426-9.145,20.426-20.425V93.957C379.234,82.677,370.089,73.532,358.809,73.532z M338.383,175.66H174.979v-61.277
-						h163.404V175.66z" />
-					</g>
-				</g>
-				<g>
-					<g>
-					<path d="M270.298,388.085h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S281.578,388.085,270.298,388.085z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M181.787,268.255h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S193.068,268.255,181.787,268.255z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M270.298,268.255h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S281.578,268.255,270.298,268.255z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M358.809,268.255h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S370.089,268.255,358.809,268.255z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M181.787,328.17h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S193.068,328.17,181.787,328.17z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M270.298,328.17h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S281.578,328.17,270.298,328.17z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M358.809,328.17h-27.234c-11.28,0-20.426,9.145-20.426,20.426v59.915c0,11.28,9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426v-59.915C379.234,337.315,370.089,328.17,358.809,328.17z" />
-					</g>
-				</g>
-				<g>
-					<g>
-						<path d="M181.787,388.085h-27.234c-11.28,0-20.426,9.145-20.426,20.426s9.145,20.426,20.426,20.426h27.234
-						c11.28,0,20.426-9.145,20.426-20.426S193.068,388.085,181.787,388.085z" />
-					</g>
-			</svg>
-				<p>Uštedite na potrošnji energije.</p>
+			<!-- prozori po meri -->
+			<a href="#">
+				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M5.641 22.569l-5.641 1.431 1.397-5.674 4.244 4.243zm-2.829-5.657l4.243 4.243 16.945-16.913-4.242-4.242-16.946 16.912zm14.114-2.783l-1.414 1.414.708.708 1.414-1.414 1.414 1.414-2.122 2.122.707.707 2.122-2.122 1.417 1.385-2.829 2.829-4.232-4.233-1.415 1.413 5.648 5.648 5.656-5.657-5.643-5.643-1.431 1.429zm-9.887-4.261l-4.21-4.21 2.828-2.829 1.369 1.401-2.121 2.121.707.707 2.121-2.122 1.414 1.415-1.414 1.414.707.707 1.414-1.414 1.432-1.429-5.629-5.629-5.657 5.657 5.623 5.624 1.416-1.413z" />
+				</svg>
+				<p>Prozori vasoj po lorem meri.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
 			</a>
 
+			<!-- ustedite na potrosnji -->
+			<a href="#">
+				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z" />
+				</svg>
+				<p>Ustedite na potrošnji energije.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+			</a>
+			<!-- prozori po meri end -->
 		</div>
-		
-		</div>
-		<button id="topBtn" onclick="topFunction()">&#10094;</button>
-		
+
+	</div>
+	<!-- <button id="topBtn" onclick="topFunction()">&#10094;</button> -->
+	<button id="back-to-top-btn">&#10094;</button>
+
 
 
 	<footer>
@@ -300,45 +277,48 @@
 		<div id="icons-vraper">
 			<p id="icons">Pratie nas na:</p>
 
-			<div class="icons">			
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-instagram"></a>
+			<div class="icons">
+				<link rel="stylesheet"
+					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
 			</div>
 
-				<h5>Stolarija Bato:</br></h5>
-				<h4><i class="fa fa-phone"></i> tel: +38165/456/456</br></h4>
-				<h4><i class="fa fa-phone"></i>tel: +38165/65-56-56</br></h4>
-				<h4 id="adresa"><i class='fas fa-map-marker-alt'></i>Adresa: Mojsinje Cacak</br></h4>
-			</div>
-			<!--icons end-->
+			<h5>Stolarija Bato:<br></h5>
+			<h4><i class="fa fa-phone"></i> tel: +38165/456/456<br></h4>
+			<h4><i class="fa fa-phone"></i>tel: +38165/65-56-56<br></h4>
+			<h4 id="adresa"><i class='fas fa-map-marker-alt'></i>Adresa: Mojsinje Cacak<br></h4>
+		</div>
+		<!--icons end-->
 
-	<!-- mapa -->
+		<!-- mapa -->
 		<div id="mapTxt">
 			<ul>
-			<li<h3>Gde se nalazimo:</h3></li>
-			<li id="map">
-		  <img id="draggable" src="D:/Dokumenta/Desktop/New folder/stlBato/images/mapa.jpg"> 
-			</li>
+				<li>
+					<h3>Gde se nalazimo:</h3>
+				</li>
+				<li id="map">
+					<img id="draggable" src="./images/mapa.jpg">
+				</li>
 			</ul>
 		</div>
-	<!-- mapa end -->
+		<!-- mapa end -->
 
-	<!-- proizvodi-->
+		<!-- proizvodi-->
 		<div id="proizvodiFooter">
 			<p id="proizvodiNaslov">Proizvodi:</p>
-		<div id="innerProizvodi"> 
-					  
-		<a href="#">aluminijumska_stolarija</a>
-		<a href="#">pvc_roletne</a>
-		<a href="#">aluminijumske_roletne</a>
-		<a href="#">komarnici</a>
-		<a href="#">pvc_stolarija</a>
-		<a href="#">harmonika_vrata</a>
-		<a href="#">aluminijumska_ograda</a>
-		<a href="#">tus_kabine</a>
+			<div id="innerProizvodi">
 
-				 <!-- 	<a href="#">trakaste_i_rolo_zavese</a>
+				<a href="#">aluminijumska_stolarija</a>
+				<a href="#">pvc_roletne</a>
+				<a href="#">aluminijumske_roletne</a>
+				<a href="#">komarnici</a>
+				<a href="#">pvc_stolarija</a>
+				<a href="#">harmonika_vrata</a>
+				<a href="#">aluminijumska_ograda</a>
+				<a href="#">tus_kabine</a>
+
+				<!-- 	<a href="#">trakaste_i_rolo_zavese</a>
 					<a href="#">venecijaneri</a>
 					
           		    <a href="#">sobna_vrata</a>
@@ -350,29 +330,31 @@
 							d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
 						</path>
 					</svg> -->
-					
-  </div> 
-	</div>
-	<!-- proizvodi end-->
+
+			</div>
+		</div>
+		<!-- proizvodi end-->
 
 	</footer>
 
 	<p id="copyRight">Copyright &copy; Sva prava zadrzana, Bato aluminijumska i pvc stolarija.</p>
 
-<!-- contacts icons-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- contacts icons-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-		 <script src="D:\Dokumenta\Desktop\New folder\stlBato\js\slide.js"></script>
-		<script src="D:\Dokumenta\Desktop\New folder\stlBato\js\topBtn.js"></script>
 
-		<!--  
+	<script src="./js/topBtn.js"></script>
+	<script type="text/javascript" src="./js/slide.js"></script>
+
+	<!--  
 		 <script async defer 
 		 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
 		</script> -->
 </body>
+
 </html>

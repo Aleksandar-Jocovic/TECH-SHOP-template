@@ -2,9 +2,10 @@
 #cards {
   //  padding: 10px;
   max-width: 800px;
-  width: 80%;
+  //width: 80%;
   //border: #ccc solid 1px;
-  background-color: #f4f4f4;
+
+  background-color: $mainBackgroun;
   // background-color: slategrey;
 
   margin: 0 auto;
@@ -20,6 +21,7 @@
 
   a {
     margin: 0 auto;
+    margin-bottom: 20px;
     // max-width: 250px;
     width: 250px;
     height: 390px;
@@ -36,7 +38,7 @@
     //border-bottom-right-radius: 15px;
 
     img {
-      border: 1px solid $lightBlue;
+      //border: 1px solid $lightBlue;
       background-size: cover;
       width: 100%;
       height: 70%;
@@ -65,12 +67,11 @@
 }
 
 #gridCard1 {
-  background-color: #f4f4f4;
+  background-color: $mainBackgroun;
   border-bottom: none;
   text-align: left;
   button {
     position: relative;
-
     right: -170px;
   }
 }
@@ -92,44 +93,61 @@
 }
 #cards a {
   padding-top: 20px;
-  border: 2px solid $lightBlue;
-  border-radius: 20px;
-  border: none;
-  margin-top: 50px;
-  background-color: #f4f4f4;
+  margin-top:10px;
+  background-color: $mainBackgroun;
   //max-width: 100px;
-  max-height: 200px;
-  // border: 2px solid black;
-  // border-radius: 35px;
+  max-height: 250px;
   p {
     font-family: 'Roboto', sans-serif;
-
     font-size: 20px;
     margin: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
   }
 }
 
 .fill {
   width: 50px;
   height: 50px;
-  fill: $lightBlue;
+  
+  //fill: $lightBlue;
+  fill: #F46517;
   // padding: 10px;
   //border: 2px solid red;
   //border-radius: 35px;
 }
+.svgRadius {
+  border: 2px solid #F46517;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  margin-bottom: 20px;
+  max-width: 250px;
+ 
+ 
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  img {
+    max-height: 250px;
+  }
+}
 
-#gridBtn {
-  font-weight: 500;
-  width: 80px;
-  height: 40px;
-  position: relative;
-  bottom: -2px;
-  margin: 0;
-  right: -85px;
-  background-color: $lightBlue;
-  color: #f4f4f4;
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  border-style: none;
-  //border-top-left-radius: 15px;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
