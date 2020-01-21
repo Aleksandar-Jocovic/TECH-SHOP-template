@@ -53,7 +53,7 @@ nav {
   background-color: $lightBlue;
   color: whitesmoke;
   z-index: 3;
-  background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/aaaa.jpg");
+  background-image: url("../images/aaaa.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -69,7 +69,7 @@ nav {
   height: 70px;
   width: 112px;
   left: 20px;
-  background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh70.png");
+  background-image: url("../images/logoh70.png");
 
 }
 .logoToHome {
@@ -82,14 +82,14 @@ nav {
    // right: -30px;
     position: absolute;
     left: 20px;
-    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh48.png");
+    background-image: url("../images/logoh48.png");
     height: 48px;
     width: 77px;
   }
 @media screen and (max-width: 800px) {
   .logoImg {
     left: 20px;
-    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/logoh48.png");
+    background-image: url("../images/logoh48.png");
     height: 48px;
     width: 77px;
   }
