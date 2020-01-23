@@ -5,6 +5,7 @@ $('.owl-carousel').owlCarousel({
   items: 4,
   autoplay: true,
   autoplayTimeout: 8000,
+  navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
   responsive: {
     // breakpoint from 0 up
     0: {
@@ -31,3 +32,13 @@ $(document).on('scroll', function () {
     $('header').removeClass('navResize');
   }
 });
+
+
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}

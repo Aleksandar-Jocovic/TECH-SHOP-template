@@ -53,7 +53,7 @@ nav {
   background-color: $lightBlue;
   color: whitesmoke;
   z-index: 3;
-  background-image: url("../images/aaaa.jpg");
+  //background-image: url("../images/aaaa.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -70,6 +70,7 @@ nav {
   width: 112px;
   left: 20px;
   background-image: url("../images/logoh70.png");
+  transition: 0.4s ease-in-out;
 
 }
 .logoToHome {
@@ -85,6 +86,7 @@ nav {
     background-image: url("../images/logoh48.png");
     height: 48px;
     width: 77px;
+    transition: 0.4s ease-in-out;
   }
 @media screen and (max-width: 800px) {
   .logoImg {
@@ -176,9 +178,13 @@ nav {
   text-align: center;
   margin: 0 auto;
    position: relative;
+   left: -1000px;
    line-height: 0;
    animation: title 1s forwards;
    animation-delay: 1s;
+;
+   
+   
  /*  animation-name: title;
   animation-duration: 2s;
   animation-fill-mode: forwards; */
@@ -189,10 +195,11 @@ nav {
 
 @keyframes title {
   0% {left: -1000px}
+  60% {left: 0}
+  80% {left: -10px}
   100% {left: 0}
+
 }
-
-
 
 #fancyParagraf {
   // background-color: rgb(223, 223, 238);
@@ -397,7 +404,7 @@ footer {
     height: 72vh;
     position: absolute;
     right: 0px;
-    top: 40px;
+    top: 57px;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
     width: 45%;

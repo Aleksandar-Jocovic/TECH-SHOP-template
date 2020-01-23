@@ -4,16 +4,17 @@
   background-color: $mainBackgroun;
 }
 .box {
-  height: 300px;
+  height: 350px;
   min-width: 250px;
   background-color: $mainBackgroun;
+
   // margin: 0 auto;
   // margin-left: 5px;
   // margin-right: 5px;
   margin: 10px;
   img {
     width: 100%;
-    height: 90%;
+    height: 80%;
     max-width: 250px;
     margin: 0 auto;
   }
@@ -29,14 +30,33 @@
   padding: 0 !important;
   font: inherit;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
+  top: 43%;
+  left: -20px;
+  //transform: translateY(-50%);
+  width:40px;
   height: 30px;
   border-radius: 50%;
-  background-color: $darkBlue;
-  color: $mainBackgroun;
+  background-color: transparent;
+  //color: $darkBlue;
+    span {
+    display: none;
+  }
+  i {
+    padding: 0;
+    height: 27px;
+    width: 30px;
+    //right: 15px;
+    margin-top: 7px;
+  }
 }
+.owl-carousel .owl-nav button.owl-prev:focus {outline: none;}
+.owl-carousel .owl-nav button.owl-next:focus {outline: none;}
+/*  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    font-family: 'fontAwesome';
+
+} */
 .owl-carousel .owl-nav button.owl-next {
   background: none;
   color: inherit;
@@ -44,11 +64,202 @@
   padding: 0 !important;
   font: inherit;
   position: absolute;
-  top: 50%;
-  right: 0;
-  width: 30px;
+  top: 43%;
+  right: -20px;
+  width: 40px;
   height: 30px;
   border-radius: 50%;
-  background-color: orchid;
+  background-color: transparent;
   text-align: center;
+  span {
+    display: none;
+  }
+  i {
+    padding: 0;
+    height: 27px;
+    width: 30px;
+    //right: 15px;
+    margin-top: 7px;
+    
+  }
+ 
+}
+ /* .owl-carousel .owl-nav button.owl-next:after {
+    content: "&#10094";
+  } */
+/*
+.owl-carousel .owl-nav .owl-prev:before{
+    // fa-chevron-left
+    content: "\f053";
+    margin-right:10px;
+}
+.owl-carousel .owl-nav .owl-next:after{
+    //fa-chevron-right
+    content: "\f054";
+    margin-right:10px;
+} */
+
+// galery start 
+
+.column {
+  float: left;
+  width: 12vh;
+  //padding: 10px;
+  height: 12vh;
+  max-height: 150px;
+  overflow: hidden;
+  border: 1px solid #D6D6D6;
+  margin: 5px;
+  
+
+}
+.column:hover {
+  border: 1px solid #F46517;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer;
+  overflow: hidden;
+  
+  //background-size: cover; 
+}
+
+
+.column img:hover {
+  opacity: 1;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.containerProduct {
+  margin-top: 20px;
+  overflow: hidden;
+  width: 60vh;
+  height: 60vh;
+  position: relative;
+  display: none;
+  padding: 0;
+  
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+// galery end
+
+.product {
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 800px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productInfo ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+  .product {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+/*   .containerProduct {
+    width: 100%;
+    height: 100%;
+  } */
+  .productInfo {
+    align-self: flex-start;
+  }
+  
+}
+
+@media screen and (max-width: 350px) {
+  .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+  }
+
+    .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+  }
+}
+
+.productName {
+  font-size: 35px;
+}
+
+.details {
+  box-sizing: border-box;
+  padding: 20px; 
+}  
+
+.details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+
+      }
+.details h3 span {
+  font-size: 16px;
+  color: #F46517;
+}
+
+.box a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.adressIcon {
+  fill: darkgray;
+  height: 18px;
+  width: 30px;
+  position: relative;
+  //margin-right: 8px;
+  top: 3px;
+  //margin-top: 7px;
+}
+
+#icons-vraper ul li {
+  list-style: none;
+  text-align: center;
+
+}
+
+#icons-vraper ul {
+  margin: 0 auto;
 }

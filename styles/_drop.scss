@@ -47,15 +47,19 @@
   text-align: center;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
+  user-select: none;
   //border: 3px solid $darkBlue;
 }
 
-#back-to-top-btn:hover,
-#back-to-top-btn:focus {
-  color: $darkBlue;
-  background-color: /* $mainBackgroun */ rgba(255, 68, 0, 0.568);
-}
+#back-to-top-btn:focus {outline: none; user-select: none;}
 
+/* #back-to-top-btn:hover
+{
+  color: $darkBlue;
+  background-color: rgba(255, 68, 0, 0.568);
+  outline: none;
+}
+ */
 @media screen and (max-width: 800px) {
   #back-to-top-btn {
     bottom: 10px;
