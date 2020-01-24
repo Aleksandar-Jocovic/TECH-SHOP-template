@@ -228,12 +228,12 @@ footer {
   display: flex;
   //flex-direction: column;
   justify-content: space-between;
-  min-height: 300px;
+  min-height: 280px;
   color: rgb(209, 197, 197);
   background-color: rgb(43, 41, 49);
   //margin-top: 10%;
   //padding: 20px 10px 0 30px;
-  padding: 30px;
+  padding: 10px 20px 0 20px;
   clear: both;
   position: relative;
   margin-top: 20px;
@@ -261,12 +261,13 @@ footer {
   //background-color: rgb(167, 231, 6);
   //width: 30%;
   min-width: 100px;
+  margin-bottom: unset;
   //	min-height: 100px;
   //height: 80%;
-  color: white;
+ // color: white;
   //display: inline;
   text-align: center;
-  padding-bottom: 20px;
+  //padding-bottom: 20px;
 }
 
 #mapTxt {
@@ -304,7 +305,7 @@ footer {
 
 #copyRight {
   margin: 0;
-  color: white;
+  color: darkgray;
   background-color: rgb(43, 41, 49);
   border-top: 1px solid rgb(79, 77, 85);
   text-align: center;
@@ -361,6 +362,7 @@ footer {
   .quickContact {
     height: 23px;
     font-size: 12px;
+    // dal treba da se izbacii
     #telefon {
       margin: 0 auto;
     }
@@ -388,6 +390,9 @@ footer {
       width: 100%;
       margin-top: 10px;
       padding: 0;
+    }
+    #icons-vraper {
+      margin-left: 20px;
     }
   }
 

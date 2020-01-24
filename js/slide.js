@@ -1,4 +1,4 @@
-console.log('a');
+//console.log('a');
 /* var slideIndex = 1;
 
 showSlides(slideIndex);
@@ -85,7 +85,7 @@ autoSlide(); */
 img.draggable(); */
 //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa skinuto img dragable zbog owl slidera
 /* function initMap () {
-  // location of place 
+  // location of place
   var uluru = {lat:-25.344, lng:131.036};
   // the map created at Uluru
   var map = new google.maps.Map(
