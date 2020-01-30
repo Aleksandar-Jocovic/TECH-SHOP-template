@@ -12,6 +12,7 @@ body {
   padding: 0;
   height: 100%;
   min-width: 250px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .noDisplay {
   display: none;
@@ -53,7 +54,7 @@ nav {
   background-color: $lightBlue;
   color: whitesmoke;
   z-index: 3;
-  //background-image: url("../images/aaaa.jpg");
+  background-image: url("../images/983279.png");
   background-position: center;
   background-size: cover;
 }
@@ -239,18 +240,25 @@ footer {
   margin-top: 20px;
 
 }
+.footerTitle {
+  font-size: 22px;
+  height: 28px;
+}
 
 #icons-vraper {
-  width: 25%;
+  width: 30%;
+  min-width: 200px;
   text-align: center;
   h4 {
     font-weight: normal;
     font-size: 16px;
   }
   .fa-phone {
+    text-align: center;
     padding: 0;
-    height: 20px;
+    height: 18px;
     width: 30px;
+    color: darkgray;
   }
   .fa-map-marker-alt {
     width: 30px;
@@ -260,7 +268,7 @@ footer {
 .icons {
   //background-color: rgb(167, 231, 6);
   //width: 30%;
-  min-width: 100px;
+  min-width: 200px;
   margin-bottom: unset;
   //	min-height: 100px;
   //height: 80%;
@@ -271,7 +279,7 @@ footer {
 }
 
 #mapTxt {
-  width: 35%;
+  width: 40%;
   min-height: 60px;
   overflow: hidden;
  
@@ -289,7 +297,7 @@ footer {
 #proizvodiFooter {
   text-align: center;
   font-size: 14px;
-  width: 30%;
+  width: 25%;
   min-height: 60px;
   #innerProizvodi {
     display: grid;
@@ -312,7 +320,7 @@ footer {
   font-size: 14px;
 }
 
-.fa {
+/* .fa {
   padding: 16px;
   font-size: 30px;
   width: 50px;
@@ -320,7 +328,7 @@ footer {
   text-align: center;
   text-decoration: none;
   margin-top: 5px;
-}
+} */
 
 /* Add a hover effect if you want */
 .fa:hover {

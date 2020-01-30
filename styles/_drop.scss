@@ -28,6 +28,7 @@
 //back to toop btn
 
 #back-to-top-btn {
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
   display: none;
   position: fixed;
   bottom: 20px;
@@ -51,7 +52,7 @@
   //border: 3px solid $darkBlue;
 }
 
-#back-to-top-btn:focus {outline: none; user-select: none;}
+
 
 /* #back-to-top-btn:hover
 {

@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 
-  <title>StlBato</title>
-
+  <title>proizvodi</title>
+  <script src="owlCarousel/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="owlCarousel/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- adress icon -->
-  <!--   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
- -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 </head>
 
 <body>
@@ -31,7 +35,6 @@
 
     <div class="logoImg" id="logoImgId">
       <a class="logoToHome" href="index.html"></a>
-
     </div>
 
     <!--     <div class="bigLogo" id="logo">
@@ -43,10 +46,9 @@
 
     <ul class="nav-links">
       <li><a href="index.html">naslovna</a></li>
-      <li><a href="kontakt.html" id="activeNav">Kontakt</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
 
-
-      <li class="dropdown"><a href="proizvodiNew.html" class="dropbtn">proizvodi &#9662</a>
+      <li class="dropdown"><a href="proizvodiNew.html" id="activeNav" class="dropbtn">proizvodi &#9662</a>
         <div class="dropdown-content">
           <a href="aluminijumska-stolarija.html">aluminijumska stolarija</a>
           <a href="#">pvc stolarija</a>
@@ -64,8 +66,9 @@
         </div>
       </li>
 
-      <li class="noDisplay"><a href="proizvodiNew.html">proizvodi</a></li>
       <li><a href="#">O nama</a></li>
+
+      <li class="noDisplay"><a href="proizvodiNew.html" id="activeNav">proizvodi</a></li>
     </ul>
 
     <div class="burger">
@@ -89,22 +92,55 @@
         sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
         including versions of Lorem Ipsum.</p>
     </div>
-    <aside class='kontaktAside'>
-      <div id="bigImgKontakt">
-        <img src="./images/firstImg.jpg">
-      </div>
-      <div id='smallImgKontakt'>
-        <img src="./images/firstImg.jpg">
-        <img src="./images/firstImg.jpg">
-      </div>
+
+    <div class="sviProizvodi">
+      <a href="proizvodi.html">
+        <img src="images/vrata.jfif" alt="">
+        <p>SOBNA VRATA</p>
+      </a>
+
+      <a href="aluminijumska-stolarija.html">
+        <div class='productVraper'>
+          <img src="images/profil1.jpg" alt="">
+          <h3 class="saznajteVise">Saznajte vise</h3>
+        </div>
+        <p>ALUMINIJUMSKA STOLARIJA</p>
+      </a>
+
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+      <a href="#">
+        <img src="images/vrata.jfif" alt="">
+        <p>sovsv vsvvs</p>
+      </a>
+    </div>
+
+    <aside>
+
+
 
     </aside>
-    <div id="fancyParagraf">
-      <p id="smallTxt">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-        printer
-        desktop publishing software like Aldus PageMaker
-        including versions of Lorem Ipsum.</p>
-    </div>
+
+
+
 
     <div id="cards">
       <!--usluzno secenje  -->
@@ -137,12 +173,15 @@
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
       </a>
       <!-- prozori po meri end -->
+
     </div>
 
 
   </div>
 
+  <!-- end od main content -->
   <button id="back-to-top-btn">&#10094</button>
+
 
 
   <footer>
@@ -217,7 +256,7 @@
       <p class="footerTitle">Proizvodi:</p>
       <div id="innerProizvodi">
 
-        <a href="aluminijumska-stolarija.html">aluminijumska_stolarija</a>
+        <a href="#">aluminijumska_stolarija</a>
         <a href="#">pvc_roletne</a>
         <a href="#">aluminijumske_roletne</a>
         <a href="#">komarnici</a>
@@ -225,7 +264,6 @@
         <a href="#">harmonika_vrata</a>
         <a href="#">aluminijumska_ograda</a>
         <a href="#">tus_kabine</a>
-        <a href="proizvodi.html">sobna_vrata</a>
 
         <!-- 	<a href="#">trakaste_i_rolo_zavese</a>
   					<a href="#">venecijaneri</a>
@@ -246,16 +284,20 @@
 
   </footer>
 
+
   <p id="copyRight">Copyright &copy; Sva prava zadrzana, Bato aluminijumska i pvc stolarija.</p>
 
 
+  <!--owlcarousel-->
+  <script src="owlCarousel/owl.carousel.js"></script>
 
-  <!-- izgleda da su oba jq za mapu -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script src="./js/topBtn.js"></script>
   <script type="text/javascript" src="./js/slide.js"></script>
+  <script src="./js/productSlider.js"></script>
+  <!-- izgleda da su oba jq za mapu -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 
 </body>
 

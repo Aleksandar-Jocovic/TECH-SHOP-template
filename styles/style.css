@@ -13,6 +13,7 @@ body {
   padding: 0;
   height: 100%;
   min-width: 250px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .noDisplay {
@@ -67,6 +68,7 @@ nav {
   background-color: #35424e;
   color: whitesmoke;
   z-index: 3;
+  background-image: url("../images/983279.png");
   background-position: center;
   background-size: cover;
 }
@@ -279,8 +281,14 @@ footer {
   margin-top: 20px;
 }
 
+.footerTitle {
+  font-size: 22px;
+  height: 28px;
+}
+
 #icons-vraper {
-  width: 25%;
+  width: 30%;
+  min-width: 200px;
   text-align: center;
 }
 
@@ -290,9 +298,11 @@ footer {
 }
 
 #icons-vraper .fa-phone {
+  text-align: center;
   padding: 0;
-  height: 20px;
+  height: 18px;
   width: 30px;
+  color: darkgray;
 }
 
 #icons-vraper .fa-map-marker-alt {
@@ -300,13 +310,13 @@ footer {
 }
 
 .icons {
-  min-width: 100px;
+  min-width: 200px;
   margin-bottom: unset;
   text-align: center;
 }
 
 #mapTxt {
-  width: 35%;
+  width: 40%;
   min-height: 60px;
   overflow: hidden;
 }
@@ -321,7 +331,7 @@ footer {
 #proizvodiFooter {
   text-align: center;
   font-size: 14px;
-  width: 30%;
+  width: 25%;
   min-height: 60px;
 }
 
@@ -347,7 +357,7 @@ footer {
   font-size: 14px;
 }
 
-.fa {
+/* .fa {
   padding: 16px;
   font-size: 30px;
   width: 50px;
@@ -355,8 +365,7 @@ footer {
   text-align: center;
   text-decoration: none;
   margin-top: 5px;
-}
-
+} */
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
@@ -700,57 +709,30 @@ footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #f4f4f4;
-  -webkit-animation: show 1s forwards;
-          animation: show 1s forwards;
+  /*   animation: show 2s forwards;
   opacity: 0;
-  -webkit-transform: rotateY(40deg);
-          transform: rotateY(40deg);
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-  position: relative;
+  transform: rotateY(-40deg);
+  animation-delay: 0.7s; */
 }
 
 .owlShow {
   -webkit-animation: show 2s forwards ease-in;
           animation: show 2s forwards ease-in;
-  opacity: 0.2;
-  -webkit-transform: rotateY(40deg);
-          transform: rotateY(40deg);
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.box {
-  height: 350px;
-  min-width: 250px;
-  background-color: #f4f4f4;
-  /*     animation: show 1s forwards;
-  
-  transform: rotateY(40deg);
-  animation-delay: 0.7s; */
-  margin: 10px;
-}
-
-.box img {
-  width: 100%;
-  height: 80%;
-  max-width: 250px;
-  margin: 0 auto;
-}
-
-.box p {
-  text-align: center;
+  position: relative;
+  left: -1500px;
+  -webkit-animation-delay: 0.7;
+          animation-delay: 0.7;
+  opacity: 0;
 }
 
 @-webkit-keyframes show {
   0% {
-    opacity: 1;
-    -webkit-transform: rotateY(70deg);
-            transform: rotateY(70deg);
-    /* transform: rotateZ(2deg); */
+    opacity: 0.2;
+    -webkit-transform: rotateY(-190deg);
+            transform: rotateY(-190deg);
   }
-  /*   25% { opacity: 1;transform: rotateY(20deg);}
-  50% {opacity: 1; transform: rotateY(10deg);} */
+  /*   60% {transform: rotateY(0deg);}
+  80% {transform: rotateY(-50deg);} */
   100% {
     opacity: 1;
     -webkit-transform: rotateY(0deg);
@@ -760,13 +742,12 @@ footer {
 
 @keyframes show {
   0% {
-    opacity: 1;
-    -webkit-transform: rotateY(70deg);
-            transform: rotateY(70deg);
-    /* transform: rotateZ(2deg); */
+    opacity: 0.2;
+    -webkit-transform: rotateY(-190deg);
+            transform: rotateY(-190deg);
   }
-  /*   25% { opacity: 1;transform: rotateY(20deg);}
-  50% {opacity: 1; transform: rotateY(10deg);} */
+  /*   60% {transform: rotateY(0deg);}
+  80% {transform: rotateY(-50deg);} */
   100% {
     opacity: 1;
     -webkit-transform: rotateY(0deg);
@@ -774,10 +755,35 @@ footer {
   }
 }
 
+.box {
+  height: 350px;
+  min-width: 250px;
+  background-color: #f4f4f4;
+  -webkit-animation: show 2s forwards;
+          animation: show 2s forwards;
+  opacity: 0;
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  margin: 10px;
+}
+
+.box img {
+  width: 250px;
+  height: 80%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.box p {
+  text-align: center;
+}
+
 .owl-carousel .owl-nav button.owl-prev {
   text-decoration: none;
   background: none;
-  color: inherit;
+  color: #3f3f3f;
   border: none;
   padding: 0 !important;
   font: inherit;
@@ -892,11 +898,18 @@ footer {
 .containerProduct {
   margin-top: 20px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   max-width: 600px;
-  max-height: 500px;
+  max-height: 450px;
   position: relative;
   padding: 0;
+}
+
+.containerProduct img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Expanding image text */
@@ -919,9 +932,11 @@ footer {
 }
 
 .product {
+  border-top: 1px solid darkgray;
   margin: 0 auto;
-  padding: 0;
   margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,9 +966,9 @@ footer {
     margin: 0;
     width: 100%;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -962,15 +977,31 @@ footer {
     width: 100%;
     height: 100%;
   } */
-  .productInfo, .productGalery {
+  .productInfo {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .productGalery {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    position: relative;
+    top: -100px;
   }
   .productInfo {
     margin-left: 20px;
   }
   .productGalery {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productInfo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .productGalery {
+    top: 0;
   }
 }
 
@@ -983,12 +1014,89 @@ footer {
   }
   .containerProduct {
     height: 40vh;
+    min-height: 300px;
     width: 100%;
   }
 }
 
 .productName {
-  font-size: 35px;
+  font-size: 30px;
+  position: relative;
+  right: -200px;
+  opacity: 0;
+  -webkit-animation: productNameAnim 1.2s forwards;
+          animation: productNameAnim 1.2s forwards;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+@-webkit-keyframes productNameAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes productNameAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.productDetails li {
+  position: relative;
+  top: 30px;
+  -webkit-animation: productDetailAnim 1s linear forwards;
+          animation: productDetailAnim 1s linear forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes productDetailAnim {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes productDetailAnim {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.productDetails li:nth-child(1) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.productDetails li:nth-child(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.productDetails li:nth-child(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .details {
@@ -1020,7 +1128,7 @@ footer {
   height: 18px;
   width: 25px;
   position: relative;
-  top: 3px;
+  top: -1px;
 }
 
 #icons-vraper ul li {
@@ -1058,6 +1166,10 @@ footer {
   margin-bottom: unset;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.productAnimatedTitle {
+  height: 70px;
 }
 
 .kontaktAside {
@@ -1133,6 +1245,7 @@ footer {
 }
 
 #back-to-top-btn {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: none;
   position: fixed;
   bottom: 20px;
@@ -1155,14 +1268,6 @@ footer {
   transition: 0.2s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-#back-to-top-btn:focus {
-  outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1476,8 +1581,8 @@ html {
 }
 
 #cards {
-  border-bottom: 1px solid #35424e;
-  border-top: 1px solid #35424e;
+  border-bottom: 1px solid darkgray;
+  border-top: 1px solid darkgray;
 }
 
 #cards a {
@@ -1527,8 +1632,8 @@ html {
 .card .imgVraper img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .imgVraper {
@@ -1553,5 +1658,79 @@ html {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+
+.sviProizvodi {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.sviProizvodi a {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 290px;
+  color: #35424e;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  /*     p {
+      position: relative;
+      top: -20px;
+    } */
+}
+
+.sviProizvodi a img {
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sviProizvodi a:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.sviProizvodi a:hover .saznajteVise {
+  color: white;
+  -webkit-transform: translateX(220px);
+          transform: translateX(220px);
+}
+
+.sviProizvodi a:active .saznajteVise {
+  color: white;
+  -webkit-transform: translateX(-220px);
+          transform: translateX(-220px);
+}
+
+.saznajteVise {
+  position: relative;
+  top: -150px;
+  right: 220px;
+  color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* @keyframes in {
+  0% {}
+  100% {right: 0;}
+} */
+.productVraper {
+  height: 230px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
