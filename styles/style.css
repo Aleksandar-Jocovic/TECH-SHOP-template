@@ -68,7 +68,6 @@ nav {
   background-color: #35424e;
   color: whitesmoke;
   z-index: 3;
-  background-image: url("../images/983279.png");
   background-position: center;
   background-size: cover;
 }
@@ -1021,6 +1020,7 @@ footer {
 
 .productName {
   font-size: 30px;
+  font-weight: bolder;
   position: relative;
   right: -200px;
   opacity: 0;
@@ -1174,7 +1174,7 @@ footer {
 
 .kontaktAside {
   max-width: 800px;
-  background-color: red;
+  background-color: #f4f4f4;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 70px;
@@ -1214,6 +1214,62 @@ footer {
   #bigImgKontakt {
     width: 100%;
   }
+}
+
+.contact-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-title h1 {
+  font-size: 25px;
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+  color: red;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #680000;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+  color: #580a0a;
+}
+
+form .submit {
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #6ff857;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -1697,11 +1753,15 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
+.sviProizvodi a p {
+  margin-top: 10px;
+}
+
 .sviProizvodi a:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
 }
 
 .sviProizvodi a:hover .saznajteVise {
@@ -1710,19 +1770,55 @@ html {
           transform: translateX(220px);
 }
 
-.sviProizvodi a:active .saznajteVise {
-  color: white;
+.sviProizvodi a:hover .saznajteViseBorder {
   -webkit-transform: translateX(-220px);
           transform: translateX(-220px);
 }
 
+.card:hover .saznajteVise {
+  color: white;
+  -webkit-transform: translateX(220px);
+          transform: translateX(220px);
+}
+
+.card:hover .saznajteViseBorder {
+  -webkit-transform: translateX(-220px);
+          transform: translateX(-220px);
+}
+
+/* .sviProizvodi a:active .saznajteVise{
+  color: white;
+  transform: translateX(-220px);
+} */
 .saznajteVise {
   position: relative;
+  font-size: 20px;
+  font-weight: 400;
   top: -150px;
   right: 220px;
   color: transparent;
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+
+.saznajteViseBorder {
+  position: relative;
+  top: -150px;
+  left: 220px;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.saznajteViseBorder {
+  border-top: 2px solid orangered;
+  width: 100px;
+  margin: 0 auto;
 }
 
 /* @keyframes in {
