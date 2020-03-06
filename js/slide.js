@@ -1,35 +1,3 @@
-//console.log('a');
-/* var slideIndex = 1;
-
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('allSlides');
-  var dots = document.getElementsByClassName('dot');
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-} */
-
 // fade animation
 
 const navSlide = () => {
@@ -55,6 +23,7 @@ const navSlide = () => {
 };
 navSlide();
 
+
 // automate slide index
 
 /* function autoSlide() {
@@ -79,22 +48,72 @@ navSlide();
 
   dots[slideIndex - 1].className += ' active';
 }
-autoSlide(); */
+ */
 
-/* var img = $('#draggable');
-img.draggable(); */
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa skinuto img dragable zbog owl slidera
-/* function initMap () {
-  // location of place
-  var uluru = {lat:-25.344, lng:131.036};
-  // the map created at Uluru
-  var map = new google.maps.Map(
-    document.getElementById('map'), {zoom: 4, center: uluru});
-    // The marker positioned at Uluru
-    var marker = new google.maps.Marker({position:uluru, map:map});
-    //fali jos jedan script pogledaj na developers.gooogle.com
-} */
+//my carousel
+var img = document.getElementsByClassName('img');
+var indicator = document.getElementsByClassName('indicator');
+let o = 0;
+let y = 1;
+let m = 3;
+function plus() {
+  for (let i = 0; i < img.length; i++) {
+    if (img[i].classList.contains('active')) {
+      img[i].classList.remove('active')
+    }
+    /*     if (indicator[i].classList.contains('active-indicator')) {
+          indicator[i].classList.remove('active-indicator');
+        } */
+  }
 
-//jebeni api keyyy wtff
+  for (let x = 0; x < indicator.length; x++) {
+    if (indicator[x].classList.contains('active-indicator')) {
+      indicator[x].classList.remove('active-indicator');
+    }
+  }
 
-/// todo on click home
+  function active() {
+    if (o === img.length - 1) {
+      o = 0;
+      m = 3;
+    } else {
+      o++;
+      m++
+    }
+    img[o].classList.add('active');
+    //indicator[o - 1].classList.remove('active-indicator');
+    indicator[o].classList.add('active-indicator');
+
+  }
+  active();
+}
+
+function minus() {
+  for (let i = 0; i < img.length; i++) {
+    if (img[i].classList.contains('active')) {
+      img[i].classList.remove('active')
+    }
+  }
+  for (let x = 0; x < indicator.length; x++) {
+    if (indicator[x].classList.contains('active-indicator')) {
+      indicator[x].classList.remove('active-indicator');
+    }
+  }
+
+  function active() {
+    if (y === 0) {
+      y = img.length - 1;
+    } else {
+      y--;
+    }
+    console.log(y)
+    img[y].classList.add('active');
+    indicator[y].classList.add('active-indicator');
+  }
+  active();
+}
+
+
+
+
+

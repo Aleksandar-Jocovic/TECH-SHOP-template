@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap');
+.outer {
+  position: relative; 
+  //top: 10px;
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1200px;
+  height: 50vh;
+  //border-bottom: 10px solid $orange;
+  //border: 2px solid rgb(161, 0, 121);
+  background: rgb(170, 170, 170);
+.patr-two {
+  background: red;
+  top: 10px;
+}
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  //border: 2px solid skyblue;
+  overflow: hidden;
+
+}
+
+.inner .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  //top: -10px;
+  transform: scale(1.1);
+  opacity: 0;
+  transition: 2s;
+  
+}
+
+
+.inner .one {
+ background: url("../images/windiws.jpg") no-repeat center center / cover;
+}
+
+.inner .two {
+ background: url("../images/calculating-bills.jpg") no-repeat center center / cover;
+
+}
+
+.inner .three {
+  background: url("../images/windiws.jpg") no-repeat center center / cover;
+}
+
+.active {
+  animation: active 1s linear forwards;
+}
+
+@keyframes active {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+    transform: scale(1);
+  }
+}
+
+.plus-btn {
+  left: 0;
+ 
+  svg {
+    transform: translateX(-10px);
+    opacity: 0.4;
+    fill: white;
+    transition: 1s;
+  }
+
+}
+
+.plus-btn, .minus-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  right: 0;
+  width: 60px;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+.minus-btn {
+   svg {
+    transform: translateX(10px);
+    opacity: 0.4;
+    fill: white;
+    transition: 1s;
+
+  }
+}
+
+.outer:hover {
+  .plus-btn svg {
+    fill: orangered;
+    opacity: 0.8;
+    transform: translateX(0px);
+    
+  }
+    .minus-btn svg {
+    fill: orangered;
+    opacity: 0.6;
+    transform: translateX(0px);
+  }
+}
+
+.slider-box {
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+  height: 70%;
+  width: 430px;
+  border: 2px solid $orange;
+  
+
+  background: #35424ed3;
+  color: white;
+  z-index: 3;
+  h1 {
+    font-weight: 400;
+  }
+  h2 {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 3px solid orangered ;
+    text-align: center;
+    
+    
+  }
+
+
+  p {
+    position: absolute;
+    font-size: 270px;
+    //color: #888e9496;
+    color: #35424ed3;
+    z-index:  -1;
+    font-weight: 900;
+    font-family: sans-serif;
+    right: -60px;
+    top: -40px;
+    text-align: center;
+  }
+
+}
+
+
+.two .slider-box {
+  left: 600px;
+  p {
+    right:-140px;
+    font-size: 250px;
+
+  }
+}
+
+.indicators {
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  .indicator {
+    display: inline-block;
+    transition: 0.5s;
+    margin: 0 5px;
+    position: relative;
+    top: -2px;
+    width: 27px;
+    height: 4px;
+    border-radius: 2px;
+    background: white;
+    opacity: 0.4;
+    /* z-index: ; */
+  }
+  .active-indicator {
+  //background: orangered;
+  opacity: 0.8;
+  top: -7px;
+}
+}
+
+/* .active-indicator {
+  color: orangered !important;
+  opacity: 0.8;
+  top: 0;
+
+}
+ */
+.orange-blue {
+  position: relative;
+  //top: -50px;
+  position: relative;
+  max-width: 790px;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+  margin: 0 auto;
+  display: flex;
+  
+  .orange {
+    height: 100%;
+    width: 10%;
+    //margin-right: 10px;
+    //clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background: $orange;
+  }
+/*   .white {
+  height: 100%;
+    width: 25px;
+    margin: 0 5px;
+  } */
+
+  .blue {
+    height: 100%;
+    width: 88%;
+    background: $lightBlue;
+    
+    //clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+}
+.orange:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: 10%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: $orange transparent transparent transparent;
+    
+}
+
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.orange-second {
+    height: 100%;
+    width: 100px;
+    //margin-right: 10px;
+    //clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background: $orange;
+}
+
+.ukras-vrap {
+  width: 100%;
+  height: 25px;
+  position: relative;
+  //overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background: $lightBlue;
+  z-index: 1;
+  .ukras-orange {
+    height: 15px;
+    width: 100px;
+    background: $lightBlue;
+  }
+  .ukras-orange:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    //border-color: $orange transparent transparent transparent;
+    border-color: $lightBlue transparent transparent transparent;
+
+    z-index: 3;
+}
+
+
+
+/*   .ukras-flip {
+    height: 40px;
+    width: 20px;
+    background: black;
+    transform: rotateZ(30deg);
+  } */
+
+}
+
+.ukras-orange:nth-child(2) {
+  position: relative;
+  //width: 400px;
+  //background: black;
+  right: 0;
+  transform: rotateZ(180deg);
+  transform: rotateY(180deg);
+}
+
+.ukras-vrap:nth-child(1), .ukras-vrap2 {
+  background: $orange;
+  //height: 10px;
+  transform: rotateZ(180deg);
+
+}
+
+// donji deo ukrasa na telefonu ili prepraviti ili izbaciti jer se smanjuje dok ne nestane
+
+.ukras-vrap2 {
+ transform: rotateZ(0);
+ //height: 15px;
+ .ukras-orange {
+   width: 200px;
+   height: 25px;
+ }
+ .ukras-orange:after {
+   margin-left: 76px;
+   border-width: 25px 25px 0;
+
+ }
+}
+
+
+// na izdvajamo ukras mali i veliki tj donji i gornji
+.home-small-slider {
+  margin: 20px auto;
+  max-width: 800px;
+  background: linear-gradient($lightBlueDarken, $lightBlue) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 10px solid $orange;
+
+  }
+  .part-one {
+    width: 60%;
+    margin: 0 auto;
+    height: 20px;
+    position: relative;
+    top: -1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    
+    background-color: $orange;
+  }
+  .part-one:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    right: -99.68%;
+    //margin-left: 70%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    //border-color: $orange transparent transparent transparent;
+    border-color: $orange transparent transparent transparent;
+    z-index: 3;
+}
+  .part-one::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -39px;
+    
+    //margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    //border-color: $orange transparent transparent transparent;
+    border-color:  transparent $orange transparent transparent  ;
+    z-index: 3;
+    //transform: rotateZ(45deg);
+}
+
+//donji deo na izdvajamo
+.part-two {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 40%;
+  margin: 0 auto;
+  transform: rotateX(180deg);
+  height: 30px;
+  top: 1px;
+  &.part-one:before {
+    border-width:  30px 30px 0 0;
+    right: -99.6%;
+    
+  }
+&.part-one::after {
+  border-width: 0 30px 30px 0;
+  left: -59px;
+  
+}
+
+}
+  
+
+/// na slajderu ukras gornji i donji
+
+// skuder part donji deo 
+.sliderPart {
+  position: relative;
+  top: -9px;
+  border-bottom-left-radius: 3px;
+  //problematican
+  border-bottom-right-radius: 3px;
+  bottom: 0;
+  height: 10px;
+  background: $mainBackgroun;
+
+ &.part-one:before {
+    border-color: $mainBackgroun transparent transparent transparent;
+    border-width: 10px 10px 0 0;
+    top: -6px;
+    right: -99.5%;
+  }
+
+&.part-one::after {
+  border-width: 0 10px 10px 0;
+  left: -19px;
+  top: -6px;
+
+  border-color:  transparent $mainBackgroun transparent transparent ;
+}
+}
+
+.slider-part-one {
+  z-index: 2;
+  background: $mainBackgroun;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  top: -1px;
+  &.part-one:before {
+    border-color: $mainBackgroun transparent transparent transparent;
+    right: -99.6%;
+  }
+
+  &.part-one::after {
+    border-color:  transparent $mainBackgroun transparent transparent ;
+    left: -39px;
+  }
+}

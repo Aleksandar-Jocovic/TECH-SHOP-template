@@ -1,5 +1,5 @@
 .dropdown-content {
-  z-index: 5;
+  z-index: 153;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -16,6 +16,10 @@
   display: block;
   text-align: center;
   padding: 10px;
+  z-index: 15;
+  z-index: 153;
+
+
 
 }
 .dropdown-content a:hover {

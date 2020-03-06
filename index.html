@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="swiper.min.css">
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
@@ -87,169 +87,173 @@
 
 	</nav>
 
-	<div id="demo" class="carousel slide" data-ride="carousel">
 
 
-		<ul class="carousel-indicators">
-			<li data-target="#demo" data-slide-to="0" class="active"></li>
-			<li data-target="#demo" data-slide-to="1"></li>
-			<li data-target="#demo" data-slide-to="2"></li>
-		</ul>
+	<!-- end of nav barrrr -->
+	<div class="outer">
+		<div class="part-one slider-part-one"></div>
 
+		<div class="inner">
 
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="content">
-					<h1>Sobna vrata</h1>
-					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+			<div class="img one active">
+				<!--  <img src="tehnologies1.jpg" alt=""> -->
+				<div class="slider-box">
+					<h1>Zasto bas mi?</h1>
+					<h2>Ugradnja pvc i aluminijumske stolarije.<br>
+						Usluzno secenje i sklapanje prozora po meri</h2>
+					<p>?</p>
 				</div>
-				<img src="./images/firstImg.jpg" alt="Los Angeles" width="1100" height="500">
+
 			</div>
 
-			<div class="carousel-item">
-				<img src="./images/firstImg.jpg" alt="Chicago" width="1100" height="500">
-				<div class="content">
-					<h1>Sobna vrata</h1>
-					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+			<div class="img two">
+				<div class="slider-box">
+					<h1>20%</h1>
+					<h2>Vec prve godine vtaticete 20% investicije amet consectetur adipisicing elit. Eius, exercitationem.</h2>
+					<p>2+2</p>
 				</div>
 			</div>
 
-			<div class="carousel-item">
-				<img src="./images/firstImg.jpg" alt="New York" width="1100" height="500">
-				<div class="content">
-					<h1>Sobna vrata</h1>
-					<p>Veoma kvalitetna i sigurna sobna vrata.</p>
+			<div class="img three">
+				<div class="slider-box">
+					<h1>Igramo u istom timu.Popusite kurac ladenu binu</h1>
+					<h2>Pristupacne cene, kvalited i preko 3000 zadovoljnih musterija govore u nase ime</h2>
+					<p>=4</p>
 				</div>
 			</div>
+
 		</div>
+		<button class="plus-btn" onclick="minus()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+				viewBox="0 0 24 24">
+				<path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></button>
+		<button class="minus-btn" onclick="plus()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+				viewBox="0 0 24 24">
+				<path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg></button>
 
-
-		<a class="carousel-control-prev" href="#demo" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#demo" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
+		<div class="indicators">
+			<div class="indicator active-indicator"></div>
+			<div class="indicator"></div>
+			<div class="indicator"></div>
+		</div>
+		<!-- 		<div class="orange-blue">
+			<div class="orange"></div>
+			<div class="blue"></div>
+			<div class="orange-second"></div>
+		</div> -->
+		<div class="part-one part-two sliderPart"></div>
 	</div>
-	<!-- 
-		<div class="mainSlideContainer">
 
-			<div class="allSlides fade">
-				<div class="slideNumber">1/3</div>
-				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImgEdit.jpg">
-			<div class="content">
-				<h1>Sobna vrata</h1>
-				<p>Veoma kvalitetna i sigurna sobna vrata.</p>
-			</div>
-			>
-			</div>
 
-			<div class="allSlides fade">
-				<div class="slideNumber">2/3</div>
-				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/imageTwo.jpg">
-				<div class="content">
-					<h1>Roletne i komarnici</h1>
-					<p>Korektan odnos cene i kvaliteta.</p>
 
-				</div>
-			</div>
-			<div class="allSlides fade">
-				<div class="slideNumber">3/3</div>
-				<img class="image" src="D:/Dokumenta/Desktop/New folder/stlBato/images/firstImg.jpg">
-			<div class="content">
-				<h1>Aluminijumske ograde i gelenderi.</h1>
-				<p>Vikokog kvaliteta i odllicong izgleda.</p>
-
-			</div>
-			</div>
-
-			<a class="prevButton" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="nextButton" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-	
-		<div class="dotContainer">
- 				<span class="dot" onclick="currentSlide(1)"></span>		
-				 <span class="dot" onclick="currentSlide(2)"></span>		
-				<span class="dot" onclick="currentSlide(3)"></span>
-
-		</div>
-
- -->
 	<div id="mainContent">
-		<div id='naslov'>
+		<!-- 		<div id='naslov'>
 			<h2>Bato</h2>
 			<h3></h3>
-		</div>
+		</div> -->
+
+
+
 		<div id="fancyParagraf">
 
-			<!-- <p id="bigTxt">Stolarija Bato</p> -->
-			<!--  <p id="mediumTxt">posvecena kommpanija koja mnogo voli vase pare</p> --><br>
+			<div class="ukras-vrap">
+				<div class="ukras-orange"></div>
+				<div class="ukras-orange"></div>
+			</div>
+
 
 			<p id="smallTxt">
 				Naši proizvodi pružaju skrovitost i toplinu pa dopridonose ugodnom osećaju u Vašem domu. Vitak profil i savremen
 				dizajn odlikuju naš prozorski sistem.</p>
-		</div>
-		<div id='naslov'>
-			<h2>Izdvajamo</h2>
-			<h3></h3>
-		</div>
-		<aside class='aside'>
 
-			<a class="card" href="aluminijumska-stolarija.html">
-				<div class="imgVraper">
-					<img class="cardImg" src="images/profil1.jpg" alt="Avatar" style="width:100%">
-				</div>
-				<div class="container">
-					<h4><b>Aluminijumska Stolarija</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<div class="imgVraper">
-					<img class="cardImg" src="images/profil2.jpg" alt="Avatar" style="width:100%">
-				</div>
-				<div class="container">
-					<h4><b>John Doe</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<div class="imgVraper">
-					<img class="cardImg" src="images/profil3.jpg" alt="Avatar" style="width:100%">
-				</div>
-				<div class="container">
-					<h4><b>John Doe</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<div class="imgVraper">
-					<img class="cardImg" src="images/vrata.jfif" alt="Avatar" style="width:100%">
-				</div>
-				<div class="container">
-					<h4><b>John Doe</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<div class="imgVraper">
-					<img class="cardImg" src="images/profil1.jpg" alt="Avatar" style="width:100%">
-					<h3 class="saznajteVise">Saznajte vise</h3>
-					<h3 class="saznajteViseBorder"></h3>
-				</div>
-				<div class="container">
-					<h4><b>John Doe</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
-				</div>
-			</a>
-			<div class="card" href="#">
-				<img src="images/vrata.jfif" alt="Avatar" style="width:100%">
-				<div class="container">
-					<h4><b>John Doe</b></h4>
-					<p>Drvo aluminijum stolarija kombinuje najbolje osobine dva materijala.</p>
+			<div class="ukras-vrap ukras-vrap2">
+				<div class="ukras-orange"></div>
+				<div class="ukras-orange"></div>
+			</div>
+
+		</div>
+
+
+
+
+		<div class="home-small-slider">
+
+
+			<div class="part-one"></div>
+
+
+
+			<div class="small-slider">
+				<div class="sviProizvodi">
+
+
+					<!-- <a href="aluminijumska-stolarija.html">
+				        <div class='productVraper'>
+				          <img src="images/profil1.jpg" alt="">
+				          <h3 class="saznajteVise">Saznajte vise</h3>
+				          <h3 class="saznajteViseBorder"></h3>
+				        </div>
+				        <p>ALUMINIJUMSKA STOLARIJA</p>
+				      </a> -->
+
+					<a href="proizvodi.html">
+
+						<div class='productVraper'>
+							<div class="see-tru"></div>
+							<img src="images/vrata.jfif" alt="">
+							<h3 class="saznajteVise">Saznajte vise</h3>
+							<h3 class="saznajteViseBorder"></h3>
+
+						</div>
+						<p>SOBNA VRATA</p>
+					</a>
+
+					<a href="aluminijumska-stolarija.html">
+						<div class='productVraper'>
+							<div class="see-tru"></div>
+							<img src="images/venecianer.jpg" alt="">
+							<h3 class="saznajteVise">Saznajte više</h3>
+							<h3 class="saznajteViseBorder"></h3>
+						</div>
+						<p>VENECIANERI</p>
+					</a>
+					<a href="aluminijumska-stolarija.html">
+						<div class='productVraper'>
+							<div class="see-tru"></div>
+							<img src="images/profil33.jpg" alt="">
+							<h3 class="saznajteVise">Saznajte vise</h3>
+							<h3 class="saznajteViseBorder"></h3>
+						</div>
+						<p>ALUMINIJUMSKA STOLARIJA</p>
+					</a>
+
+
 				</div>
 			</div>
-		</aside>
+			<div class="part-one part-two"></div>
+		</div>
+
+
+
+
+
+		<div class="orange-blue">
+			<div class="orange"></div>
+			<div class="blue"></div>
+		</div>
+	</div>
+
+
+
+	<div id='naslov'>
+		<h2>NEKI OD PROIZVODA</h2>
+		<h3></h3>
+	</div>
+
+
+
+
+	<aside class='aside'>
+
 		<!-- Swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -302,62 +306,70 @@
 			<div class="swiper-pagination"></div>
 		</div>
 
-		<script type="text/javascript" src="swiper.min.js"></script>
-
-		<script src="swiper.min.js"></script>
-
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper('.swiper-container', {
-				effect: 'coverflow',
-				grabCursor: true,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				coverflowEffect: {
-					rotate: 60,
-					stretch: 6,
-					depth: 60,
-					modifier: 4,
-					slideShadows: true,
-				},
-				pagination: {
-					el: '.swiper-pagination',
-				},
-			});
-		</script>
-		<div id="cards">
-			<!--usluzno secenje  -->
-			<a href="#">
-				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-					<path
-						d="M21 14v-11h-11v-3h-7v3h-3v2h3v16h16v3h2v-3h3v-7h-3zm-11-9h9v9h-9v-9zm12 14h-17v-17h3v1h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h1v3z" />
-				</svg>
-				<p>Usluzno secenje prozora.</p>
-				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-			</a>
+	</aside>
+	<div class="orange-blue">
+		<div class="orange"></div>
+		<div class="white"></div>
+		<div class="blue"></div>
+	</div>
 
 
-			<!-- prozori po meri -->
-			<a href="#">
-				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-					<path
-						d="M5.641 22.569l-5.641 1.431 1.397-5.674 4.244 4.243zm-2.829-5.657l4.243 4.243 16.945-16.913-4.242-4.242-16.946 16.912zm14.114-2.783l-1.414 1.414.708.708 1.414-1.414 1.414 1.414-2.122 2.122.707.707 2.122-2.122 1.417 1.385-2.829 2.829-4.232-4.233-1.415 1.413 5.648 5.648 5.656-5.657-5.643-5.643-1.431 1.429zm-9.887-4.261l-4.21-4.21 2.828-2.829 1.369 1.401-2.121 2.121.707.707 2.121-2.122 1.414 1.415-1.414 1.414.707.707 1.414-1.414 1.432-1.429-5.629-5.629-5.657 5.657 5.623 5.624 1.416-1.413z" />
-				</svg>
-				<p>Prozori vasoj po lorem meri.</p>
-				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-			</a>
+	<script type="text/javascript" src="swiper.min.js"></script>
 
-			<!-- ustedite na potrosnji -->
-			<a href="#">
-				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-					<path
-						d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z" />
-				</svg>
-				<p>Ustedite na potrošnji energije.</p>
-				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-			</a>
-			<!-- prozori po meri end -->
-		</div>
+	<script src="swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 60,
+				stretch: 6,
+				depth: 60,
+				modifier: 4,
+				slideShadows: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	</script>
+	<div id="cards">
+		<!--usluzno secenje  -->
+		<a href="#">
+			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path
+					d="M21 14v-11h-11v-3h-7v3h-3v2h3v16h16v3h2v-3h3v-7h-3zm-11-9h9v9h-9v-9zm12 14h-17v-17h3v1h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h1v3z" />
+			</svg>
+			<p>Usluzno secenje prozora.</p>
+			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+		</a>
+
+
+		<!-- prozori po meri -->
+		<a href="#">
+			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path
+					d="M5.641 22.569l-5.641 1.431 1.397-5.674 4.244 4.243zm-2.829-5.657l4.243 4.243 16.945-16.913-4.242-4.242-16.946 16.912zm14.114-2.783l-1.414 1.414.708.708 1.414-1.414 1.414 1.414-2.122 2.122.707.707 2.122-2.122 1.417 1.385-2.829 2.829-4.232-4.233-1.415 1.413 5.648 5.648 5.656-5.657-5.643-5.643-1.431 1.429zm-9.887-4.261l-4.21-4.21 2.828-2.829 1.369 1.401-2.121 2.121.707.707 2.121-2.122 1.414 1.415-1.414 1.414.707.707 1.414-1.414 1.432-1.429-5.629-5.629-5.657 5.657 5.623 5.624 1.416-1.413z" />
+			</svg>
+			<p>Prozori vasoj po lorem meri.</p>
+			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+		</a>
+
+		<!-- ustedite na potrosnji -->
+		<a href="#">
+			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path
+					d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z" />
+			</svg>
+			<p>Ustedite na potrošnji energije.</p>
+			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+		</a>
+		<!-- prozori po meri end -->
+	</div>
 
 	</div>
 	<!-- <button id="topBtn" onclick="topFunction()">&#10094;</button> -->

@@ -1,4 +1,5 @@
 //  @import "mediaQ.scss";
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 @import '_variables.scss';
 @import '_home.scss';
 @import '_carorusel.scss';
@@ -7,8 +8,11 @@
 @import '_kontakt.scss';
 @import '_drop.scss';
 @import '_grid.scss';
-@import '_proizvodiNew.scss'
+@import '_proizvodiNew.scss';
+@import '_newHome.scss';
 
+
+// input animation with html css dev ed za form nije lose da se ubacii
 // bag ifon nav nije sticky
 // logo class ili id="logo" kad sam resize nav sta treba da stoji class ili log u home.scss je class
 // prozivodi na telefonu bag nece side menu i dugme nzm sta je

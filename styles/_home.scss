@@ -18,7 +18,13 @@ body {
   display: none;
 }
 .quickContact {
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: $lightBlue;
   height: 29px;
   color: whitesmoke;
@@ -46,7 +52,12 @@ nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -90,6 +101,9 @@ nav {
     transition: 0.4s ease-in-out;
   }
 @media screen and (max-width: 800px) {
+  nav, .quickContact {
+    width: 100%;
+  }
   .logoImg {
     left: 20px;
     background-image: url("../images/logoh48.png");
@@ -176,14 +190,14 @@ nav {
   //font: 15px/1.5 Helvetica,sans-serif;
 }
 #naslov {
-  text-align: center;
-  margin: 0 auto;
+   text-align: center;
+   margin: 50px auto;
    position: relative;
    left: -1000px;
    line-height: 0;
    animation: title 1s forwards;
    animation-delay: 1s;
-;
+
    
    
  /*  animation-name: title;
@@ -191,6 +205,7 @@ nav {
   animation-fill-mode: forwards; */
   h2, h3 {
     padding: 0;
+    color: $lightBlueDarken;
   }
 }
 
@@ -204,24 +219,28 @@ nav {
 
 #fancyParagraf {
   // background-color: rgb(223, 223, 238);
-  background-color: $mainBackgroun;
+  //background-color: $lightBlue;
+  background: linear-gradient($lightBlueDarken, $lightBlue) ;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
+  //margin-top: 20px;
+  
   max-width: 790px;
-  padding: 10px;
+  //padding: 10px;
   padding-top: 0;
 
   #smallTxt {
     text-align: center;
-    color: $lightBlue;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: $fontNew;
+    //font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     //line-height: 2;
     word-wrap: break-word;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 20px;
   }
 }
 
@@ -248,7 +267,11 @@ footer {
 #icons-vraper {
   width: 30%;
   min-width: 200px;
-  text-align: center;
+  //text-align: center;
+    list-style: none;
+  text-align: start;
+  //margin-left: 15%;}
+  margin-top: 5px;
   h4 {
     font-weight: normal;
     font-size: 16px;
@@ -263,6 +286,11 @@ footer {
   .fa-map-marker-alt {
     width: 30px;
   }
+}
+
+#icons-vraper ul {
+  margin: 0 auto;
+ 
 }
 
 .icons {
@@ -407,7 +435,7 @@ footer {
 
   .nav-links {
     //-webkit-tap-highlight-color: unset;
-    background-image: url("D:/Dokumenta/Desktop/New folder/stlBato/images/aaaa.jpg");
+    background-image: url("../aaaa.jpg");
     z-index: 999;
     align-items: center;
     background-color: $lightBlue;
