@@ -2351,8 +2351,8 @@ html {
 .sliderPart.part-one:before {
   border-color: #637280 transparent transparent transparent;
   border-width: 10px 10px 0 0;
-  top: -6px;
-  right: -99.8%;
+  top: -8px;
+  right: -99.9%;
 }
 
 .sliderPart.part-one::after {
