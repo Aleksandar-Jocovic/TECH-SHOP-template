@@ -2342,7 +2342,7 @@ html {
   position: relative;
   top: -9px;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 2px;
   bottom: 0;
   height: 10px;
   background: #637280;
@@ -2352,13 +2352,13 @@ html {
   border-color: #637280 transparent transparent transparent;
   border-width: 10px 10px 0 0;
   top: -8px;
-  right: -99.9%;
+  right: -100%;
 }
 
 .sliderPart.part-one::after {
   border-width: 0 10px 10px 0;
-  left: -19px;
-  top: -6px;
+  left: -20px;
+  top: -8px;
   border-color: transparent #637280 transparent transparent;
 }
 

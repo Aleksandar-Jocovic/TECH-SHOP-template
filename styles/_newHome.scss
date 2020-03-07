@@ -468,7 +468,7 @@
   top: -9px;
   border-bottom-left-radius: 3px;
   //problematican
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius:2px;
   bottom: 0;
   height: 10px;
   background: $mainBackgroun;
@@ -477,13 +477,13 @@
     border-color: $mainBackgroun transparent transparent transparent;
     border-width: 10px 10px 0 0;
     top: -8px;
-    right: -99.9%;
+    right: -100%;
   }
 
 &.part-one::after {
   border-width: 0 10px 10px 0;
-  left: -19px;
-  top: -6px;
+  left: -20px;
+  top: -8px;
 
   border-color:  transparent $mainBackgroun transparent transparent ;
 }
