@@ -89,7 +89,6 @@ nav {
 /*dodato owo gore*/
 .nav-links li a:hover {
   color: #e8491d;
-  font-weight: bold;
 }
 
 .logoImg {
@@ -213,13 +212,12 @@ nav {
 #naslov {
   text-align: center;
   margin: 50px auto;
+  margin-bottom: 0;
   position: relative;
-  left: -1000px;
   line-height: 0;
-  -webkit-animation: title 1s forwards;
-          animation: title 1s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  /* animation: title 1s forwards;
+  animation-delay: 1s;
+ */
   /*  animation-name: title;
   animation-duration: 2s;
   animation-fill-mode: forwards; */
@@ -261,8 +259,8 @@ nav {
 }
 
 #fancyParagraf {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2e3944), to(#3a4652));
-  background: linear-gradient(#2e3944, #3a4652);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #2e3944), color-stop(80%, #3a4652));
+  background: linear-gradient(#2e3944 20%, #3a4652 80%);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -629,12 +627,10 @@ footer {
 #activeNav {
   text-decoration: none;
   color: orangered;
-  /* font-size: 15px; */
   border-top: 1px solid white;
   margin: 5px 0 0 0;
   padding-top: 5px;
   z-index: 10;
-  font-weight: bold;
 }
 
 .carousel-inner img {
@@ -689,39 +685,44 @@ footer {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 380px;
-  background: #fff;
+  height: 340px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2e3944), to(#4e6070));
+  background: linear-gradient(#2e3944 80%, #4e6070);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .swiper-slide .imgBx {
   width: 100%;
-  height: 300px;
-  max-height: 300px;
+  height: 280px;
+  max-height: 280px;
+  overflow: hidden;
 }
 
 .swiper-slide .imgBx img {
   width: 100%;
   max-height: 300px;
-  overflow: hidden;
 }
 
 .swiper-slide .details {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
 }
 
 .swiper-slide .details h3 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   line-height: 20px;
+  color: #898b8d;
+  text-transform: uppercase;
 }
 
 .swiper-slide .details h3 span {
-  font-size: 16px;
-  color: olivedrab;
+  font-size: 18px;
+  color: #272f36;
 }
 
 /* @import '_slide.scss'; */
@@ -1589,7 +1590,6 @@ html {
   background-color: #637280;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 70px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
@@ -1880,6 +1880,7 @@ html {
 .productVraper {
   height: 230px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .outer {
@@ -1894,6 +1895,33 @@ html {
 .outer .patr-two {
   background: red;
   top: 10px;
+}
+
+@media (max-width: 600px) {
+  .outer {
+    height: 70vh;
+  }
+  .img .slider-box {
+    left: 10px;
+    height: 50%;
+    width: 230px;
+  }
+  .img .slider-box h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .img .slider-box h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .two .slider-box {
+    position: relative;
+    left: 80px !important;
+    z-index: 3;
+  }
+  .two .slider-box h1 {
+    font-size: 50px;
+  }
 }
 
 .inner {
@@ -2031,13 +2059,14 @@ html {
   height: 70%;
   width: 430px;
   border: 2px solid #4e6070;
-  background: #35424ed3;
+  background: rgba(53, 66, 78, 0.8);
   color: white;
   z-index: 3;
 }
 
 .slider-box h1 {
   font-weight: 400;
+  text-align: center;
 }
 
 .slider-box h2 {
@@ -2052,7 +2081,7 @@ html {
 .slider-box p {
   position: absolute;
   font-size: 270px;
-  color: #35424ed3;
+  color: rgba(53, 66, 78, 0.5);
   z-index: -1;
   font-weight: 900;
   font-family: sans-serif;
@@ -2062,7 +2091,7 @@ html {
 }
 
 .two .slider-box {
-  left: 600px;
+  left: 400px;
 }
 
 .two .slider-box p {
@@ -2183,7 +2212,7 @@ html {
 .ukras-vrap .ukras-orange {
   height: 15px;
   width: 100px;
-  background: #3a4652;
+  background: #2e3944;
 }
 
 .ukras-vrap .ukras-orange:after {
@@ -2195,7 +2224,7 @@ html {
   height: 0;
   border-style: solid;
   border-width: 15px 15px 0 0;
-  border-color: #3a4652 transparent transparent transparent;
+  border-color: #2e3944 transparent transparent transparent;
   z-index: 3;
 }
 
@@ -2222,11 +2251,13 @@ html {
 .ukras-vrap2 .ukras-orange {
   width: 200px;
   height: 25px;
+  background: #3a4652;
 }
 
 .ukras-vrap2 .ukras-orange:after {
   margin-left: 76px;
   border-width: 25px 25px 0;
+  border-color: #3a4652 transparent transparent transparent;
 }
 
 .home-small-slider {
@@ -2245,6 +2276,8 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-top: 10px solid #4e6070;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .part-one {
@@ -2262,7 +2295,7 @@ html {
   content: "";
   display: inline-block;
   position: relative;
-  right: -99.68%;
+  right: -99.8%;
   width: 0;
   height: 0;
   border-style: solid;
@@ -2297,7 +2330,7 @@ html {
 
 .part-two.part-one:before {
   border-width: 30px 30px 0 0;
-  right: -99.6%;
+  right: -99.8%;
 }
 
 .part-two.part-one::after {
@@ -2319,7 +2352,7 @@ html {
   border-color: #637280 transparent transparent transparent;
   border-width: 10px 10px 0 0;
   top: -6px;
-  right: -99.5%;
+  right: -99.8%;
 }
 
 .sliderPart.part-one::after {
@@ -2343,7 +2376,7 @@ html {
 
 .slider-part-one.part-one:before {
   border-color: #637280 transparent transparent transparent;
-  right: -99.6%;
+  right: -99.8%;
 }
 
 .slider-part-one.part-one::after {

@@ -47,6 +47,7 @@
       transition: all 0.5s ease-in-out;
       vertical-align: unset;
     }
+
     p {
       margin-top: 10px;
     }
@@ -139,4 +140,6 @@
 .productVraper {
   height: 230px;
   overflow: hidden;
+  border-radius: 5px;
+
 }

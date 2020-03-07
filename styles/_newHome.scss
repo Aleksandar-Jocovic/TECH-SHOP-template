@@ -14,6 +14,38 @@
   top: 10px;
 }
 }
+// slider za telefon 
+@media(max-width: 600px) {
+  .outer {
+    height: 70vh;
+  }
+
+  .img .slider-box {
+    left: 10px;
+    height: 50%;
+    width: 230px;
+    h1 {
+      font-size: 30px;
+      text-align: center;
+
+    }
+    h2 { 
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+ .two {
+   .slider-box { 
+      position: relative;
+      left: 80px !important;
+      z-index: 3;
+      h1 {
+        font-size: 50px;
+        
+      }
+    }
+  }
+}
 
 .inner {
   position: relative;
@@ -131,11 +163,15 @@
   border: 2px solid $orange;
   
 
-  background: #35424ed3;
+  //background: #35424e;
+  background:rgba(53, 66, 78, 0.8);
+
+  
   color: white;
   z-index: 3;
   h1 {
     font-weight: 400;
+    text-align: center;
   }
   h2 {
     margin-top: 30px;
@@ -153,7 +189,7 @@
     position: absolute;
     font-size: 270px;
     //color: #888e9496;
-    color: #35424ed3;
+    color: rgba(53, 66, 78, 0.5);
     z-index:  -1;
     font-weight: 900;
     font-family: sans-serif;
@@ -166,7 +202,7 @@
 
 
 .two .slider-box {
-  left: 600px;
+  left: 400px;
   p {
     right:-140px;
     font-size: 250px;
@@ -280,7 +316,7 @@
   .ukras-orange {
     height: 15px;
     width: 100px;
-    background: $lightBlue;
+    background: $lightBlueDarken;
   }
   .ukras-orange:after {
     content: "";
@@ -292,7 +328,7 @@
     border-style: solid;
     border-width: 15px 15px 0 0;
     //border-color: $orange transparent transparent transparent;
-    border-color: $lightBlue transparent transparent transparent;
+    border-color: $lightBlueDarken transparent transparent transparent;
 
     z-index: 3;
 }
@@ -327,15 +363,20 @@
 // donji deo ukrasa na telefonu ili prepraviti ili izbaciti jer se smanjuje dok ne nestane
 
 .ukras-vrap2 {
- transform: rotateZ(0);
+  transform: rotateZ(0);
+  
+
  //height: 15px;
  .ukras-orange {
    width: 200px;
    height: 25px;
+   background: $lightBlue;
  }
  .ukras-orange:after {
    margin-left: 76px;
    border-width: 25px 25px 0;
+    border-color: $lightBlue transparent transparent transparent;
+
 
  }
 }
@@ -350,6 +391,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-top: 10px solid $orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   }
   .part-one {
@@ -368,7 +410,7 @@
     content: "";
     display: inline-block;
     position: relative;
-    right: -99.68%;
+    right: -99.8%;
     //margin-left: 70%;
     width: 0;
     height: 0;
@@ -406,7 +448,7 @@
   top: 1px;
   &.part-one:before {
     border-width:  30px 30px 0 0;
-    right: -99.6%;
+    right: -99.8%;
     
   }
 &.part-one::after {
@@ -435,7 +477,7 @@
     border-color: $mainBackgroun transparent transparent transparent;
     border-width: 10px 10px 0 0;
     top: -6px;
-    right: -99.5%;
+    right: -99.8%;
   }
 
 &.part-one::after {
@@ -458,7 +500,7 @@
   top: -1px;
   &.part-one:before {
     border-color: $mainBackgroun transparent transparent transparent;
-    right: -99.6%;
+    right: -99.8%;
   }
 
   &.part-one::after {

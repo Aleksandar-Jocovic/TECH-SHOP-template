@@ -73,7 +73,6 @@ nav {
 /*dodato owo gore*/
 .nav-links li a:hover {
   color: #e8491d;
-  font-weight: bold;
 }
 
 .logoImg{
@@ -190,14 +189,15 @@ nav {
   //font: 15px/1.5 Helvetica,sans-serif;
 }
 #naslov {
-   text-align: center;
-   margin: 50px auto;
-   position: relative;
-   left: -1000px;
-   line-height: 0;
-   animation: title 1s forwards;
-   animation-delay: 1s;
-
+  text-align: center;
+  margin: 50px auto;
+  margin-bottom: 0;
+  position: relative;
+  //left: -1000px;
+  line-height: 0;
+  /* animation: title 1s forwards;
+  animation-delay: 1s;
+ */
    
    
  /*  animation-name: title;
@@ -220,8 +220,7 @@ nav {
 #fancyParagraf {
   // background-color: rgb(223, 223, 238);
   //background-color: $lightBlue;
-  background: linear-gradient($lightBlueDarken, $lightBlue) ;
-
+  background: linear-gradient($lightBlueDarken 20%, $lightBlue 80%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 0 auto;
@@ -568,13 +567,8 @@ footer {
 #activeNav {
   text-decoration: none;
   color: orangered;
-  /* font-size: 15px; */
   border-top: 1px solid white;
-  //font-weight: bold;
   margin: 5px 0 0 0;
-  // letter-spacing: 2px;
   padding-top: 5px;
   z-index: 10;
-  font-weight: bold;
-  //font: 15px/1.5 Helvetica,sans-serif;
 }

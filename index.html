@@ -109,14 +109,14 @@
 			<div class="img two">
 				<div class="slider-box">
 					<h1>20%</h1>
-					<h2>Vec prve godine vtaticete 20% investicije amet consectetur adipisicing elit. Eius, exercitationem.</h2>
+					<h2>Vec prve godine vtaticete 20% investicije.</h2>
 					<p>2+2</p>
 				</div>
 			</div>
 
 			<div class="img three">
 				<div class="slider-box">
-					<h1>Igramo u istom timu.Popusite kurac ladenu binu</h1>
+					<h1>Igramo u istom timu.</h1>
 					<h2>Pristupacne cene, kvalited i preko 3000 zadovoljnih musterija govore u nase ime</h2>
 					<p>=4</p>
 				</div>
@@ -135,11 +135,6 @@
 			<div class="indicator"></div>
 			<div class="indicator"></div>
 		</div>
-		<!-- 		<div class="orange-blue">
-			<div class="orange"></div>
-			<div class="blue"></div>
-			<div class="orange-second"></div>
-		</div> -->
 		<div class="part-one part-two sliderPart"></div>
 	</div>
 
@@ -232,144 +227,125 @@
 			<div class="part-one part-two"></div>
 		</div>
 
-
-
-
-
-		<div class="orange-blue">
-			<div class="orange"></div>
-			<div class="blue"></div>
+		<div id='naslov'>
+			<h2>NEKI OD PROIZVODA</h2>
+			<h3></h3>
 		</div>
-	</div>
 
+		<aside class='aside'>
 
-
-	<div id='naslov'>
-		<h2>NEKI OD PROIZVODA</h2>
-		<h3></h3>
-	</div>
-
-
-
-
-	<aside class='aside'>
-
-		<!-- Swiper -->
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="images/profil1.jpg" alt="">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="imgBx">
+							<img src="images/profil22.jpg" alt="">
+						</div>
+						<div class="details">
+							<h3>Jon Doe<br><span>Web Desinger</span></h3>
+						</div>
 					</div>
-					<div class="details">
-						<h3>Jon Doe<br><span>Web Desinger</span></h3>
+
+					<div class="swiper-slide">
+						<div class="imgBx">
+							<img src="images/venecianer.jpg" alt="">
+						</div>
+						<div class="details">
+							<h3>Jon Doe<br><span>Web Desinger</span></h3>
+						</div>
 					</div>
+
+					<div class="swiper-slide">
+						<div class="imgBx">
+							<img src="images/profil3.jpg" alt="">
+						</div>
+						<div class="details">
+							<h3>Jon Doe<br><span>Web Desinger</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="imgBx">
+							<img src="images/vrata.jfif" alt="">
+						</div>
+						<div class="details">
+							<h3>Jon Doe<br><span>Web Desinger</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="imgBx">
+							<img src="images/venecianer.jpg" alt="">
+						</div>
+						<div class="details">
+							<h3>Jon Doe<br><span>Web Desinger</span></h3>
+						</div>
+					</div>
+
+
 				</div>
-
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="images/profil1.jpg" alt="">
-					</div>
-					<div class="details">
-						<h3>Jon Doe<br><span>Web Desinger</span></h3>
-					</div>
-				</div>
-
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="images/profil1.jpg" alt="">
-					</div>
-					<div class="details">
-						<h3>Jon Doe<br><span>Web Desinger</span></h3>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="images/profil1.jpg" alt="">
-					</div>
-					<div class="details">
-						<h3>Jon Doe<br><span>Web Desinger</span></h3>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="imgBx">
-						<img src="images/profil1.jpg" alt="">
-					</div>
-					<div class="details">
-						<h3>Jon Doe<br><span>Web Desinger</span></h3>
-					</div>
-				</div>
-
-
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
+
+		</aside>
+
+
+
+		<script type="text/javascript" src="swiper.min.js"></script>
+
+		<script src="swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				coverflowEffect: {
+					rotate: 60,
+					stretch: 6,
+					depth: 60,
+					modifier: 4,
+					slideShadows: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+		</script>
+		<div id="cards">
+			<!--usluzno secenje  -->
+			<a href="#">
+				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M21 14v-11h-11v-3h-7v3h-3v2h3v16h16v3h2v-3h3v-7h-3zm-11-9h9v9h-9v-9zm12 14h-17v-17h3v1h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h1v3z" />
+				</svg>
+				<p>Usluzno secenje prozora.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+			</a>
+
+
+			<!-- prozori po meri -->
+			<a href="#">
+				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M5.641 22.569l-5.641 1.431 1.397-5.674 4.244 4.243zm-2.829-5.657l4.243 4.243 16.945-16.913-4.242-4.242-16.946 16.912zm14.114-2.783l-1.414 1.414.708.708 1.414-1.414 1.414 1.414-2.122 2.122.707.707 2.122-2.122 1.417 1.385-2.829 2.829-4.232-4.233-1.415 1.413 5.648 5.648 5.656-5.657-5.643-5.643-1.431 1.429zm-9.887-4.261l-4.21-4.21 2.828-2.829 1.369 1.401-2.121 2.121.707.707 2.121-2.122 1.414 1.415-1.414 1.414.707.707 1.414-1.414 1.432-1.429-5.629-5.629-5.657 5.657 5.623 5.624 1.416-1.413z" />
+				</svg>
+				<p>Prozori vasoj po lorem meri.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+			</a>
+
+			<!-- ustedite na potrosnji -->
+			<a href="#">
+				<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z" />
+				</svg>
+				<p>Ustedite na potrošnji energije.</p>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
+			</a>
+			<!-- prozori po meri end -->
 		</div>
-
-	</aside>
-	<div class="orange-blue">
-		<div class="orange"></div>
-		<div class="white"></div>
-		<div class="blue"></div>
-	</div>
-
-
-	<script type="text/javascript" src="swiper.min.js"></script>
-
-	<script src="swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			effect: 'coverflow',
-			grabCursor: true,
-			centeredSlides: true,
-			slidesPerView: 'auto',
-			coverflowEffect: {
-				rotate: 60,
-				stretch: 6,
-				depth: 60,
-				modifier: 4,
-				slideShadows: true,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-			},
-		});
-	</script>
-	<div id="cards">
-		<!--usluzno secenje  -->
-		<a href="#">
-			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-				<path
-					d="M21 14v-11h-11v-3h-7v3h-3v2h3v16h16v3h2v-3h3v-7h-3zm-11-9h9v9h-9v-9zm12 14h-17v-17h3v1h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h1v3z" />
-			</svg>
-			<p>Usluzno secenje prozora.</p>
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-		</a>
-
-
-		<!-- prozori po meri -->
-		<a href="#">
-			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-				<path
-					d="M5.641 22.569l-5.641 1.431 1.397-5.674 4.244 4.243zm-2.829-5.657l4.243 4.243 16.945-16.913-4.242-4.242-16.946 16.912zm14.114-2.783l-1.414 1.414.708.708 1.414-1.414 1.414 1.414-2.122 2.122.707.707 2.122-2.122 1.417 1.385-2.829 2.829-4.232-4.233-1.415 1.413 5.648 5.648 5.656-5.657-5.643-5.643-1.431 1.429zm-9.887-4.261l-4.21-4.21 2.828-2.829 1.369 1.401-2.121 2.121.707.707 2.121-2.122 1.414 1.415-1.414 1.414.707.707 1.414-1.414 1.432-1.429-5.629-5.629-5.657 5.657 5.623 5.624 1.416-1.413z" />
-			</svg>
-			<p>Prozori vasoj po lorem meri.</p>
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-		</a>
-
-		<!-- ustedite na potrosnji -->
-		<a href="#">
-			<svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-				<path
-					d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z" />
-			</svg>
-			<p>Ustedite na potrošnji energije.</p>
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellendus.</h4>
-		</a>
-		<!-- prozori po meri end -->
-	</div>
 
 	</div>
 	<!-- <button id="topBtn" onclick="topFunction()">&#10094;</button> -->
