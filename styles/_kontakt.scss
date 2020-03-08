@@ -41,7 +41,51 @@
 }
 
 
+
+//section 
+
+section {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .kontakt-map {
+    display: flex;
+    border-top: 5px solid #485867;
+    border-bottom: 5px solid #485867;
+    border-right: 10px solid #485867;
+    //border-left: 50px solid #485867;
+    //max-height: 100%;
+    height: fit-content;
+    //border: 1px solid green;
+    //width: 60%;
+    max-width: 550px;
+    background: #485867;
+    //overflow: hidden;
+    .plane {
+      width: 50px;
+      height: 100%;
+      background:  #485867;
+      svg {
+      width: 30px;
+
+      height: 30px;
+      fill:  darken($color: $lightBlueDarken, $amount: 7);
+      margin: 10px;
+      }
+    }
+    img {
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  }
+}
+
 .contact-title {
+  //margin-top: 20px;
+  background: darken($color: $lightBlueDarken, $amount: 7);
+  color: $fontNew;
   text-align: center;
   text-transform: uppercase;
   h1{
@@ -53,30 +97,46 @@
     font-size: 16px;
   }
 }
+.contact-form {
+  height: min-content;
+  width: 100%;
+}
 
 form {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  //width: 490px;
   text-align: center;
   //margin-top: 50px;
   transition: all 4s ease-in-out;
-  color: red;
+  background: darken($color: $lightBlueDarken, $amount: 7);
+
 }
 
 .form-control {
   //text-align: center;
-  width: 600px;
-  background: transparent;
+  //max-width: 400px;
+  height: 55px;
+  width: 90%;
+  background: darken($color: $lightBlueDarken, $amount: 7);
   border: none;
   outline: none;
-  border-bottom: 1px solid gray;
-  color: rgb(104, 0, 0);
+  border-bottom: 1px solid orange;
+  //color: darken($color: $lightBlueDarken, $amount: 7);
   font-size: 18px;
-  margin-bottom: 16px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+textarea {
+  height: 200px !important;
 }
 
 input {
   height: 45px;
   color: rgb(88, 10, 10);
+  background: $orange;
 
 }
 
@@ -87,12 +147,110 @@ form .submit {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  height: 50px;
+  height: 40px;
   margin-top: 20px;
+
 }
+
+    .plane {
+      width: 50px;
+      height: 100%;
+      background:  #485867;
+      svg {
+      width: 30px;
+
+      height: 30px;
+      fill:  darken($color: $lightBlueDarken, $amount: 7);
+      margin: 10px;
+      }
+    }
 
 form .submit:hover {
   background-color: #6ff857;
   cursor: pointer;
 
+}
+@media(max-width: 800px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    .contact-info {
+      margin: 20px 0;
+    }
+    .kontakt-map {
+      max-width: 100%;
+      width: 100%;
+      //height: 65vh;
+      //background: black;
+    }
+  }
+}
+
+//contact info
+.contact-info {
+  width: fit-content;
+  //background: red;
+  margin-right: 2px;
+  border-top: 5px solid #485867;
+  border-bottom: 5px solid #485867;
+
+
+
+  /* transform: translateX(-50%);
+  opacity: 1; */
+  
+}
+.contact-info-item {
+  a {
+    display: flex;
+    //color:  red ;
+    
+    svg {
+      position: relative;
+      top: 15px;
+    }
+  }
+  //background:rgba(255, 255, 255, 0.7);
+  background: darken($color: $orange, $amount: 3);
+  //opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  //border: 1px solid $secondary-color;
+  
+  height: 50px;
+  //margin-top: 15px;
+  padding: 0 10px;
+  
+    svg {
+      width: 30px;
+      height: 30px;
+      //fill: $lightBlueDarken;
+      fill:  darken($color: $lightBlueDarken, $amount: 7);
+      margin-right: 10px;
+    }
+    p {
+      font-size: 18px;
+      background: darken($color: $lightBlueDarken, $amount: 7);
+      //color:darken($color: $lightBlueDarken, $amount: 7);
+      color: $fontNew;
+      width: 182px;
+      padding-top: 10px;
+      border-left: 1px solid $lightBlueDarken;
+      height: 100%;
+    }
+ 
+}
+.contact-info-item:nth-child(1) {
+  margin-top: 0;
+}
+
+.contact-info-item:nth-child(6):hover,
+.contact-info-item:nth-child(4):hover,
+.contact-info-item:nth-child(5):hover {
+  svg {
+    fill: black;
+    transition: ease-in all;
+  }
 }

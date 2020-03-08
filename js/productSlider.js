@@ -34,7 +34,7 @@ $(document).on('scroll', function () {
 });
 
 
-
+// product galery ja msm 
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");

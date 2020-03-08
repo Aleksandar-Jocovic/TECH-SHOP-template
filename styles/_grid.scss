@@ -9,7 +9,7 @@
   // background-color: slategrey;
 
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 30px;
   
   // margin:20px;
   display: grid;
@@ -20,20 +20,7 @@
   overflow: hidden;
 
   a {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    // max-width: 250px;
-    width: 250px;
-    height: 390px;
-    color: $lightBlue;
-    //background-color: rgb(223, 223, 238);
-    //list-style: none;
-    text-decoration: none;
-    text-align: center;
-    overflow: hidden;
-    font-size: 17px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+   
 
     //border-bottom-right-radius: 15px;
 
@@ -93,10 +80,21 @@
 }
 #cards a {
   padding-top: 20px;
-  margin-top:10px;
   background-color: $mainBackgroun;
-  //max-width: 100px;
-  max-height: 250px;
+  max-height: 230px;
+  position: relative;
+  top: 20px;
+  opacity: 0.2;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+  width: 250px;
+  color: $lightBlueDarken;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
   p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -111,56 +109,5 @@
 .fill {
   width: 50px;
   height: 50px;
-  
   fill: $lightBlueDarken;
-  //fill: #F46517;
-  
-  // padding: 10px;
-  //border: 2px solid red;
-  //border-radius: 35px;
-}
-/* .svgRadius {
-  border: 2px solid #F46517;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-} */
-.card {
-  margin-bottom: 20px;
-  max-width: 250px;
- 
- 
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  .imgVraper img {
-    
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease-in-out;
-    //animation: imgZoom 1s ease-in-out;
-  }
-}
-.imgVraper {
-  max-height: 250px;
-  overflow: hidden;
-
-}
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-.card:hover .cardImg {
-    transform: scale(1.05);
-    filter: brightness(70%);
-  }
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
 }

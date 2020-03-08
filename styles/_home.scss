@@ -189,31 +189,42 @@ nav {
   //font: 15px/1.5 Helvetica,sans-serif;
 }
 #naslov {
-  text-align: center;
-  margin: 50px auto;
-  margin-bottom: 0;
+  //text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  //margin-bottom: 40px;
   position: relative;
-  //left: -1000px;
+  top: 20px;
+  opacity: 0;
   line-height: 0;
-  /* animation: title 1s forwards;
-  animation-delay: 1s;
- */
-   
-   
- /*  animation-name: title;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; */
+  width: fit-content;
   h2, h3 {
     padding: 0;
     color: $lightBlueDarken;
   }
+  .title-border {
+    width: 80%;
+    position: relative;
+    top: 35px;
+    border: 1px solid $lightBlue;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    opacity: 0;
+  }
 }
 
-@keyframes title {
-  0% {left: -1000px}
-  60% {left: 0}
-  80% {left: -10px}
-  100% {left: 0}
+.show-on-scroll-title-border {
+  animation: 1s show-on-scroll-title-animation ease-in-out forwards;
+}
+
+@keyframes show-on-scroll-title-animation {
+  100% {
+    top: 15px;
+    opacity: 1;
+  }
+}
+.show-on-scroll-title {
+  animation: 1s slider-text-anim ease-in-out forwards;
 
 }
 
@@ -223,8 +234,8 @@ nav {
   background: linear-gradient($lightBlueDarken 20%, $lightBlue 80%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 60px auto;
+  //margin-bottom: 20px;
   //margin-top: 20px;
   
   max-width: 790px;
@@ -232,9 +243,11 @@ nav {
   padding-top: 0;
 
   #smallTxt {
+    position: relative;
+    top: 20px;
+    opacity: 0;
     text-align: center;
     color: $fontNew;
-    //font-family: 'Roboto', sans-serif;
     font-size: 18px;
     //line-height: 2;
     word-wrap: break-word;
@@ -248,7 +261,7 @@ footer {
   //flex-direction: column;
   justify-content: space-between;
   min-height: 280px;
-  color: rgb(209, 197, 197);
+  color: darkgrey;
   background-color: rgb(43, 41, 49);
   //margin-top: 10%;
   //padding: 20px 10px 0 30px;
@@ -259,20 +272,20 @@ footer {
 
 }
 .footerTitle {
-  font-size: 22px;
+  font-size: 20px;
+  text-transform: uppercase;
   height: 28px;
 }
 
 #icons-vraper {
-  width: 30%;
+  width: 25%;
   min-width: 200px;
-  //text-align: center;
-    list-style: none;
+  list-style: none;
   text-align: start;
-  //margin-left: 15%;}
   margin-top: 5px;
+  padding-left: 2%;
+
   h4 {
-    font-weight: normal;
     font-size: 16px;
   }
   .fa-phone {
@@ -287,22 +300,18 @@ footer {
   }
 }
 
-#icons-vraper ul {
+#icons-vraper .contactFooter ul {
   margin: 0 auto;
- 
+  list-style: none;
+  li {
+    margin: 10px 0;
+  } 
 }
 
 .icons {
-  //background-color: rgb(167, 231, 6);
-  //width: 30%;
   min-width: 200px;
   margin-bottom: unset;
-  //	min-height: 100px;
-  //height: 80%;
- // color: white;
-  //display: inline;
   text-align: center;
-  //padding-bottom: 20px;
 }
 
 #mapTxt {
@@ -326,16 +335,6 @@ footer {
   font-size: 14px;
   width: 25%;
   min-height: 60px;
-  #innerProizvodi {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    grid-gap: 5px;
-  }
-
-  a {
-    display: block;
-    color: white;
-  }
 }
 
 #copyRight {
@@ -426,9 +425,7 @@ footer {
       margin-top: 10px;
       padding: 0;
     }
-    #icons-vraper {
-      margin-left: 20px;
-    }
+
   }
 
 
@@ -501,9 +498,13 @@ footer {
   .noDisplay {
     display: inline;
   }
+  .iconsNew {
+    width: fit-content;
+    margin: 20px auto;
+  }
 }
 
-////////////////////////////////////////end of toggle class
+////////////////////////////////////////************************************************end of toggle class
 .nav-active {
   transform: translateX(0%);
 }
