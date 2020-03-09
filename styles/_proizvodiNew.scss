@@ -1,3 +1,36 @@
+// small proizvodi na proizvodi strani
+
+.sviProizvodi {
+
+  &.svi-proizvodi-small { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-gap: 1px;
+  .productVraper {
+    height: 150px;
+
+  }
+  a {
+    height: 200px;
+    width: 175px;
+  }
+  img {
+    height: 150px;
+  }
+  .see-tru {
+    height: 150px;
+    width: 175px;
+  }
+  .saznajteVise {
+    top: -115px;
+    right: 197px;
+  }
+  .saznajteViseBorder {
+    top: -125px;
+  }
+}
+}
+
 .sviProizvodi {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -68,32 +101,40 @@
 }
 
 
-.sviProizvodi a:hover img {
-    transform: scale(1.1) !important;
-}
+
 
 .sviProizvodi a:hover .see-tru { 
   opacity: 0.9;
   filter: blur(3px);
+
 }
 
 .sviProizvodi a:hover .saznajteVise{
-  color: white;
+  //color: white;
   transform: translateX(220px);
+  animation: blue-btn 1s forwards ease-in-out;
+  animation-delay: 500ms;
+  //@extend: red;
+}
+
+@keyframes blue-btn {
+  to {
+    background: rgb(0, 162, 255);
+  }
 }
 
 .sviProizvodi a:hover .saznajteViseBorder{
   //color: white;
   transform: translateX(-220px);
 }
-.card:hover .saznajteVise{
-  color: white;
+/* .card:hover .saznajteVise{
+  //color: white;
   transform: translateX(220px);
 }
 .card:hover .saznajteViseBorder{
   
   transform: translateX(-220px);
-}
+} */
 /* .sviProizvodi a:active .saznajteVise{
   color: white;
   transform: translateX(-220px);
@@ -109,7 +150,7 @@
   font-weight: 400;
   top: -150px;
   right: 160px;
-  //color: transparent;
+  color: white;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;
   transition: all 0.5s ease-in-out;
@@ -119,17 +160,13 @@
   //animation: in 1s forwards ease-in;
 }
 
-.saznajteVise:hover {
+/* .saznajteVise:hover {
   background: rgb(0, 162, 255);
-  .saznajteViseBorder {
-  display: none;
-  }
+} */
 
-}
-
-.saznajteVise:hover .saznajteViseBorder {
+/* .saznajteVise:hover .saznajteViseBorder {
   display: none;
-}
+} */
  
 .saznajteViseBorder {
   position: relative;
@@ -140,6 +177,8 @@
   font-family: 'Roboto', sans-serif;
   transition: all 0.5s ease-in-out;
   z-index: 4;
+
+
 
 }
 .saznajteViseBorder {
@@ -166,3 +205,4 @@
     width: 10px;
   }
 }
+
