@@ -267,7 +267,7 @@ nav {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 60px auto;
-  max-width: 790px;
+  max-width: 800px;
   padding-top: 0;
 }
 
@@ -292,7 +292,7 @@ footer {
           justify-content: space-between;
   min-height: 280px;
   color: darkgrey;
-  background-color: #2b2931;
+  background-color: #28262c;
   padding: 10px 20px 0 20px;
   clear: both;
   position: relative;
@@ -366,6 +366,7 @@ footer {
 }
 
 #copyRight {
+  padding: 10px;
   margin: 0;
   color: darkgray;
   background-color: #2b2931;
@@ -1179,6 +1180,10 @@ footer {
   font-size: 16px;
 }
 
+.iconsNew a {
+  text-decoration: none;
+}
+
 #followId {
   color: darkgrey;
   margin-top: 10px;
@@ -1281,7 +1286,6 @@ section .kontakt-map img {
 }
 
 .contact-title {
-  background: #20272f;
   color: #898b8d;
   text-align: center;
   text-transform: uppercase;
@@ -1302,6 +1306,7 @@ section .kontakt-map img {
   height: -moz-min-content;
   height: min-content;
   width: 100%;
+  background: #242c35;
 }
 
 form {
@@ -1318,19 +1323,19 @@ form {
   text-align: center;
   -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
-  background: #20272f;
 }
 
 .form-control {
   height: 55px;
   width: 90%;
-  background: #20272f;
+  background: transparent;
   border: none;
   outline: none;
   border-bottom: 1px solid orange;
   font-size: 18px;
   margin: 5px auto;
-  text-align: center;
+  text-align: start;
+  color: yellow;
 }
 
 textarea {
@@ -1339,19 +1344,20 @@ textarea {
 
 input {
   height: 45px;
-  color: #580a0a;
-  background: #4e6070;
+  color: orange;
+  color: yellow;
 }
 
 form .submit {
   background: #ff5722;
-  border-color: transparent;
+  border: none;
+  text-align: center;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   height: 40px;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .plane {
@@ -1382,83 +1388,105 @@ form .submit:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section .contact-info {
+  section .info-outer {
     margin: 20px 0;
+    width: 100%;
+  }
+  section .info-outer a p {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   section .kontakt-map {
     max-width: 100%;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-left: 10px solid #485867;
+    border-top: none;
+  }
+  section .kontakt-map .plane svg {
+    margin-left: 0;
+  }
+  section .kontakt-map #kontaktirajte-nas {
+    position: relative;
+    top: -40px;
+    color: #20272f;
+    font-size: 20px;
   }
 }
 
-.contact-info {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-right: 2px;
-  border-top: 5px solid #485867;
-  border-bottom: 5px solid #485867;
-  /* transform: translateX(-50%);
-  opacity: 1; */
-}
-
-.contact-info-item {
+.info-outer {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px 5px 0;
   background: #485867;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-  padding: 0 10px;
-}
-
-.contact-info-item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-info-item a svg {
-  position: relative;
-  top: 15px;
-}
-
-.contact-info-item svg {
-  width: 30px;
-  height: 30px;
-  fill: #20272f;
+  width: 40%;
   margin-right: 10px;
 }
 
-.contact-info-item p {
+.info-outer .info-icons {
+  width: 50px;
+  background: #485867;
+}
+
+.info-outer .info-icons svg {
+  margin: 0 10px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  fill: #20272f;
+}
+
+.info-outer .info-icons svg:nth-child(1) {
+  margin-top: 10px;
+}
+
+.info-outer .info-icons svg:nth-child(2) {
+  margin-top: 14px;
+}
+
+.info-outer .info-icons svg:nth-child(3) {
+  margin-top: 13px;
+}
+
+.info-outer .info-icons svg:nth-child(4) {
+  margin-top: 14px;
+}
+
+.info-outer .info-icons svg:nth-child(5) {
+  margin-top: 16px;
+}
+
+.info-outer .info-info {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background: #242c35;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.info-outer .info-info p {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  margin: 0 10px;
+  margin-top: 10px;
+  height: 40px;
   font-size: 18px;
-  background: #20272f;
   color: #898b8d;
-  width: 182px;
-  padding-top: 10px;
-  border-left: 1px solid #2e3944;
-  height: 100%;
-}
-
-.contact-info-item:nth-child(1) {
-  margin-top: 0;
-}
-
-.contact-info-item:nth-child(6):hover svg,
-.contact-info-item:nth-child(4):hover svg,
-.contact-info-item:nth-child(5):hover svg {
-  fill: black;
-  -webkit-transition: ease-in all;
-  transition: ease-in all;
 }
 
 .dropdown-content {
@@ -2414,9 +2442,6 @@ html {
   width: 100%;
   height: 25px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2450,12 +2475,11 @@ html {
 }
 
 .ukras-orange:nth-child(2) {
-  position: relative;
+  position: absolute;
+  display: inline-block;
   right: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: translateY(-100%) rotateY(180deg);
+          transform: translateY(-100%) rotateY(180deg);
 }
 
 .ukras-vrap:nth-child(1), .ukras-vrap2 {
@@ -2501,14 +2525,12 @@ html {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.part-one {
+.part-one, .part-one-fp {
   width: 60%;
   margin: 0 auto;
   height: 20px;
   position: relative;
   top: -1px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   background-color: #4e6070;
 }
 
@@ -2539,8 +2561,8 @@ html {
 }
 
 .part-two {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  /*   border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; */
   width: 40%;
   margin: 0 auto;
   -webkit-transform: rotateX(180deg);
@@ -2562,8 +2584,6 @@ html {
 .sliderPart {
   position: relative;
   top: -9px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 2px;
   bottom: 0;
   height: 10px;
   background: #637280;
@@ -2590,8 +2610,8 @@ html {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  /*   border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; */
   top: -1px;
 }
 
@@ -2603,5 +2623,54 @@ html {
 .slider-part-one.part-one::after {
   border-color: transparent #637280 transparent transparent;
   left: -39px;
+}
+
+#fancyParagraf {
+  border-top: 5px solid #4e6070;
+}
+
+#fancyParagraf .part-one-fp {
+  width: 60%;
+  height: 15px;
+}
+
+#fancyParagraf .part-one-fp .part-one-fp:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: -99.8%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: #4e6070 transparent transparent transparent;
+  z-index: 3;
+}
+
+#fancyParagraf .part-one-fp .part-one-fp::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -39px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #4e6070 transparent transparent;
+  z-index: 3;
+}
+
+#fancyParagraf .part-one:before {
+  border-color: #4e6070 transparent transparent transparent;
+  right: -53%;
+  border-width: 15px 15px 0 0;
+  top: -1px;
+}
+
+#fancyParagraf .part-one::after {
+  border-color: transparent orange transparent transparent;
+  left: -250px;
+  border-width: 0 15px 15px 0;
+  top: -1px;
 }
 /*# sourceMappingURL=style.css.map */

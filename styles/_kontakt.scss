@@ -84,7 +84,7 @@ section {
 
 .contact-title {
   //margin-top: 20px;
-  background: darken($color: $lightBlueDarken, $amount: 7);
+  //background: darken($color: $lightBlueDarken, $amount: 7);
   color: $fontNew;
   text-align: center;
   text-transform: uppercase;
@@ -100,6 +100,8 @@ section {
 .contact-form {
   height: min-content;
   width: 100%;
+  background: darken($color: $lightBlueDarken, $amount: 5);
+
 }
 
 form {
@@ -110,7 +112,7 @@ form {
   text-align: center;
   //margin-top: 50px;
   transition: all 4s ease-in-out;
-  background: darken($color: $lightBlueDarken, $amount: 7);
+ // background: darken($color: $lightBlueDarken, $amount: 7);
 
 }
 
@@ -119,36 +121,43 @@ form {
   //max-width: 400px;
   height: 55px;
   width: 90%;
-  background: darken($color: $lightBlueDarken, $amount: 7);
+  background: transparent;
+  //background: darken($color: $lightBlueDarken, $amount: 7);
   border: none;
   outline: none;
   border-bottom: 1px solid orange;
   //color: darken($color: $lightBlueDarken, $amount: 7);
   font-size: 18px;
   margin: 5px auto;
-  text-align: center;
+  text-align: start;
+  color: yellow;  
 }
 
 textarea {
   height: 200px !important;
+
 }
 
 input {
   height: 45px;
-  color: rgb(88, 10, 10);
-  background: $orange;
+  color:orange;
+  color: yellow;
+
+  //background: $orange;
 
 }
 
 form .submit {  
   background: #ff5722;
-  border-color: transparent;
+  border: none;
+  text-align: center;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   height: 40px;
-  margin-top: 20px;
+  margin: 20px auto;
+
 
 }
 
@@ -174,83 +183,161 @@ form .submit:hover {
   section {
     flex-direction: column;
     justify-content: center;
-    .contact-info {
+    .info-outer {
       margin: 20px 0;
+      width: 100%;
+      a p {
+        flex: 1;
+      }
     }
     .kontakt-map {
       max-width: 100%;
       width: 100%;
+      flex-direction: column;
+      border-left: 10px solid #485867;
+      border-top: none;
+      .plane svg {
+        margin-left: 0;
+      }
+      #kontaktirajte-nas {
+        position: relative;
+        top: -40px;
+        color:  darken($color: $lightBlueDarken, $amount: 7);
+        font-size: 20px;
+      }
       //height: 65vh;
       //background: black;
     }
   }
 }
 
-//contact info
-.contact-info {
-  width: fit-content;
-  //background: red;
-  margin-right: 2px;
-  border-top: 5px solid #485867;
-  border-bottom: 5px solid #485867;
+// //contact info
+// .contact-info {
+//   width: fit-content;
+//   //background: red;
+//   margin-right: 2px;
+//   border-top: 5px solid #485867;
+//   border-bottom: 5px solid #485867;
 
 
 
-  /* transform: translateX(-50%);
-  opacity: 1; */
+//   /* transform: translateX(-50%);
+//   opacity: 1; */
   
-}
-.contact-info-item {
-  a {
-    display: flex;
-    //color:  red ;
+// }
+// .contact-info-item {
+//   min-width: fit-content;
+//   border: none;
+
+//   //background:rgba(255, 255, 255, 0.7);
+//   background: darken($color: $orange, $amount: 3);
+//   //opacity: 0.7;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   align-items: center;
+//   //border: 1px solid $secondary-color;
+  
+//   height: 50px;
+//   //margin-top: 15px;
+//   padding: 0 10px;
+//     a {
+//     display: flex;
+//     //color:  red ;
     
-    svg {
-      position: relative;
-      top: 15px;
-    }
-  }
-  //background:rgba(255, 255, 255, 0.7);
-  background: darken($color: $orange, $amount: 3);
-  //opacity: 0.7;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  //border: 1px solid $secondary-color;
-  
-  height: 50px;
-  //margin-top: 15px;
-  padding: 0 10px;
-  
-    svg {
-      width: 30px;
-      height: 30px;
-      //fill: $lightBlueDarken;
-      fill:  darken($color: $lightBlueDarken, $amount: 7);
-      margin-right: 10px;
-    }
-    p {
-      font-size: 18px;
-      background: darken($color: $lightBlueDarken, $amount: 7);
-      //color:darken($color: $lightBlueDarken, $amount: 7);
-      color: $fontNew;
-      width: 182px;
-      padding-top: 10px;
-      border-left: 1px solid $lightBlueDarken;
-      height: 100%;
-    }
+//       svg {
+//         position: relative;
+//         top: 15px;
+//       }
+//     }
+//     svg {
+//       width: 30px;
+//       height: 30px;
+//       //fill: $lightBlueDarken;
+//       fill:  darken($color: $lightBlueDarken, $amount: 7);
+//       margin-right: 10px;
+//     }
+//     p {
+//       font-size: 18px;
+//       background: darken($color: $lightBlueDarken, $amount: 7);
+//       //color:darken($color: $lightBlueDarken, $amount: 7);
+//       color: $fontNew;
+//       //width: 182px;
+//       padding-top: 10px;
+//       //border-left: 1px solid $lightBlueDarken;
+//       height: 100%;
+//       flex: 1;
+//     }
  
-}
-.contact-info-item:nth-child(1) {
-  margin-top: 0;
+// }
+// .contact-info-item:nth-child(1) {
+//   margin-top: 0;
+// }
+
+// .contact-info-item:nth-child(6):hover,
+// .contact-info-item:nth-child(4):hover,
+// .contact-info-item:nth-child(5):hover {
+//   svg {
+//     fill: black;
+//     transition: ease-in all;
+//   }
+// }
+
+.info-outer {
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 100%;
+  display: flex;
+  padding: 5px 10px 5px 0;
+  background: #485867;
+  width: 40%;
+  margin-right: 10px;
+
+  
+    .info-icons {
+      width: 50px;
+      background: #485867;
+      //padding: 10px;
+      svg {
+        margin: 0 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        fill: darken($color: $lightBlueDarken, $amount: 7);
+
+      }
+      svg:nth-child(1) {
+        margin-top: 10px;
+      }
+      svg:nth-child(2) {
+        margin-top: 14px;
+      }      
+      svg:nth-child(3) {
+        margin-top: 13px;
+      }
+      svg:nth-child(4) {
+        margin-top: 14px;
+      }
+      svg:nth-child(5) {
+        margin-top: 16px;
+      }            
+    }
+
+    .info-info {
+      min-width: fit-content;
+      background: darken($color: $lightBlueDarken, $amount: 5);
+      flex: 1;
+      p {
+        min-width: fit-content;
+        //margin: 12px;
+        margin: 0 10px;
+        margin-top: 10px;
+        height: 40px; 
+        font-size: 18px; 
+        color: $fontNew
+              
+
+      }
+    }
 }
 
-.contact-info-item:nth-child(6):hover,
-.contact-info-item:nth-child(4):hover,
-.contact-info-item:nth-child(5):hover {
-  svg {
-    fill: black;
-    transition: ease-in all;
-  }
-}

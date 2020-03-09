@@ -349,7 +349,7 @@
   height: 25px;
   position: relative;
   //overflow: hidden;
-  display: flex;
+  //display: flex;
   justify-content: space-between;
   background: $lightBlue;
   z-index: 1;
@@ -385,12 +385,13 @@
 }
 
 .ukras-orange:nth-child(2) {
-  position: relative;
+  position: absolute;
+  display: inline-block;
   //width: 400px;
   //background: black;
   right: 0;
-  transform: rotateZ(180deg);
-  transform: rotateY(180deg);
+  //transform: rotateZ(180deg);
+  transform: translateY(-100%) rotateY(180deg);
 }
 
 .ukras-vrap:nth-child(1), .ukras-vrap2 {
@@ -434,14 +435,14 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   }
-  .part-one {
+  .part-one, .part-one-fp {
     width: 60%;
     margin: 0 auto;
     height: 20px;
     position: relative;
     top: -1px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    //border-bottom-left-radius: 3px;
+    //border-bottom-right-radius: 3px;
 
     
     background-color: $orange;
@@ -479,8 +480,8 @@
 
 //donji deo na izdvajamo
 .part-two {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+/*   border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; */
   width: 40%;
   margin: 0 auto;
   transform: rotateX(180deg);
@@ -506,9 +507,9 @@
 .sliderPart {
   position: relative;
   top: -9px;
-  border-bottom-left-radius: 3px;
+  //border-bottom-left-radius: 3px;
   //problematican
-  border-bottom-right-radius:2px;
+  //border-bottom-right-radius:2px;
   bottom: 0;
   height: 10px;
   background: $mainBackgroun;
@@ -535,8 +536,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+/*   border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; */
   top: -1px;
   &.part-one:before {
     border-color: $mainBackgroun transparent transparent transparent;
@@ -546,5 +547,60 @@
   &.part-one::after {
     border-color:  transparent $mainBackgroun transparent transparent ;
     left: -39px;
+  }
+}
+
+#fancyParagraf  {
+  border-top: 5px solid $orange;
+    .part-one-fp {
+      width: 60%;
+      height: 15px;
+      .part-one-fp:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    right: -99.8%;
+    //margin-left: 70%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    //border-color: $orange transparent transparent transparent;
+    border-color: $orange transparent transparent transparent;
+    z-index: 3;
+}
+  .part-one-fp::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -39px;
+    
+    //margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    //border-color: $orange transparent transparent transparent;
+    border-color:  transparent $orange transparent transparent  ;
+    z-index: 3;
+    //transform: rotateZ(45deg);
+}
+    }
+   .part-one:before {
+    border-color: $orange transparent transparent transparent;
+    right: -53%;
+    border-width: 15px 15px 0 0;
+    top: -1px;
+
+
+    //transform: translateX(-210px);
+  }
+
+    .part-one::after {
+    border-color:  transparent orange transparent transparent ;
+    left: -250px;
+    border-width: 0 15px 15px 0;
+    top: -1px;
+
   }
 }
