@@ -84,7 +84,7 @@
 }
 
 .active {
-  animation: active 1s linear forwards;
+  animation: active 1.5s ease-in-out forwards;
 }
 
 @keyframes active {
@@ -161,7 +161,7 @@
   top: 50%;
   left: 50%;
   //transform: translateY(-50%);
-  transform: rotateY(40deg) translate(-45%, -50%);
+  transform: rotateY(20deg) translate(-48%, -50%);
   height: 70%;
   width: 430px;
   //border: 2px solid $orange; 
@@ -179,7 +179,7 @@
     text-align: center;
     opacity: 0;
     position: relative;
-    top: 10px;
+    top: -10px;
     font-family: sans-serif;
 
 
@@ -193,7 +193,7 @@
     text-align: center;
     opacity: 0;
     position: relative;
-    top: 10px;
+    top: -10px;
     font-family: sans-serif;
 
   
@@ -217,14 +217,14 @@
 //slider box end
 
 .slider-box-anim {
-    animation: 1.5s slider-box-anim ease-in-out forwards;
+    animation: 0.5s slider-box-anim ease-in-out forwards;
     h1 {
-      animation: 1s slider-text-anim ease-in-out forwards;
-      animation-delay: 1s;
+      animation: 0.6s slider-text-anim ease-in-out forwards;
+      animation-delay: 1.3s;
     }
     h2 {
-    animation: 1s slider-text-anim ease-in-out forwards;
-    animation-delay: 1.5s;
+    animation: 0.8s slider-text-anim ease-in-out forwards;
+    animation-delay: 1.7s;
   }   
 }
 
@@ -434,7 +434,7 @@
 .home-small-slider {
   margin: 20px auto;
   max-width: 800px;
-  background: linear-gradient($lightBlueDarken, $lightBlue) ;
+  background: linear-gradient($lightBlueDarken, $lightBlue);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -524,14 +524,14 @@
  &.part-one:before {
     border-color: $mainBackgroun transparent transparent transparent;
     border-width: 10px 10px 0 0;
-    top: -8px;
+    top: -6px;
     right: -100%;
   }
 
 &.part-one::after {
   border-width: 0 10px 10px 0;
   left: -20px;
-  top: -8px;
+  top: -6px;
 
   border-color:  transparent $mainBackgroun transparent transparent ;
 }
@@ -548,12 +548,12 @@
   top: -1px;
   &.part-one:before {
     border-color: $mainBackgroun transparent transparent transparent;
-    right: -99.8%;
+    right: -100%;
   }
 
   &.part-one::after {
     border-color:  transparent $mainBackgroun transparent transparent ;
-    left: -39px;
+    left: -40px;
   }
 }
 
@@ -578,4 +578,46 @@
       //top: -10px;
     }
   }
+}
+
+//bread crumbs
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 0;
+  list-style: none;
+  //background-color: $mainBackgroun;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  //display: inline;
+  font-size: 18px;
+  color:  $lightBlueDarken;
+
+
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color:  $lightBlueDarken;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: rgb(155, 84, 2);
+  text-decoration: underline;
 }

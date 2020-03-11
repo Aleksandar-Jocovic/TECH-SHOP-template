@@ -8,18 +8,14 @@ var imgA = document.querySelector('.imgA');
 var imgB = document.querySelector('.imgB');
 var imgC = document.querySelector('.imgC');
 
-
-
 function loop() {
-
-
 
   elementsToShow.forEach(function (element) {
     if (isElementInViewport(element)) {
       element.classList.add('show-on-scroll-title');
-    } else {
+    }/*  else {
       element.classList.remove('show-on-scroll-title');
-    }
+    } */
   })
 
   //title border animation
@@ -31,7 +27,6 @@ function loop() {
     }
   })
 
-
   if (isElementInViewport(imgA)) {
     imgA.classList.add('show-on-scroll-img');
   }
@@ -42,15 +37,10 @@ function loop() {
     imgC.classList.add('show-on-scroll-img');
   }
 
-
-
-  //img and bio
-
   scroll(loop);
 }
 
 loop();
-
 
 function isElementInViewport(el) {
   if (typeof jQuery === "function" && el instanceof jQuery) {

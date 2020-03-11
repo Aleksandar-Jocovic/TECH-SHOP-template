@@ -236,17 +236,17 @@ nav {
   .title-border {
     width: 80%;
     position: relative;
-    top: 10px;
+    //top: 10px;
     border: 1px solid $lightBlue;
     margin: 0 auto;
     margin-bottom: 40px;
     opacity: 0;
-    animation-delay: 600ms;
+    animation-delay: 700ms;
   }
 }
 
 .show-on-scroll-title-border {
-  animation: 1s show-on-scroll-title-animation ease-in-out forwards;
+  animation: 0.8s show-on-scroll-title-animation ease-in-out forwards;
 }
 
 @keyframes show-on-scroll-title-animation {
@@ -317,7 +317,7 @@ footer {
   min-width: 200px;
   list-style: none;
   text-align: start;
-  margin-top: 5px;
+  //margin-top: 5px;
   padding-left: 2%;
 
   h4 {
@@ -341,6 +341,9 @@ footer {
   li {
     margin: 10px 0;
   } 
+  li:nth-child(1) {
+    margin: 0;
+  }
 }
 
 .icons {
@@ -432,6 +435,7 @@ footer {
   .quickContact {
     height: 23px;
     font-size: 12px;
+    top: 0;
     // dal treba da se izbacii
     #telefon {
       margin: 0 auto;
@@ -467,9 +471,10 @@ footer {
 
   .nav-links {
     //-webkit-tap-highlight-color: unset;
-    background-image: url("../aaaa.jpg");
+    //background-image: url("../aaaa.jpg");
     z-index: 999;
     align-items: center;
+    //background-color: darken($color: $lightBlueDarken, $amount: 7);
     background-color: $lightBlue;
     display: flex;
     flex-direction: column;
@@ -480,7 +485,7 @@ footer {
     top: 57px;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
-    width: 45%;
+    width: 55%;
   }
 
   .nav-links li {
@@ -511,6 +516,7 @@ footer {
   }
   nav {
     height: 60px;
+    margin-top: 0;
   }
   #gmail {
     display: none;
