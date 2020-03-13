@@ -19,10 +19,6 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.noDisplay {
-  display: none;
-}
-
 .quickContact {
   width: 90%;
   max-width: 1200px;
@@ -117,6 +113,10 @@ nav {
   transition: 0.4s ease-in-out;
 }
 
+.noDisplay {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   nav, .quickContact {
     width: 100%;
@@ -132,8 +132,77 @@ nav {
     height: 48px;
     width: 77px;
   }
+  body {
+    overflow-x: hidden;
+  }
+  .quickContact {
+    height: 23px;
+    font-size: 12px;
+    top: 0;
+  }
+  .quickContact #telefon {
+    margin: 0 auto;
+  }
+  .icons {
+    display: inline-block;
+  }
+  .nav-links {
+    z-index: 999;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3a4652;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 72vh;
+    position: absolute;
+    right: 0px;
+    top: 57px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    width: 55%;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    z-index: 5;
+    display: block;
+  }
+  .logo {
+    position: relative;
+    top: -2px;
+    padding: 0 0 5px 0;
+    width: 62px;
+    left: -10%;
+    border-bottom: 1px solid whitesmoke;
+  }
+  #bato {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+  nav {
+    height: 60px;
+    margin-top: 0;
+  }
+  #gmail {
+    display: none;
+  }
 }
 
+/* @media end */
 .logo {
   text-align: unset;
   line-height: unset;
@@ -455,106 +524,11 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-  .quickContact {
-    height: 23px;
-    font-size: 12px;
-    top: 0;
-  }
-  .quickContact #telefon {
-    margin: 0 auto;
-  }
-  .icons {
-    display: inline-block;
-  }
-  footer {
-    padding: 5px;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer #icons-vraper,
-  footer .icons,
-  footer #mapTxt,
-  footer #map,
-  footer #proizvodiFooter {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    padding: 0;
-  }
-  .nav-links {
-    z-index: 999;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #3a4652;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 72vh;
-    position: absolute;
-    right: 0px;
-    top: 57px;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.2s ease-in;
-    transition: -webkit-transform 0.2s ease-in;
-    transition: transform 0.2s ease-in;
-    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-    width: 55%;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    z-index: 5;
-    display: block;
-  }
-  .logo {
-    position: relative;
-    top: -2px;
-    padding: 0 0 5px 0;
-    width: 62px;
-    left: -10%;
-    border-bottom: 1px solid whitesmoke;
-  }
-  #bato {
-    font-size: 14px;
-    letter-spacing: 5px;
-  }
-  #alpvc {
+  /*   #alpvc {
     font-size: 8.5px;
     letter-spacing: 1.2px;
-    color: #4e6070;
-  }
-  nav {
-    height: 60px;
-    margin-top: 0;
-  }
-  #gmail {
-    display: none;
-  }
+    color: $orange;
+  } */
   #mainContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -583,6 +557,33 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
     margin: 20px auto;
+  }
+  footer {
+    padding: 5px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer #icons-vraper,
+  footer .icons,
+  footer #mapTxt,
+  footer #map,
+  footer #proizvodiFooter {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
   }
 }
 
