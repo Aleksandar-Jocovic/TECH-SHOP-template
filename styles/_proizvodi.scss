@@ -366,11 +366,15 @@
   height: 18px;
   width: 25px;
   position: relative;
-  top: -1px;
-  &.gmail-footer-icon {
+  top: 4px;
+/*   &.gmail-footer-icon {
     top: 5px;
   }
+  &.phone-footer-icon {
+    top: 5px;;
+  } */
 }
+
 
 .contactFooter {
   margin: 0 auto;
@@ -399,7 +403,7 @@ fill: #F46517;
   }
 }
 
-#followId {
+.followId {
   color: darkgrey;
   margin-top: 10px;
   font-size: 18px;
@@ -478,10 +482,6 @@ fill: #F46517;
   .productInfo  {
     margin-left: 0%;
     //border-top: 10px solid red;
-    .info-outer {
-     
-    }
-
   }
 
   .row {
@@ -506,14 +506,6 @@ fill: #F46517;
 }
 
 @media screen and (max-width: 420px) {
-  .productInfo {
-  //max-width: 80%;
-   }
-/*   .productGalery {
-    top: 0; 
- }
-   */
-
   .breadcrumb { 
     width: 100%;
     padding: 10px 0;

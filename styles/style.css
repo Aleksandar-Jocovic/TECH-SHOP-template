@@ -1136,11 +1136,13 @@ footer {
   height: 18px;
   width: 25px;
   position: relative;
-  top: -1px;
-}
-
-.adressIcon.gmail-footer-icon {
-  top: 5px;
+  top: 4px;
+  /*   &.gmail-footer-icon {
+    top: 5px;
+  }
+  &.phone-footer-icon {
+    top: 5px;;
+  } */
 }
 
 .contactFooter {
@@ -1172,7 +1174,7 @@ footer {
   text-decoration: none;
 }
 
-#followId {
+.followId {
   color: darkgrey;
   margin-top: 10px;
   font-size: 18px;
@@ -1277,10 +1279,6 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  /*   .productGalery {
-    top: 0; 
- }
-   */
   .breadcrumb {
     width: 100%;
     padding: 10px 0;
