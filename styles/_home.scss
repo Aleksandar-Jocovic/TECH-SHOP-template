@@ -1,218 +1,194 @@
-* {
-  font-family: $abel;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
+//  * {
+//   font-family: $abel;
+//   box-sizing: border-box;
+//   margin: 0px;
+//   padding: 0px;
+// }
 
-body {
-  background-color: $mainBackgroun;
-  //background-color: slategrey;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  min-width: 250px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-.noDisplay {
-  display: none;
-}
-.quickContact {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  top: 30px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: $lightBlue;
-  height: 29px;
-  color: whitesmoke;
-  padding: 3.5px 40px 0 40px;
-  border-bottom: 1px solid rgba(255, 252, 252, 0.473);
-  p {
-    display: inline;
-    margin: 0;
-  }
-  #telefon {
-    margin: 0;
-    color: orange;
-  }
-  #gmail {
-    margin: 0;
-    float: right;
-    color: orange;
-    a {
-      color: white;
-    }
-  }
-}
+// body {
+//   background-color: $mainBackgroun;
+//   //background-color: slategrey;
+//   margin: 0;
+//   padding: 0;
+//   height: 100%;
+//   min-width: 250px;
+//   -webkit-tap-highlight-color: rgba(0,0,0,0);
+// }
+// .noDisplay {
+//   display: none;
+// }
+// .quickContact {
+//   width: 90%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   position: relative;
+//   top: 30px;
+//   border-top-left-radius: 5px;
+//   border-top-right-radius: 5px;
+//   background-color: $lightBlue;
+//   height: 29px;
+//   color: whitesmoke;
+//   padding: 3.5px 40px 0 40px;
+//   border-bottom: 1px solid rgba(255, 252, 252, 0.473);
+//   p {
+//     display: inline;
+//     margin: 0;
+//   }
+//   #telefon {
+//     margin: 0;
+//     color: orange;
+//   }
+//   #gmail {
+//     margin: 0;
+//     float: right;
+//     color: orange;
+//     a {
+//       color: white;
+//     }
+//   }
+// }
 
-nav {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 30px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  height: 90px;
-  background-color: $lightBlue;
-  color: whitesmoke;
-  z-index: 3;
-  //background-image: url("../images/983279.png");
-  background-position: center;
-  background-size: cover;
-}
+// nav {
+//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+//   position: sticky;
+//   top: 0;
+//   width: 90%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   margin-top: 30px;
+//   border-bottom-left-radius: 5px;
+//   border-bottom-right-radius: 5px;
+//   align-items: center;
+//   display: flex;
+//   justify-content: space-around;
+//   height: 90px;
+//   background-color: $lightBlue;
+//   color: whitesmoke;
+//   z-index: 5;
+//   //background-image: url("../images/983279.png");
+//   background-position: center;
+//   background-size: cover;
+// }
+// .nav-links {
+//   text-transform: uppercase;
+//   display: flex;
+//   justify-content: space-around;
+//   width: 40%;
+//  // margin-top: 15px;
+//   //margin-bottom: 0;
+//   margin: unset;
+//   position: absolute;
+//   right: 30px;
+//   li {
+//     list-style: none;
+//   }
 
-/*dodato owo gore*/
-.nav-links li a:hover {
-  color: #e8491d;
-}
+//   a {
+//     text-decoration: none;
+//     color: whitesmoke;
+//   }
+// }
 
-.logoImg{
-  position: absolute;
-  height: 70px;
-  width: 112px;
-  left: 20px;
-  background-image: url("../images/logoh70.png");
-  transition: 0.4s ease-in-out;
+// /*dodato owo gore*/
+// .nav-links li a:hover {
+//   color: #e8491d;
+// }
 
-}
-.logoToHome {
-  position: absolute;
-  height: inherit;
-  width: inherit;
-}
+// .logoImg{
+//   position: absolute;
+//   height: 70px;
+//   width: 112px;
+//   left: 20px;
+//   background-image: url("../images/logoh70.png");
+//   transition: 0.4s ease-in-out;
 
-.logoImgSmall {
-   // right: -30px;
-    position: absolute;
-    left: 20px;
-    background-image: url("../images/logoh48.png");
-    height: 48px;
-    width: 77px;
-    transition: 0.4s ease-in-out;
-  }
-@media screen and (max-width: 800px) {
-  nav, .quickContact {
-    width: 100%;
-  }
-  .logoImg {
-    left: 20px;
-    background-image: url("../images/logoh48.png");
-    height: 48px;
-    width: 77px;
-  }
-  .logoToHome {
-  position: absolute;
-  height: 48px;
-  width: 77px;
+// }
+// .logoToHome {
+//   position: absolute;
+//   height: inherit;
+//   width: inherit;
+// }
 
-}
-}
-.logo {
-  text-align: unset;
-  line-height: unset;
-  margin: 0;
-  position: relative;
-  top: -10px;
-  padding: 0 0 5px 0;
-  width: 92.5px;
-  left: -10%;
-  border-bottom: 1px solid whitesmoke;
+// .logoImgSmall {
+//    // right: -30px;
+//     position: absolute;
+//     left: 20px;
+//     background-image: url("../images/logoh48.png");
+//     height: 48px;
+//     width: 77px;
+//     transition: 0.4s ease-in-out;
+//   }
 
-  a {
-    margin: unset;
-    padding: unset;
-    text-decoration: none;
-  }
-}
-.logo :hover {
-  cursor: pointer;
-}
-/* #bato {
-  color: white;
-  margin: 0;
-  padding: 0;
-  height: 20px;
-  font-size: 20px;
-  letter-spacing: 9px;
-  font-family: 'Orbitron', sans-serif;
-} */
-/* #alpvc {
-  height: 32px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #e8491d;
-  font-weight: bold;
-  margin: 0;
-} */
+//   .burger {
+//   position: absolute;
+//   right: 20px;
+//   cursor: pointer;
+//   display: none;
+// }
 
-.nav-links {
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
- // margin-top: 15px;
-  //margin-bottom: 0;
-  margin: unset;
-  position: absolute;
-  right: 30px;
+// .burger div {
+//   background-color: rgb(226, 226, 226);
+//   height: 3px;
+//   margin: 5px;
+//   transition: all 0.3s ease;
+//   width: 25px;
+// }
+// @media screen and (max-width: 800px) {
 
+//     .nav-links {
+//     //-webkit-tap-highlight-color: unset;
+//     //background-image: url("../aaaa.jpg");
+//     z-index: 999;
+//     align-items: center;
+//     //background-color: darken($color: $lightBlueDarken, $amount: 7);
+//     background-color: $lightBlue;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     height: 72vh;
+//     position: absolute;
+//     right: 0px;
+//     top: 57px;
+//     transform: translateX(100%);
+//     transition: transform 0.2s ease-in;
+//     width: 55%;
+//   }
 
-  li {
-    list-style: none;
-  }
+//   .nav-links li {
+//     opacity: 0;
+//   }
+//   nav, .quickContact {
+//     width: 100%;
+//   }
+//   .logoImg {
+//     left: 20px;
+//     background-image: url("../images/logoh48.png");
+//     height: 48px;
+//     width: 77px;
+//   }
+//   .logoToHome {
+//   position: absolute;
+//   height: 48px;
+//   width: 77px;
 
-  a {
-    text-decoration: none;
-    color: whitesmoke;
-  }
-}
-
-#home {
-  text-decoration: none;
-  color: $orange;
-  /* font-size: 15px; */
-  border-top: 1px solid white;
-  font-weight: bold;
-  margin: 5px 0 0 0;
-  letter-spacing: 2px;
-  padding-top: 5px;
-  font-weight: bold;
-  //font: 15px/1.5 Helvetica,sans-serif;
-}
-/* #naslov {
-  //text-align: center;
-  margin: 0 auto;
-  margin-top: 50px;
-  //margin-bottom: 40px;
-  position: relative;
-  top: 20px;
-  opacity: 0;
-  line-height: 0;
-  width: fit-content;
-  h2, h3 {
-    padding: 0;
-    color: $lightBlueDarken;
-  }
-  
-  .title-border {
-    width: 80%;
-    position: relative;
-    top: 35px;
-    border: 1px solid $lightBlue;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    opacity: 0;
-  }
-} */
+// }
+//   body {
+//     overflow-x: hidden;
+//   }
+//   .quickContact {
+//     height: 23px;
+//     font-size: 12px;
+//     top: 0;
+//   }
+//       .burger {
+//     z-index: 5;
+//     display: block;
+//   }
+//    #gmail {
+//     display: none;
+//   }
+// } 
+/*  END OF TOOGLE */
 
 .home-title {
   text-align: center;
@@ -413,34 +389,10 @@ footer {
   color: white;
 }
 
-.burger {
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
-  display: none;
-}
 
-.burger div {
-  background-color: rgb(226, 226, 226);
-  height: 3px;
-  margin: 5px;
-  transition: all 0.3s ease;
-  width: 25px;
-}
 
 @media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-  .quickContact {
-    height: 23px;
-    font-size: 12px;
-    top: 0;
-    // dal treba da se izbacii
-    #telefon {
-      margin: 0 auto;
-    }
-  }
+
   .icons {
     display: inline-block;
   }
@@ -469,33 +421,9 @@ footer {
   }
 
 
-  .nav-links {
-    //-webkit-tap-highlight-color: unset;
-    //background-image: url("../aaaa.jpg");
-    z-index: 999;
-    align-items: center;
-    //background-color: darken($color: $lightBlueDarken, $amount: 7);
-    background-color: $lightBlue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 72vh;
-    position: absolute;
-    right: 0px;
-    top: 57px;
-    transform: translateX(100%);
-    transition: transform 0.2s ease-in;
-    width: 55%;
-  }
 
-  .nav-links li {
-    opacity: 0;
-  }
 
-  .burger {
-    z-index: 5;
-    display: block;
-  }
+
 
   .logo {
     position: relative;
@@ -518,9 +446,7 @@ footer {
     height: 60px;
     margin-top: 0;
   }
-  #gmail {
-    display: none;
-  }
+ 
 
   #mainContent {
     display: flex;
