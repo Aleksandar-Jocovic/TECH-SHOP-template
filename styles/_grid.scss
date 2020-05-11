@@ -1,31 +1,16 @@
 .aside,
 #cards {
-  //  padding: 10px;
   max-width: 800px;
-  //width: 80%;
-  //border: #ccc solid 1px;
-
   background-color: $mainBackgroun;
-  // background-color: slategrey;
-
   margin: 0 auto;
   margin-top: 30px;
-  
-  // margin:20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  //grid-template-rows: 200px 200px;
   min-height: 250px;
   grid-gap: 10px;
   overflow: hidden;
-
   a {
-   
-
-    //border-bottom-right-radius: 15px;
-
     img {
-      //border: 1px solid $lightBlue;
       background-size: cover;
       width: 100%;
       height: 70%;

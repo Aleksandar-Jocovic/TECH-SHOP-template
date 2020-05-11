@@ -5,22 +5,18 @@
   background-color: #f9f9f9;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  //right: 90px;
-  
 }
 .dropdown-content a {
   min-width: 200px;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
+  text-transform: capitalize;
   display: block;
   text-align: center;
   padding: 10px;
   z-index: 15;
   z-index: 153;
-
-
-
 }
 .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -29,10 +25,8 @@
   display: block;
 }
 
-//back to toop btn
-
 #back-to-top-btn {
-   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: none;
   position: fixed;
   bottom: 20px;
@@ -44,32 +38,15 @@
   z-index: 6;
   border: none;
   outline: none;
-  background-color: $darkBlue;
+  background-color: $lightBlue;
   color: $mainBackgroun;
-  border: 1px solid  $mainBackgroun;
+  border: 1px solid $mainBackgroun;
   cursor: pointer;
   transform: rotate(90deg);
   text-align: center;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
   user-select: none;
-  //border: 3px solid $darkBlue;
-}
-
-
-
-/* #back-to-top-btn:hover
-{
-  color: $darkBlue;
-  background-color: rgba(255, 68, 0, 0.568);
-  outline: none;
-}
- */
-@media screen and (max-width: 800px) {
-  #back-to-top-btn {
-    bottom: 10px;
-    right: 10px;
-  }
 }
 
 .btnIn {
@@ -78,15 +55,6 @@
   animation-name: btnIn;
 }
 
-/* @keyframes btnIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  to {
-    opacity: 1;
-  }
-} */
 @keyframes btnIn {
   from {
     opacity: 0;
@@ -102,15 +70,6 @@
   animation-fill-mode: both;
   animation-name: btnOut;
 }
-/* @keyframes btnOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-} */
 
 @keyframes btnOut {
   from {
@@ -123,8 +82,8 @@
 }
 
 html {
- // scroll-behavior: smooth;
- line-height: unset;
+  // scroll-behavior: smooth;
+  line-height: unset;
 }
 
 .smallNav {
@@ -134,127 +93,16 @@ html {
 .bigNav {
   height: 80px;
   transition: all 0.3s ease-in-out;
-
 }
 
-.smallLogo {
-  //transition: all 0.2s ease-in-out;
-  position: relative;
-  top: -3px;
-  padding: 0 0 5px 0;
-  width: 62px;
-  left: -10%;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.452);
-
-   a {
-    margin: unset;
-    padding: unset;
-    text-decoration: none;
-  }
-}
-
-.bigLogo {
-  //transition: all 0.2s ease-in-out;
-  text-align: unset;
-  line-height: unset;
-  margin: 0;
-  position: relative;
-  top: -5px;
-  padding: 0 0 10px 0;
-  width: 94.5px;
-  left: -10%;
-  border-bottom: 1px solid rgba(245, 245, 245,0.5);
-
-  a {
-    margin: unset;
-    padding: unset;
-    text-decoration: none;
-  }
-}
-
-.batoSmall {
-  transition: all 0.2s ease-in-out;
-  font-size: 14px;
-  letter-spacing: 5px;
-  color: white;
-  margin: 0;
-  padding: 0;
-  height: 19px;
-  font-family: 'Orbitron', sans-serif;
-  text-decoration: none;
-  
-}
-.batoBig {
-  transition: all 0.2s ease-in-out;
-  color: white;
-  margin: 0;
-  padding: 0;
-  height: 25px;
-  font-size: 20px;
-  letter-spacing: 9px;
-  font-family: 'Orbitron', sans-serif;
-  
-}
-
-.alpvcSmall {
-  transition: all 0.2s ease-in-out;
-  font-size: 8.5px;
-  letter-spacing: 1.2px;
-  color: $orange;
-  margin: 0;
-  text-decoration: none;
-  height: 22px;
-}
-
-.alpvcBig {
-  transition: all 0.2s ease-in-out;
-  height: 32px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #e8491d;
-  font-weight: bold;
-  margin: 0;
- 
-}
 
 @media screen and (max-width: 800px) {
-
-.bigNav {
-  height: 57px;
-}
-.bigLogo {
-  position: relative;
-  top: -3px;
-  padding: 0 0 5px 0;
-  width: 64px;
-  left: -10%;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.452);
-   a {
-    margin: unset;
-    padding: unset;
-    text-decoration: none;
+  .bigNav {
+    height: 57px;
   }
-}
-.batoBig {
-  font-size: 14px;
-  letter-spacing: 5px;
-  color: white;
-  margin: 0;
-  padding: 0;
-  height: 17px;
-  font-family: 'Orbitron', sans-serif;
-  text-decoration: none;
   
-}
-
-.alpvcBig {
-  height: 22px;
-  font-size: 8.5px;
-  letter-spacing: 1.2px;
-  color: $orange;
-  margin: 0;
-  text-decoration: none;
-  font-weight: unset;
-}
-
+  #back-to-top-btn {
+    bottom: 10px;
+    right: 10px;
+  }
 }

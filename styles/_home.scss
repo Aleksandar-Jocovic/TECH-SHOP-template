@@ -1,4 +1,4 @@
- * {
+* {
   font-family: $abel;
   box-sizing: border-box;
   margin: 0px;
@@ -7,12 +7,11 @@
 
 body {
   background-color: $mainBackgroun;
-  //background-color: slategrey;
   margin: 0;
   padding: 0;
   height: 100%;
   min-width: 250px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .noDisplay {
   display: none;
@@ -65,7 +64,6 @@ nav {
   background-color: $lightBlue;
   color: whitesmoke;
   z-index: 5;
-  //background-image: url("../images/983279.png");
   background-position: center;
   background-size: cover;
 }
@@ -74,8 +72,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 40%;
- // margin-top: 15px;
-  //margin-bottom: 0;
   margin: unset;
   position: absolute;
   right: 30px;
@@ -89,20 +85,20 @@ nav {
   }
 }
 
-/*dodato owo gore*/
 .nav-links li a:hover {
   color: #e8491d;
 }
 
-.logoImg{
+.logoImg {
   position: absolute;
   height: 70px;
   width: 112px;
   left: 20px;
-  background-image: url("../images/logoh70.png");
+  background-image: url('../images/logo65.png');
+  background-size: cover;
   transition: 0.4s ease-in-out;
-
 }
+
 .logoToHome {
   position: absolute;
   height: inherit;
@@ -110,16 +106,16 @@ nav {
 }
 
 .logoImgSmall {
-   // right: -30px;
-    position: absolute;
-    left: 20px;
-    background-image: url("../images/logoh48.png");
-    height: 48px;
-    width: 77px;
-    transition: 0.4s ease-in-out;
-  }
+  position: absolute;
+  left: 20px;
+  background-image: url('../images/logo65.png');
+  background-size: cover;
+  height: 48px;
+  width: 77px;
+  transition: 0.4s ease-in-out;
+}
 
-  .burger {
+.burger {
   position: absolute;
   right: 20px;
   cursor: pointer;
@@ -134,12 +130,9 @@ nav {
   width: 25px;
 }
 @media screen and (max-width: 800px) {
-    .nav-links {
-    //-webkit-tap-highlight-color: unset;
-    //background-image: url("../aaaa.jpg");
+  .nav-links {
     z-index: 999;
     align-items: center;
-    //background-color: darken($color: $lightBlueDarken, $amount: 7);
     background-color: $lightBlue;
     display: flex;
     flex-direction: column;
@@ -156,21 +149,21 @@ nav {
   .nav-links li {
     opacity: 0;
   }
-  nav, .quickContact {
+  nav,
+  .quickContact {
     width: 100%;
   }
   .logoImg {
     left: 20px;
-    background-image: url("../images/logoh48.png");
+    background-image: url('../images/logo65.png');
     height: 48px;
     width: 77px;
   }
   .logoToHome {
-  position: absolute;
-  height: 48px;
-  width: 77px;
-
-}
+    position: absolute;
+    height: 48px;
+    width: 77px;
+  }
   body {
     overflow-x: hidden;
   }
@@ -179,14 +172,14 @@ nav {
     font-size: 12px;
     top: 0;
   }
-      .burger {
+  .burger {
     z-index: 5;
     display: block;
   }
-   #gmail {
+  #gmail {
     display: none;
   }
-} 
+}
 /*  END OF TOOGLE */
 
 .home-title {
@@ -211,7 +204,6 @@ nav {
   .title-border {
     width: 80%;
     position: relative;
-    //top: 10px;
     border: 1px solid $lightBlue;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -232,54 +224,41 @@ nav {
 }
 .show-on-scroll-title {
   animation: 1s slider-text-anim ease-in-out forwards;
-
 }
 
 #fancyParagraf {
-  // background-color: rgb(223, 223, 238);
-  //background-color: $lightBlue;
   background: linear-gradient($lightBlueDarken 20%, $lightBlue 80%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 60px auto;
-  //margin-bottom: 20px;
-  //margin-top: 20px;
-  
   max-width: 800px;
-  //padding: 10px;
   padding-top: 0;
-  }
+}
 
-  #smallTxt {
-    position: relative;
-    top: 20px;
-    opacity: 0;
-    text-align: center;
-    color: $fontNew;
-    font-size: 16px;
-    //line-height: 2;
-    word-wrap: break-word;
-    margin: 10px;
-    padding: 20px;
-    font-family: sans-serif;
-
-  }
-
+#smallTxt {
+  position: relative;
+  top: 20px;
+  opacity: 0.1;
+  text-align: center;
+  color: $fontNew;
+  font-size: 18px;
+  word-wrap: break-word;
+  margin: 10px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
 
 footer {
   display: flex;
-  //flex-direction: column;
   justify-content: space-between;
   min-height: 280px;
   color: darkgrey;
   background-color: rgb(40, 38, 44);
-  //margin-top: 10%;
-  //padding: 20px 10px 0 30px;
   padding: 10px 20px 0 20px;
   clear: both;
   position: relative;
   margin-top: 20px;
-
 }
 .footerTitle {
   font-size: 20px;
@@ -292,7 +271,6 @@ footer {
   min-width: 200px;
   list-style: none;
   text-align: start;
-  //margin-top: 5px;
   padding-left: 2%;
 
   h4 {
@@ -315,7 +293,7 @@ footer {
   list-style: none;
   li {
     margin: 10px 0;
-  } 
+  }
   li:nth-child(1) {
     margin: 0;
   }
@@ -331,16 +309,13 @@ footer {
   width: 40%;
   min-height: 60px;
   overflow: hidden;
- 
 }
 
 #map {
-  //left: 25%;
   width: 100%;
   height: 220px;
   overflow: hidden;
   list-style: none;
-  //height:80%;
 }
 
 #proizvodiFooter {
@@ -359,39 +334,7 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
-/* .fa {
-  padding: 16px;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 5px;
-} */
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: rgb(39, 81, 219);
-  color: white;
-}
-
-
-
 @media screen and (max-width: 800px) {
-
   .icons {
     display: inline-block;
   }
@@ -402,10 +345,7 @@ footer {
     flex-direction: column;
     align-items: center;
     display: flex;
-    //flex-direction: column;
     justify-content: space-between;
-    // pos absulute skinut zbog copy problema wrv nece ni trebati
-    //position: absolute;
     #icons-vraper,
     .icons,
     #mapTxt,
@@ -416,13 +356,7 @@ footer {
       margin-top: 10px;
       padding: 0;
     }
-
   }
-
-
-
-
-
 
   .logo {
     position: relative;
@@ -445,7 +379,6 @@ footer {
     height: 60px;
     margin-top: 0;
   }
- 
 
   #mainContent {
     display: flex;
@@ -468,7 +401,6 @@ footer {
   .iconsNew {
     width: fit-content;
     margin: 20px auto;
-    
   }
 }
 
@@ -504,7 +436,6 @@ footer {
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 20px;
-  //background-color: slategrey;
   width: 90%;
   display: block;
 }
@@ -514,7 +445,6 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  //width: 30px;
   height: 50px;
   font-size: 18px;
   border-radius: 10px;

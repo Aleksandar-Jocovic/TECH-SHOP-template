@@ -7,7 +7,6 @@
   height: 50vh;
   background: rgb(170, 170, 170);
 } 
-//slider za telefon  not critical
 @media(max-width: 600px) {
    .two .slider-box { 
       left: unset;
@@ -25,7 +24,6 @@
     height: 70vh;
   }
   .img .slider-box {
-    //left: 10px;
     height: fit-content;
     width: 230px;
     h1 {
@@ -33,7 +31,6 @@
       font-size: 28px;
       text-align: center;
       text-transform: uppercase;
-
     }
     h2 { 
       font-size: 20px;
@@ -41,7 +38,6 @@
       margin-top: 10px;
     }
   }
-
 }
 
 .inner {
@@ -61,16 +57,16 @@
 }
 
 .inner .one {
- background: url("../images/windiws.jpg") no-repeat center center / cover;
+ background: url("../images/computer.jpg") no-repeat center center / cover;
 }
 
 .inner .two {
- background: url("../images/calculating-bills.jpg") no-repeat center center / cover;
+ background: url("../images/calculating-bills.webp") no-repeat center center / cover;
 
 }
 
 .inner .three {
-  background: url("../images/windiws.jpg") no-repeat center center / cover;
+  background: url("../images/computer.jpg") no-repeat center center / cover;
 }
 
 .active {
@@ -122,7 +118,6 @@
   }
 }
 
-
 .slider-box {
   clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 94% 100%, 6% 100%, 0 92%, 0 0);
   overflow: hidden;
@@ -147,7 +142,7 @@
     opacity: 0;
     position: relative;
     top: -10px;
-    font-family: sans-serif;
+    font-family: 'Poppins',sans-serif;
   }
   h2 {
     margin-top: 30px;
@@ -158,7 +153,7 @@
     opacity: 0;
     position: relative;
     top: -10px;
-    font-family: sans-serif;
+    font-family: 'Poppins',sans-serif;
   }
 
   p {
@@ -173,7 +168,7 @@
     text-align: center;
   }
 }
-//slider box end
+
 .slider-box-anim {
     animation: 0.5s slider-box-anim ease-in-out forwards;
     h1 {
@@ -206,10 +201,6 @@
     font-weight: bold;
     font-family: sans-serif;
   }
-  p {
-    right:-140px;
-    font-size: 250px;
-  }
 }
 
 .indicators {
@@ -237,7 +228,6 @@
   }
 }
 
-// na izdvajamo ukras mali i veliki tj donji i gornji
 .home-small-slider {
   margin: 20px auto;
   max-width: 800px;
@@ -254,8 +244,6 @@
   height: 20px;
   position: relative;
   top: -1px;
-  //border-bottom-left-radius: 3px;
-  //border-bottom-right-radius: 3px;
   background-color: $orange;
 }
 .part-one:before {
@@ -268,7 +256,7 @@
   border-style: solid;
   border-width: 20px 20px 0 0;
   border-color: $orange transparent transparent transparent;
-    z-index: 3;
+  z-index: 3;
 }
 .part-one::after {
   content: "";
@@ -283,10 +271,7 @@
   z-index: 3;
 }
 
-//donji deo na izdvajamo
 .part-two {
-/*   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; */
   width: 40%;
   margin: 0 auto;
   transform: rotateX(180deg);
@@ -295,24 +280,16 @@
   &.part-one:before {
     border-width:  30px 30px 0 0;
     right: -99.8%;
-    
   }
   &.part-one::after {
     border-width: 0 30px 30px 0;
     left: -59px;  
   }
 }
-  
 
-/// na slajderu ukras gornji i donji
-
-// skuder part donji deo 
 .sliderPart {
   position: relative;
   top: -9px;
-  //border-bottom-left-radius: 3px;
-  //problematican
-  //border-bottom-right-radius:2px;
   bottom: 0;
   height: 10px;
   background: $mainBackgroun;
@@ -338,8 +315,6 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-/*   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; */
   top: -1px;
   &.part-one:before {
     border-color: $mainBackgroun transparent transparent transparent;
@@ -363,9 +338,6 @@
     transform: translateX(0px);
   }
 }
-
-
-//fancy paragraf edges
 .home-small-slider {
   &.fancy-paragraf {
     .part-one {
@@ -373,7 +345,6 @@
     }
 
     .part-one:before {
-    //border-color: red transparent transparent transparent;
     border-width: 10px 10px 0 0;
     top: -6px;
     }
@@ -387,41 +358,31 @@
 }
 
 //bread crumbs
-
-/* Style the list */
 ul.breadcrumb {
   padding: 10px 0;
   list-style: none;
-  //background-color: $mainBackgroun;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 
-/* Display list items side by side */
 ul.breadcrumb li {
-  //display: inline;
   font-size: 18px;
   color:  $lightBlueDarken;
-
-
 }
 
-/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
   color:  $lightBlueDarken;
   content: "/\00a0";
 }
 
-/* Add a color to all links inside the list */
 ul.breadcrumb li a {
   color: orange;
   text-decoration: none;
 }
 
-/* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
   color: rgb(155, 84, 2);
   text-decoration: underline;
