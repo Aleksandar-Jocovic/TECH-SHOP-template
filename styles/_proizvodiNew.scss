@@ -35,7 +35,7 @@
   grid-gap: 5px;
 
   .see-tru {
-    transition: 0.5s;
+    transition: 0.4s;
     position: absolute;
     width: 250px;
     height: 230px;
@@ -46,8 +46,8 @@
   a {
     margin: 10px auto;
     margin-top: 20px;
-    width: 250px;
-    height: 270px;
+    width: 270px;
+    height: 250px;
     color: $fontNew;
     text-decoration: none;
     text-align: center;
@@ -55,6 +55,10 @@
     font-size: 17px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+    .productVraper {
+      height: 80%;
+      width: 100%;
+    }
     img {
       background-size: cover;
       width: 100%;
@@ -62,7 +66,6 @@
       position: relative;
       top: 0;
       margin: 0 auto;
-      margin-bottom: 10px;
       transition: all 0.5s ease-in-out;
       vertical-align: unset;
       filter: blur(3px);
@@ -87,7 +90,6 @@
 }
 
 .sviProizvodi a:hover .see-tru { 
-
   opacity: 0.8;
 }
 .sviProizvodi a:hover .productVraper {
@@ -96,7 +98,7 @@
 
 .sviProizvodi a:hover  .saznajteVise{
   transform: translateX(220px);
-  animation: blue-btn 1s forwards ease-in-out;
+  animation: blue-btn 0.5s forwards ease-in-out;
   animation-delay: 500ms;
 }
 
@@ -118,7 +120,7 @@
   font-size: 20px;
   font-weight: 400;
   top: -150px;
-  right: 160px;
+  right: 150px;
   color: white;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;

@@ -612,7 +612,7 @@ footer {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 340px;
+  height: 310px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2e3944), to(#4e6070));
   background: linear-gradient(#2e3944 80%, #4e6070);
   /* border: 2px solid $lightBlueDarken; */
@@ -626,7 +626,7 @@ footer {
 
 .swiper-slide a .imgBx {
   width: 100%;
-  height: 280px;
+  height: 250px;
   max-height: 280px;
   overflow: hidden;
 }
@@ -663,43 +663,20 @@ footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #637280;
-  /*   animation: show 2s forwards;
-  opacity: 0;
-  transform: rotateY(-40deg);
-  animation-delay: 0.7s; */
 }
 
-/* .owlShow {
-  animation: show 2s forwards ease-in;
-  position: relative;
-  left: -1500px;
-  animation-delay: 0.7;
-  opacity: 0;
-}
-
-@keyframes show {
-  0% {opacity:0.2;transform: rotateY(-190deg);}
-
-  100% {opacity:1;transform: rotateY(0deg);}
-} */
 .box {
-  height: 342px;
-  width: 250px;
-  /*   animation: show 2s forwards;
-  opacity: 0;
-  transform: rotateY(-40deg);
-  animation-delay: 0.7s; */
+  height: 320px;
+  width: 270px;
   border-radius: 5px;
-  /* background: linear-gradient($lightBlueDarken 80%, $orange); */
   overflow: hidden;
   margin: 10px auto;
 }
 
 .box img {
-  width: 250px;
-  height: 280px;
-  max-width: 250px;
-  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
@@ -716,13 +693,6 @@ footer {
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  /*   i {
-    padding: 0;
-    height: 27px;
-    width: 30px;
-    //right: 15px;
-    margin-top: 7px;
-  } */
 }
 
 .owl-carousel .owl-nav button.owl-prev span {
@@ -737,12 +707,6 @@ footer {
   outline: none;
 }
 
-/*  .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
-    font-family: 'fontAwesome';
-
-} */
 .owl-carousel .owl-nav button.owl-next {
   background: none;
   color: inherit;
@@ -758,34 +722,12 @@ footer {
   background-color: transparent;
   text-align: center;
   color: #20272f;
-  /*   i {
-    padding: 0;
-    height: 27px;
-    width: 30px;
-    //right: 15px;
-    margin-top: 7px;
-    
-  } */
 }
 
 .owl-carousel .owl-nav button.owl-next span {
   display: none;
 }
 
-/* .owl-carousel .owl-nav button.owl-next:after {
-    content: "&#10094";
-  } */
-/*
-.owl-carousel .owl-nav .owl-prev:before{
-    // fa-chevron-left
-    content: "\f053";
-    margin-right:10px;
-}
-.owl-carousel .owl-nav .owl-next:after{
-    //fa-chevron-right
-    content: "\f054";
-    margin-right:10px;
-} */
 .column {
   float: left;
   width: 120px;
@@ -845,8 +787,7 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -900,47 +841,6 @@ footer {
   max-width: 600px;
 }
 
-/* // product name animation
-.productName {
-  font-size: 30px;
-  font-weight: bolder;
-  position: relative;
-  right: -200px;
-  opacity: 0;
-  animation: productNameAnim 1.2s forwards;
-  animation-delay: 0.7s;
-  //display: none;
-}
-
-@keyframes productNameAnim {
- 0% {opacity: 0;}
- 100% {opacity: 1; right: 0;}
- 
-}
-
-//product details animation
-
-.productDetails li {
-  position: relative;
-  top: 30px;
-  animation: productDetailAnim 1s linear forwards;
-  opacity: 0;
-  //animation-delay: 1s;
-}
-@keyframes productDetailAnim {
-  0% {opacity: 0;}
-  20% {opacity: 1;}
-  100% {opacity: 1; top: 0;}
-}
-.productDetails li:nth-child(1) {
-  animation-delay: 0.7s ;
-}
-.productDetails li:nth-child(2) {
-  animation-delay: 0.8s ;
-}
-.productDetails li:nth-child(3) {
-  animation-delay: 0.9s ;
-} */
 .productInfo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -995,10 +895,8 @@ footer {
 .details {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-top: 2px solid #2e3944;
   padding: 10px;
   text-transform: uppercase;
-  /* background: linear-gradient(#2e3944 10%, #586c7e); */
 }
 
 .details h3 {
@@ -1011,6 +909,7 @@ footer {
 }
 
 .details h3 span {
+  display: inline;
   font-size: 16px;
   color: #283038;
 }
@@ -1026,12 +925,6 @@ footer {
   width: 25px;
   position: relative;
   top: 4px;
-  /*   &.gmail-footer-icon {
-    top: 5px;
-  }
-  &.phone-footer-icon {
-    top: 5px;;
-  } */
 }
 
 .contactFooter {
@@ -1074,10 +967,6 @@ footer {
   height: 70px;
 }
 
-.containerProduct {
-  /* border: 7px solid $orange; */
-}
-
 .containerProduct .part-one {
   left: 0;
   width: 30%;
@@ -1094,8 +983,6 @@ footer {
 }
 
 .containerProduct .part-one.part-one::after {
-  /*   border-color:  transparent $mainBackgroun transparent transparent;
- */
   display: none;
 }
 
@@ -1108,16 +995,10 @@ footer {
   top: -15px;
   height: 15px;
   left: 173px;
-  /*       bottom: 0;
-      bottom: -20px; */
 }
 
 .containerProduct .part-one.part-two.product-galery-edge.part-one:before {
-  /*     border-color: $mainBackgroun transparent transparent transparent;
-    border-width: 16px 16px 0 0; */
   display: none;
-  /* top: -8px;
-    right: -100%; */
 }
 
 .containerProduct .part-one.part-two.product-galery-edge.part-one::after {
@@ -1146,11 +1027,6 @@ footer {
   }
   .productInfo {
     margin-left: 0%;
-  }
-  .row {
-    /*     display: flex;
-    
-    justify-content: center; */
   }
   .row .column {
     margin: 10px 10px 10px 0px;
@@ -1787,8 +1663,8 @@ html {
 }
 
 .sviProizvodi .see-tru {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: absolute;
   width: 250px;
   height: 230px;
@@ -1800,8 +1676,8 @@ html {
 .sviProizvodi a {
   margin: 10px auto;
   margin-top: 20px;
-  width: 250px;
-  height: 270px;
+  width: 270px;
+  height: 250px;
   color: #898b8d;
   text-decoration: none;
   text-align: center;
@@ -1811,6 +1687,11 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+.sviProizvodi a .productVraper {
+  height: 80%;
+  width: 100%;
+}
+
 .sviProizvodi a img {
   background-size: cover;
   width: 100%;
@@ -1818,7 +1699,6 @@ html {
   position: relative;
   top: 0;
   margin: 0 auto;
-  margin-bottom: 10px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   vertical-align: unset;
@@ -1867,8 +1747,8 @@ html {
 .sviProizvodi a:hover .saznajteVise {
   -webkit-transform: translateX(220px);
           transform: translateX(220px);
-  -webkit-animation: blue-btn 1s forwards ease-in-out;
-          animation: blue-btn 1s forwards ease-in-out;
+  -webkit-animation: blue-btn 0.5s forwards ease-in-out;
+          animation: blue-btn 0.5s forwards ease-in-out;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
@@ -1900,7 +1780,7 @@ html {
   font-size: 20px;
   font-weight: 400;
   top: -150px;
-  right: 160px;
+  right: 150px;
   color: white;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;
@@ -1967,9 +1847,6 @@ html {
   .two .slider-box h1 {
     font-size: 50px;
   }
-}
-
-@media (max-width: 600px) {
   .outer {
     height: 70vh;
   }
@@ -2019,7 +1896,7 @@ html {
 }
 
 .inner .three {
-  background: url("../images/computer.jpg") no-repeat center center/cover;
+  background: url("../images/focus.jpg") no-repeat center center/cover;
 }
 
 .active {
