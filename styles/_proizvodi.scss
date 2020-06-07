@@ -2,6 +2,9 @@
   background-color: #ddd;
   display: flex;
   background-color: $mainBackgroun;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .box {
@@ -63,11 +66,10 @@
   float: left;
   width: 120px;
   height: 100px;
+  padding: 5px;
   overflow: hidden;
-  border: 1px solid #D6D6D6;
+  //border: 1px solid $lightBlueDarken;
   margin: 5px;
-  
-
 }
 .column:hover {
   border: 1px solid #F46517;
@@ -99,14 +101,14 @@
 .containerProduct {
 
   background: transparent;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   margin-right: 10px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 50vh;
-  
+  //width: 100%;
+  height: 40vh;
+  //max-height: 50vh;
 
   overflow: hidden;
   display: flex;
@@ -118,7 +120,9 @@
   padding: 0;
   img {
     object-fit: cover;
+    background-size: cover;
     width: 100%;
+    //height: 100%;
     background-position: top;
     background-size: cover;
   }
@@ -159,45 +163,83 @@
   min-width: fit-content;
   height: fit-content;
   //align-items: center;
-  justify-content: flex-start;
+  //justify-content: space-between;
 }
 
 .productGalery {
   width: 50%;
-  max-width: 600px;
+  max-width: 450px;
 }
 
-.productInfo {
-  height: fit-content;
-  align-self: flex-start;
-  margin-left: 3%;
-  .info-outer {
-    min-width: fit-content;
-    .info-icons {
-      width: 40px;
-      svg {
-        width: 24px;
-        height: 24px;
-        position: relative;
-        left: -2px;
-      }
-      svg:nth-child(2) {
-        top: 5px;
-      }
-      svg:nth-child(3) {
-        top: 15px;
-      }
-    }
-    height: fit-content;
+.specification {
+  position: relative;
+  width: 300px;
+  margin: 20px 0 0 15%;
+  ul li {
+    list-style: none;
+  }
+}
 
-    .info-info {
-      p {
-        height: fit-content;
-        min-height: 40px;
-        max-width: 230px;
-        color: $fontNew;
-      }
-    }
+.discount {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 52px;
+  height: 28px;
+  line-height: 34px;
+  text-align: center;
+  background: #f5f548;
+  .discount-inner-part {
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 26px 0 26px;
+    border-color: #f5f548 transparent transparent transparent;
+  }
+  span {
+    font-size: 19px;
+    font-family: sans-serif;
+    color: $lightBlue;
+    font-weight: bolder;
+  }
+}
+.stars {
+  display: flex;
+  margin-top: 10px;
+  svg {
+    fill: $vitoOrange;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+  }
+}
+
+.price {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: end;
+  .old-price  {
+    font-size: 18px;
+    text-decoration: line-through;
+    line-height: 23px;
+    color: rgb(66, 66, 66);
+    font-family: sans-serif;
+  }
+  .savings {
+    font-size: 15px;
+    color: #fe6732;
+    //line-height: 34px;
+    font-family: sans-serif;
+  }
+  .current-price {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: $lightBlueDarken;
   }
 }
 
@@ -208,8 +250,6 @@
 
 .details {
   box-sizing: border-box;
-  //border-top: 2px solid $lightBlueDarken;
-
   padding: 10px; 
   text-transform: uppercase;  
 }  
@@ -279,61 +319,14 @@ fill: #F46517;
 .productAnimatedTitle {
   height: 70px;
 }
-.containerProduct {
-.part-one {
-  left: 0;
-  width: 30%;
-  height: 10px;
-  transform: none;
-  background: $mainBackgroun;
-    &.part-one:before {
-    border-width: 10px 10px 0 0;
-    border-color: $mainBackgroun transparent transparent transparent;
-    top: -10px;
-  }
-
-&.part-one::after {
-  display: none;
-}
-
-  &.part-two {
-    &.product-galery-edge {
-      transform: rotateX(180deg);
-      right: 0;
-      background: $mainBackgroun;
-      position: relative;
-      top: -15px;
-      height: 15px;
-      left: 173px;
-       &.part-one:before {
-    display: none;
-
-  }
-
-&.part-one::after {
-  border-width: 0 16px 16px 0;
-  left: -14px;
-  border-color:  transparent $mainBackgroun transparent transparent ;
-}
-    }
-  }
-}
-}
-
 
 @media screen and (max-width: 800px) {
   .product {
     margin: 0;
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-  }
-  .containerProduct {
-    margin: 10px 0;
-  }
-  .productInfo  {
-    margin-left: 0%;
+    align-items: flex-start;
   }
 
   .row {
@@ -344,9 +337,16 @@ fill: #F46517;
   }
    .productGalery {
     width: 100%;
-    align-self: flex-start;
+    align-self: center;
     position: relative;
     margin-top: 30px;
+  }
+  .specification {
+    align-self: flex-end;
+    width: 100%;
+  }
+  .price {
+    position: relative;
   }
 }
 
@@ -357,11 +357,15 @@ fill: #F46517;
   }
 
   ul.breadcrumb li {
-  a {
-  font-size: 16px;
+    a {
+      font-size: 16px;
+    }
   }
-
-}
+  .specification {
+    width: 100%;
+    //align-self: flex-start;
+    margin: 15px 0 0 0;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -377,7 +381,4 @@ fill: #F46517;
     min-height: 300px;
     width: 100%;
   }
-  .productInfo {
-    margin-left: 15px;
-   }
 }
