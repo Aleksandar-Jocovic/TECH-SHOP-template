@@ -657,6 +657,10 @@ footer {
   color: #272f36;
 }
 
+.swiper-pagination-bullet-active {
+  background: #2e3944 !important;
+}
+
 .parent-box {
   background-color: #ddd;
   display: -webkit-box;
@@ -1626,7 +1630,6 @@ html {
 
 .sviProizvodi.svi-proizvodi-small .productVraper {
   height: 150px;
-  background: #bbbaba;
 }
 
 .sviProizvodi.svi-proizvodi-small a {
@@ -1638,20 +1641,6 @@ html {
   height: 150px;
 }
 
-.sviProizvodi.svi-proizvodi-small .see-tru {
-  height: 150px;
-  width: 175px;
-}
-
-.sviProizvodi.svi-proizvodi-small .saznajteVise {
-  top: -115px;
-  right: 197px;
-}
-
-.sviProizvodi.svi-proizvodi-small .saznajteViseBorder {
-  top: -125px;
-}
-
 .sviProizvodi {
   display: -ms-grid;
   display: grid;
@@ -1660,22 +1649,11 @@ html {
   grid-gap: 5px;
 }
 
-.sviProizvodi .see-tru {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  position: absolute;
-  width: 250px;
-  height: 230px;
-  background: #485c68;
-  opacity: 0;
-  z-index: 3;
-}
-
 .sviProizvodi a {
   margin: 10px auto;
   margin-top: 20px;
-  width: 270px;
-  height: 250px;
+  width: 250px;
+  height: 220px;
   color: #898b8d;
   text-decoration: none;
   text-align: center;
@@ -1686,6 +1664,7 @@ html {
 }
 
 .sviProizvodi a .productVraper {
+  position: relative;
   height: 80%;
   width: 100%;
 }
@@ -1733,22 +1712,18 @@ html {
   }
 }
 
-.sviProizvodi a:hover .see-tru {
-  opacity: 0.8;
-}
-
 .sviProizvodi a:hover .productVraper {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
 .sviProizvodi a:hover .saznajteVise {
-  -webkit-transform: translateX(220px);
-          transform: translateX(220px);
-  -webkit-animation: blue-btn 0.5s forwards ease-in-out;
-          animation: blue-btn 0.5s forwards ease-in-out;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-animation: blue-btn 0.4s forwards ease-in-out;
+          animation: blue-btn 0.4s forwards ease-in-out;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 @-webkit-keyframes blue-btn {
@@ -1764,46 +1739,42 @@ html {
 }
 
 .sviProizvodi a:hover .saznajteViseBorder {
-  -webkit-transform: translateX(-220px);
-          transform: translateX(-220px);
+  -webkit-transform: none;
+          transform: none;
 }
 
 .saznajteVise {
-  position: relative;
-  padding: 10px 5px 0 5px;
+  position: absolute;
+  width: 140px;
   height: 50px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 20px;
+  top: calc(50% - 25px);
+  left: calc(50% - 70px);
+  line-height: 50px;
+  -webkit-transform: translate(-200%);
+          transform: translate(-200%);
+  font-size: 17px;
   font-weight: 400;
-  top: -150px;
-  right: 150px;
   color: white;
   text-transform: uppercase;
-  font-family: 'Abel', sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  margin: 0;
-  z-index: 4;
-}
-
-.saznajteViseBorder {
-  position: relative;
-  top: -160px;
-  left: 220px;
-  color: transparent;
-  text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 4;
 }
 
 .saznajteViseBorder {
-  border-top: 2px solid white;
+  position: absolute;
   width: 100px;
-  margin: 0 auto;
+  height: 2px;
+  top: calc(50% + 10px);
+  left: calc(50% - 50px);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  will-change: transform;
+  background: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
 }
 
 .productVraper {
