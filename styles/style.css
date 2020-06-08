@@ -823,13 +823,15 @@ footer {
 }
 
 .product {
-  /* border-top: 1px solid $lightBlueDarken; */
   border-bottom: 1px solid #2e3944;
   margin: 20px auto;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1200px;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -847,11 +849,12 @@ footer {
 .specification {
   position: relative;
   width: 300px;
-  margin: 20px 0 0 15%;
+  margin: 20px 0 0 0;
 }
 
 .specification ul li {
   list-style: none;
+  font-size: 18px;
 }
 
 .discount {
@@ -1042,6 +1045,11 @@ footer {
   .price {
     position: relative;
   }
+  .containerProduct {
+    height: 40vh;
+    min-height: 300px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1064,11 +1072,6 @@ footer {
   }
   .owl-carousel .owl-nav button.owl-prev {
     left: 0;
-  }
-  .containerProduct {
-    height: 40vh;
-    min-height: 300px;
-    width: 100%;
   }
 }
 
